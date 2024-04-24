@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-19T16:50:58 IST" name="Suite" finished-at="2024-04-19T16:51:43 IST" duration-ms="45125">
+    <groups>
+    </groups>
+    <test started-at="2024-04-19T16:50:58 IST" name="ChromeTest" finished-at="2024-04-19T16:51:43 IST" duration-ms="45125">
+      <class name="qa.test.VerifySection50Application">
+        <test-method is-config="true" signature="beforeTestMethod(java.lang.String)[pri:0, instance:qa.test.VerifySection50Application@909217e]" started-at="2024-04-19T16:50:58 IST" name="beforeTestMethod" finished-at="2024-04-19T16:51:02 IST" duration-ms="4576" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestMethod -->
+        <test-method signature="OpenWestminsterBoUrl(java.lang.reflect.Method)[pri:49, instance:qa.test.VerifySection50Application@909217e]" started-at="2024-04-19T16:51:02 IST" name="OpenWestminsterBoUrl" finished-at="2024-04-19T16:51:21 IST" duration-ms="18452" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void qa.test.VerifySection50Application.OpenWestminsterBoUrl(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenWestminsterBoUrl -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.VerifySection50Application@909217e]" started-at="2024-04-19T16:51:21 IST" name="afterMethod" finished-at="2024-04-19T16:51:21 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OpenWestminsterBoUrl status=SUCCESS method=VerifySection50Application.OpenWestminsterBoUrl(java.lang.reflect.Method)[pri:49, instance:qa.test.VerifySection50Application@909217e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="performActionOnDashboard(java.lang.reflect.Method)[pri:50, instance:qa.test.VerifySection50Application@909217e]" started-at="2024-04-19T16:51:21 IST" name="performActionOnDashboard" finished-at="2024-04-19T16:51:32 IST" duration-ms="10797" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void qa.test.VerifySection50Application.performActionOnDashboard(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performActionOnDashboard -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.VerifySection50Application@909217e]" started-at="2024-04-19T16:51:32 IST" name="afterMethod" finished-at="2024-04-19T16:51:32 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=performActionOnDashboard status=SUCCESS method=VerifySection50Application.performActionOnDashboard(java.lang.reflect.Method)[pri:50, instance:qa.test.VerifySection50Application@909217e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="checkApplicationDetails(java.lang.reflect.Method)[pri:51, instance:qa.test.VerifySection50Application@909217e]" started-at="2024-04-19T16:51:32 IST" name="checkApplicationDetails" finished-at="2024-04-19T16:51:37 IST" duration-ms="4976" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void qa.test.VerifySection50Application.checkApplicationDetails(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkApplicationDetails -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.VerifySection50Application@909217e]" started-at="2024-04-19T16:51:37 IST" name="afterMethod" finished-at="2024-04-19T16:51:37 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkApplicationDetails status=SUCCESS method=VerifySection50Application.checkApplicationDetails(java.lang.reflect.Method)[pri:51, instance:qa.test.VerifySection50Application@909217e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:qa.test.VerifySection50Application@909217e]" started-at="2024-04-19T16:51:37 IST" name="afterTest" finished-at="2024-04-19T16:51:43 IST" duration-ms="6248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- qa.test.VerifySection50Application -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>
