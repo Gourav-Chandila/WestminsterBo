@@ -3,16 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="qa.test.VerifySection50Application">
+      <class name="qa.test.Section50TestServerSfbo">
         <methods>
           <include name="afterMethod"/>
           <include name="afterTest"/>
-          <include name="beforeTestMethod"/>
           <include name="OpenWestminsterBoUrl"/>
-          <include name="checkApplicationName"/>
-          <include name="performActionOnDashboard"/>
+          <include name="beforeTestMethod"/>
         </methods>
-      </class> <!-- qa.test.VerifySection50Application -->
+      </class> <!-- qa.test.Section50TestServerSfbo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

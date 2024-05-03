@@ -5,12 +5,20 @@
 		<listener class-name="utils.SuiteListener"></listener>
 	</listeners>
 
-	<test thread-count="5" name="ChromeTest">
-		
-		<parameter name="browser" value="chrome"></parameter>
+	<test thread-count="5" name="FireFoxTest">
+		<parameter name="browser" value="firefox"></parameter>
 		<classes>
-			<class name="qa.test.TestSection50" />
+			<class name="qa.test.TestSection50UatSfbo" />
 		</classes>
-	</test>
+	</test>  
+
+	<test thread-count="5" name="EdgeTest">
+
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			
+			<class name="qa.test.Section50TestServerSfbo" />
+		</classes>
+	</test>  
 
 </suite> <!-- Suite -->

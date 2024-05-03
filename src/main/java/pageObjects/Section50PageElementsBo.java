@@ -5,7 +5,18 @@ public class Section50PageElementsBo {
 	public static String businessSearchInputField = "business_search";
 	public static String businessDetailsSearchButton = "//button[@id='business_search_button']";
 	public static String businessModalSearchButton = "modal_business_search_button";
+	//not use this link for select below a genric function for this 
 	public static String businessModalSelectButton = "//button[contains(@class, \"business_search_select\") and contains(@partyid, '{\"business_name\":null,\"main_business_party_id\":\"30839\",\"address\":null,\"business_address\":null,\"orderId\":null,\"name\":null,\"telephone\":null,\"partyId\":\"30838\",\"businessPartyId\":\"30839\",\"email\":\"test@fgl.com\"}')]";
+
+	public static String businessModalSelectButton2(String partyId, String email) {
+		// Base XPath with placeholders and this function generates xpath for business address select button accepts t
+		String baseXPath = "//button[@class='btn btn-link business_search_select' and contains(@partyid, '%s') and contains(@partyid, '%s')]";
+
+		// Format the XPath with the given partyId and email
+		String xpath = String.format(baseXPath, String.format("\"partyId\":\"%s\"", partyId),
+				String.format("\"email\":\"%s\"", email));
+		return xpath;
+	}
 
 	// Application
 	public static String applicationSectionLabel = "//h2[text()='Application']";
@@ -43,7 +54,6 @@ public class Section50PageElementsBo {
 	public static String trafficPlanDescriptionInputField = "traffic_plan_desc";
 	public static String trafficPlanUploadButton = "traffic_plan";
 
-	
 	// About the work
 	public static String aboutTheWorkLabel = "//div[@class='panel-heading']/h2[text()='About the works']";
 	public static String aboutTheWorkDescription = "s50_work_description";

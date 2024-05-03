@@ -4,17 +4,30 @@
   <listeners>
     <listener class-name="utils.SuiteListener"/>
   </listeners>
-  <test thread-count="5" name="ChromeTest(failed)">
-    <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="FireFoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="qa.test.VerifySection50Application">
+      <class name="qa.test.TestSection50UatSfbo">
         <methods>
           <include name="afterMethod"/>
-          <include name="checkApplicationDetails" invocation-numbers="0"/>
+          <include name="beforeTestMethod"/>
           <include name="afterTest"/>
+          <include name="fillBusinessDetails" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- qa.test.TestSection50UatSfbo -->
+    </classes>
+  </test> <!-- FireFoxTest(failed) -->
+  <test thread-count="5" name="EdgeTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="qa.test.Section50TestServerSfbo">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="fillBusinessDetails" invocation-numbers="0"/>
           <include name="beforeTestMethod"/>
         </methods>
-      </class> <!-- qa.test.VerifySection50Application -->
+      </class> <!-- qa.test.Section50TestServerSfbo -->
     </classes>
-  </test> <!-- ChromeTest(failed) -->
+  </test> <!-- EdgeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

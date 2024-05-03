@@ -12,13 +12,13 @@ import utils.SeleniumUtils;
 public class LoginPageEvents {
 	ElementFetch ele = new ElementFetch();
 
-	public String enterLoginCredentials(WebDriver driver) {
+	public String enterLoginCredentials(WebDriver driver,String email,String password) {
 		try {
 			// Another method
 			Actions actions = new Actions(driver);
-			actions.sendKeys("gwise").perform();
+			actions.sendKeys(email).perform();
 			actions.sendKeys(Keys.TAB).perform();
-			actions.sendKeys("pass@123").perform();
+			actions.sendKeys(password).perform();
 			actions.sendKeys(Keys.TAB).perform();
 			actions.sendKeys(Keys.ENTER).perform();
 

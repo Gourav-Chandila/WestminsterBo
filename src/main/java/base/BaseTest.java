@@ -30,6 +30,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import utils.SeleniumUtils;
 
 public class BaseTest {
+	// Default report name, can be overridden
+	protected String reportName = "DefaultTestReport.html";
+	protected String documentTitle = "Westminster";
 
 	public static WebDriver driver;
 	public ExtentSparkReporter sparkReporter;
@@ -37,28 +40,29 @@ public class BaseTest {
 	public ExtentTest logger;
 
 	@BeforeTest
-	@Parameters("browser") // pass parameters from the testng.xml file which driver needs like
+	@Parameters("browser")
 	public void beforeTestMethod(String browser) {
-		sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + File.separator + "reports"
-				+ File.separator + "Section50ExtentReport.html");
+		sparkReporter = new ExtentSparkReporter(
+				System.getProperty("user.dir") + File.separator + "reports" + File.separator + reportName);
+
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
-		// Configure Extent Spark Reporter
-		sparkReporter.config().setDocumentTitle("Westminster Backoffice");
-		sparkReporter.config().setReportName("Section 50 Regression Report");
-		sparkReporter.config().setTheme(Theme.STANDARD);
-		sparkReporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
 
-		// Report Configuration
+		// Configure Extent Spark Reporter
+		sparkReporter.config().setDocumentTitle(documentTitle);
+		sparkReporter.config().setReportName("Regression Report");
+		sparkReporter.config().setTheme(Theme.STANDARD);
+
+		// System information
 		extent.setSystemInfo("Environment", "QA");
 		extent.setSystemInfo("Browser", browser);
 		extent.setSystemInfo("OS", "Windows 10");
 		extent.setSystemInfo("Java Version", System.getProperty("java.version"));
 
+		// Set up WebDriver
 		setupDriver(browser, true);
 		driver.manage().window().maximize();
-
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); // 5 seconds
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 
 	// After the completion of test than it generates the report
@@ -68,9 +72,9 @@ public class BaseTest {
 		// driver.quit();
 		// Calls function to send email it accepts two args 'filePath','recipientEmail'
 		try {
-			SeleniumUtils.sendEmailWithAttachment(System.getProperty("user.dir") + File.separator + "reports"
-					+ File.separator + "Section50ExtentReport.html", "hellowchandila@gmail.com", "Gourav");
-			System.out.println("Email sent successfully.");
+//			SeleniumUtils.sendEmailWithAttachment(System.getProperty("user.dir") + File.separator + "reports"
+//					+ File.separator + "Section50ExtentReport.html", "hellowchandila@gmail.com", "Gourav");
+//			System.out.println("Email sent successfully.");
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println("Failed to send email: " + e.getMessage());
