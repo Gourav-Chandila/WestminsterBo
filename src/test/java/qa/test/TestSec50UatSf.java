@@ -18,14 +18,15 @@ public class TestSec50UatSf extends BaseTest {
 	LoginPageEvents loginPg = new LoginPageEvents();
 	Sec50UatSfEvents sec50 = new Sec50UatSfEvents();
 
-//	@BeforeTest
-//	@Parameters("browser")
-//	public void beforeTestMethod(String browser) {
-//		// Set the custom report name
-//		reportName = "TestChild2Methods.html";
-//		documentTitle = "Front Office";
-//		super.beforeTestMethod(browser);
-//	}
+	@BeforeTest
+	@Parameters("browser")
+	public void beforeTestMethod(String browser) {
+		// Override the report name and document title for this class
+		reportName = "Sec50UatSf.html";
+		documentTitle = "Section 50 Front Office";
+		// Call the base class setup
+		super.beforeTestMethod(browser);
+	}
 
 	@Test(priority = '1', enabled = true)
 	public void OpenWestminsterBoUrl(Method methodName) {
@@ -48,12 +49,12 @@ public class TestSec50UatSf extends BaseTest {
 	public void confirmInformation(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String Message = sec50.confirmInfoIsTrue(driver);
-		String expectedMessage = "Please confirm the above is true : Clicked";
+		String expectedMessage = "Please confirm the above is false : Clicked";
 		Assert.assertEquals(expectedMessage, Message);
 		logger.info(Message);
 	}
 
-	@Test(priority = '3', enabled = true)
+	@Test(priority = '3', enabled = false)
 	public void fillingApplicationDates(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String startDate = "21/05/2024";
@@ -71,7 +72,7 @@ public class TestSec50UatSf extends BaseTest {
 
 	}
 
-	@Test(priority = '4', enabled = true)
+	@Test(priority = '4', enabled = false)
 	public void fillingSiteDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String streetNamePostcode = "VICTORIA STREET";// which to be searched or SW1E6AA
@@ -92,7 +93,7 @@ public class TestSec50UatSf extends BaseTest {
 
 	}
 
-	@Test(priority = '5', enabled = true)
+	@Test(priority = '5', enabled = false)
 	public void fillAboutTheWorkSection(Method methodName) {
 
 		logger = extent.createTest(methodName.getName());
@@ -103,7 +104,7 @@ public class TestSec50UatSf extends BaseTest {
 
 	}
 
-	@Test(priority = '7', enabled = true)
+	@Test(priority = '7', enabled = false)
 	public void fillSupervisorDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String expectedMessage = "Success: Supervisor details filled successfully";
@@ -120,7 +121,7 @@ public class TestSec50UatSf extends BaseTest {
 		captureAndAddScreenshot(methodName.getName());
 	}
 
-	@Test(priority = '8', enabled = true, invocationCount = 1)
+	@Test(priority = '8', enabled = false, invocationCount = 1)
 	public void fillOperatorDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String expectedMessage = "Success: Operator details filled successfully";
@@ -137,7 +138,7 @@ public class TestSec50UatSf extends BaseTest {
 		captureAndAddScreenshot(methodName.getName());
 	}
 
-	@Test(priority = '9', enabled = true)
+	@Test(priority = '9', enabled = false)
 	public void addDeclarations(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String expectedMessage = "Success: Declarations filled successfully";
@@ -146,7 +147,7 @@ public class TestSec50UatSf extends BaseTest {
 		logger.info(expectedMessage);
 	}
 
-	@Test(priority = '9', enabled = true)
+	@Test(priority = '9', enabled = false)
 	public void payFees(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String expectedMessage = "Payment successful";

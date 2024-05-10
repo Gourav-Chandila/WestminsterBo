@@ -36,29 +36,30 @@ public class BaseTest {
 	public ExtentReports extent;
 	public ExtentTest logger;
 
+	protected String reportName = "DefaultReport.html";
+	protected String documentTitle = "Default Title";
+
+	// Base class setup method, accepting customization through parameters
 	@BeforeTest
-	@Parameters("browser") // pass parameters from the testng.xml file which driver needs like
+	@Parameters({ "browser" })
 	public void beforeTestMethod(String browser) {
-		sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + File.separator + "reports"
-				+ File.separator + "Section50ExtentReport.html");
+		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(
+				System.getProperty("user.dir") + File.separator + "reports" + File.separator + reportName);
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
-		// Configure Extent Spark Reporter
-		sparkReporter.config().setDocumentTitle("Westminster Backoffice");
-		sparkReporter.config().setReportName("Section 50 Regression Report");
+
+		sparkReporter.config().setDocumentTitle(documentTitle);
+		sparkReporter.config().setReportName(reportName);
 		sparkReporter.config().setTheme(Theme.STANDARD);
-		sparkReporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
 
 		// Report Configuration
 		extent.setSystemInfo("Environment", "QA");
 		extent.setSystemInfo("Browser", browser);
 		extent.setSystemInfo("OS", "Windows 10");
 		extent.setSystemInfo("Java Version", System.getProperty("java.version"));
-
+		
+		// Set up the driver and other configurations
 		setupDriver(browser, true);
-		driver.manage().window().maximize();
-
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); // 5 seconds
 	}
 
 	// After the completion of test than it generates the report
