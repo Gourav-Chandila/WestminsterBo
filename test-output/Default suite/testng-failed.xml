@@ -3,16 +3,26 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< Updated upstream
       <class name="qa.test.VerifySection50Application">
+=======
+      <class name="common_files.TestSec50UatSfbo">
+>>>>>>> Stashed changes
         <methods>
           <include name="afterMethod"/>
           <include name="afterTest"/>
           <include name="beforeTestMethod"/>
+<<<<<<< Updated upstream
           <include name="OpenWestminsterBoUrl"/>
           <include name="checkApplicationName"/>
           <include name="performActionOnDashboard"/>
         </methods>
       </class> <!-- qa.test.VerifySection50Application -->
+=======
+          <include name="addDeclarations"/>
+        </methods>
+      </class> <!-- common_files.TestSec50UatSfbo -->
+>>>>>>> Stashed changes
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

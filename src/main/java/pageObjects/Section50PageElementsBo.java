@@ -5,7 +5,19 @@ public class Section50PageElementsBo {
 	public static String businessSearchInputField = "business_search";
 	public static String businessDetailsSearchButton = "//button[@id='business_search_button']";
 	public static String businessModalSearchButton = "modal_business_search_button";
+	// not use this link for select below a genric function for this
 	public static String businessModalSelectButton = "//button[contains(@class, \"business_search_select\") and contains(@partyid, '{\"business_name\":null,\"main_business_party_id\":\"30839\",\"address\":null,\"business_address\":null,\"orderId\":null,\"name\":null,\"telephone\":null,\"partyId\":\"30838\",\"businessPartyId\":\"30839\",\"email\":\"test@fgl.com\"}')]";
+
+	public static String businessModalSelectButton2(String partyId, String email) {
+		// Base XPath with placeholders and this function generates xpath for business
+		// address select button accepts t
+		String baseXPath = "//button[@class='btn btn-link business_search_select' and contains(@partyid, '%s') and contains(@partyid, '%s')]";
+
+		// Format the XPath with the given partyId and email
+		String xpath = String.format(baseXPath, String.format("\"partyId\":\"%s\"", partyId),
+				String.format("\"email\":\"%s\"", email));
+		return xpath;
+	}
 
 	// Application
 	public static String applicationSectionLabel = "//h2[text()='Application']";
@@ -40,6 +52,7 @@ public class Section50PageElementsBo {
 	}
 
 	// Traffic management description input field and upload button
+	public static String trafficPlanBrowseFile = "traffic_plan_input";
 	public static String trafficPlanDescriptionInputField = "traffic_plan_desc";
 	public static String trafficPlanUploadButton = "traffic_plan";
 
@@ -48,7 +61,8 @@ public class Section50PageElementsBo {
 	public static String aboutTheWorkLabel = "//div[@class='panel-heading']/h2[text()='About the works']";
 	public static String aboutTheWorkDescription = "s50_work_description";
 	public static String aboutTheWorkFootwayOption = "s50_footway_carriageway_footway";
-	public static String aboutTheWorkRoadClosureNoOption = "s50_road_closure_no";
+//	public static String aboutTheWorkRoadClosureNoOption = "s50_road_closure_no";
+	public static String aboutTheWorkRoadClosureNoOption = "//input[@id='s50_road_closure_no']";
 	public static String aboutTheWorkTrafficDescription = "s50_traffic_description";
 
 	// Supervisor details
@@ -78,11 +92,32 @@ public class Section50PageElementsBo {
 	public static String operatorUploadButton = "operator_card";
 	public static String operatororSaveDetailsButton = "add_operator_button";
 
+	// Declaration
+	public static String declarationHeading = "//div[@class='panel-heading']/h2[text()='Declarations']";
+	public static String addDeclarationButton = "//button[text()='Add declaration']";
+	public static String addDeclarationModalTermsAndConditionCheckBox = "//input[@id='declaration_tc_confirm2']";
+	public static String addDeclarationModalConfirmationCheckBox = "//input[@id='declaration_permission_confirm2']";
+	public static String addDeclarationModalFullName = "(//input[@id='declaration_company_name2'])[1]";
+	public static String addDeclarationModalCompanyName = "//input[@id='temp_declaration_company_name']";
+	public static String addDeclarationModalPosition = "//input[@id='temp_declaration_position']";
+	public static String saveDeclarationButton = "//button[@id='add_declaration']";
+	public static String declarationDataProtectionToggleButton = "//div[@class='row']//div[@class='col-xs-4']//div[contains(@class, 'toggle-group')]//label[contains(@class, 'toggle-off') and contains(text(), 'No')]";
+
 	// Order Summary
 	public static String orderSummaryLabel = "//div[@class='panel-heading']/h2[text()='Order summary']";
 	public static String orderSummaryPrice = "(//span[@class='price_display'])[1]";
 
-	// Payment
+
+
+	// Please confirm the above is true: in front office
+
+	public static String confirmInfoLabel = "//label[@id='detailscorrectanchor']";
+	public static String noTogglebutton = "(//label[@class='btn btn-danger active toggle-off'])[1]";
+	
+	//Payment sf
+	public static String PayAndSubmitButton="//button[@id='section50_application_submit']";
+	
+	//Payment bo	
 	public static String paymentLabel = "//div[@class='panel-heading' and text()='Payment']";
 	public static String paymentInFullToggleButton = "(//label[@class='btn btn-danger active toggle-off'])[2]";
 	public static String paymentMethodDropdown = "//span[@class='filter-option pull-left' and text()='Payment Method']";
@@ -92,15 +127,9 @@ public class Section50PageElementsBo {
 		String paymentMethod = "//span[@class='text' and text()='" + paymentMethodName + "']";
 		return paymentMethod;
 	}
-
-	// Declaration
-	public static String declarationHeading = "//div[@class='panel-heading']/h2[text()='Declarations']";
-	public static String addDeclarationButton = "//button[text()='Add declaration']";
-	public static String addDeclarationModalTermsAndConditionCheckBox = "//input[@id='declaration_tc_confirm2']";
-	public static String addDeclarationModalConfirmationCheckBox = "(//input[@id='declaration_permission_confirm2'])[2]";
-	public static String addDeclarationModalFullName = "(//input[@id='declaration_company_name2'])[2]";
-	public static String addDeclarationModalCompanyName = "(//input[@id='declaration_company_name'])[2]";
-	public static String addDeclarationModalPosition = "(//input[@id='declaration_position'])[2]";
-	public static String saveDeclarationButton = "//button[@id='add_declaration']";
-	public static String declarationDataProtectionToggleButton = "(//label[@class='btn btn-danger active toggle-off'])[1]";
+	//City pay sf
+	public static String selectPaymentCardDropDown="//div[@id='testmode-buttons']";
+	public static String masterCreditCard="//b[text()='MasterCard Credit']";
+	public static String payWithCityPayButton="//button[@id='process']";
+	
 }

@@ -68,9 +68,9 @@ public class BaseTest {
 		// driver.quit();
 		// Calls function to send email it accepts two args 'filePath','recipientEmail'
 		try {
-			SeleniumUtils.sendEmailWithAttachment(System.getProperty("user.dir") + File.separator + "reports"
-					+ File.separator + "Section50ExtentReport.html", "hellowchandila@gmail.com", "Gourav");
-			System.out.println("Email sent successfully.");
+//			SeleniumUtils.sendEmailWithAttachment(System.getProperty("user.dir") + File.separator + "reports"
+//					+ File.separator + "Section50ExtentReport.html", "hellowchandila@gmail.com", "Gourav");
+//			System.out.println("Email sent successfully.");
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println("Failed to send email: " + e.getMessage());
