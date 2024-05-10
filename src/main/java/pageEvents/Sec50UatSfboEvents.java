@@ -1,13 +1,15 @@
 //Child1.java
-package common_files;
+package pageEvents;
 
 import org.openqa.selenium.WebDriver;
 
+import base.Section50Base;
 import pageObjects.Section50PageElementsBo;
+import utils.ElementFetch;
 import utils.SeleniumUtils;
 
 public class Sec50UatSfboEvents extends Section50Base {
-
+ElementFetch ele = new ElementFetch();
 	@Override
 	public String confirmInfoIsTrue(WebDriver driver) {
 		// TODO Auto-generated method stub

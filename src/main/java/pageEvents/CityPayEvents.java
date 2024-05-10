@@ -1,4 +1,4 @@
-package common_files;
+package pageEvents;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utils.SeleniumUtils;
 
-public class CityPay {
+public class CityPayEvents {
 	public static void main(String args[]) {
 		// Automatically setup Firefox WebDriver
 		WebDriverManager.firefoxdriver().setup();

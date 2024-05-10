@@ -1,5 +1,5 @@
 //BaseClass.java
-package common_files;
+package base;
 
 import java.io.IOException;
 import java.time.Duration;

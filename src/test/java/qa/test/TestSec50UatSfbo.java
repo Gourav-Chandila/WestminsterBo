@@ -1,5 +1,5 @@
-
-package common_files;
+//TestCLass1.java
+package qa.test;
 
 import java.lang.reflect.Method;
 
@@ -9,19 +9,21 @@ import org.testng.annotations.Test;
 
 import base.BaseTest;
 import junit.framework.Assert;
-import pageEvents.LoginPageEvents2;
+import pageEvents.LoginPageEvents;
+import pageEvents.Sec50UatSfboEvents;
 import utils.Constants;
 import utils.SeleniumUtils;
 
-public class TestSec50UatSf extends BaseTest {
-	LoginPageEvents2 loginPg = new LoginPageEvents2();
-	Sec50UatSfEvents sec50 = new Sec50UatSfEvents();
+public class TestSec50UatSfbo extends BaseTest {
+	LoginPageEvents loginPg = new LoginPageEvents();
+
+	Sec50UatSfboEvents sec50 = new Sec50UatSfboEvents();
 
 //	@BeforeTest
 //	@Parameters("browser")
 //	public void beforeTestMethod(String browser) {
 //		// Set the custom report name
-//		reportName = "TestChild2Methods.html";
+//		reportName = "TestChild1Methods.html";
 //		documentTitle = "Front Office";
 //		super.beforeTestMethod(browser);
 //	}
@@ -31,31 +33,32 @@ public class TestSec50UatSf extends BaseTest {
 		logger = extent.createTest(methodName.getName());
 
 		// Opening Westminster backoffice login page url
-		driver.get(Constants.westminsterUatSfLoginUrl);
-		String loginMessage = loginPg.enterLoginCredentials(driver, "donchandila334@gmail.com", "Gourav@334");
+		driver.get(Constants.westminsterUatSfboLoginUrl);
+		String loginMessage = loginPg.enterLoginCredentials(driver, "mdickinson", "ofbiz");
 
 		logger.info(loginMessage);
-		Assert.assertEquals(loginMessage, "Login successful");
 		logger.info("Enter section 50 url :");
 		SeleniumUtils.someDelay(1000);
-		driver.get(Constants.section50UatSfUrl);
+		driver.get(Constants.section50UatSfboUrl);
 		SeleniumUtils.someDelay(1000);
 		logger.info("Current url is : " + driver.getCurrentUrl());
+
 	}
 
 	@Test(priority = '2', enabled = true)
-	public void confirmInformation(Method methodName) {
+	public void fillBusinessDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
-		String Message = sec50.confirmInfoIsTrue(driver);
-		String expectedMessage = "Please confirm the above is true : Clicked";
-		Assert.assertEquals(expectedMessage, Message);
-		logger.info(Message);
+		String businessDetailsMessage = sec50.fillBusinessDetails("30838", "test@fgl.com");
+		logger.info(businessDetailsMessage);
+		logger.info(driver.getCurrentUrl());
+		logger.info(businessDetailsMessage);
+
 	}
 
 	@Test(priority = '3', enabled = true)
 	public void fillingApplicationDates(Method methodName) {
 		logger = extent.createTest(methodName.getName());
-		String startDate = "21/05/2024";
+		String startDate = "25/05/2024";
 		String endDate = "30/05/2024";
 		String applicationDatesMessage = sec50.fillApplicationDates(driver, startDate, endDate);
 		String expectedMessage = "Success: Application dates filled successfully. Start date: " + startDate
@@ -70,6 +73,7 @@ public class TestSec50UatSf extends BaseTest {
 
 	}
 
+	
 	@Test(priority = '4', enabled = true)
 	public void fillingSiteDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
@@ -90,7 +94,7 @@ public class TestSec50UatSf extends BaseTest {
 				"The end date input field accepts a date earlier than the start date. Please ensure that the end date is on or after the start date.");
 
 	}
-
+	
 	@Test(priority = '5', enabled = true)
 	public void fillAboutTheWorkSection(Method methodName) {
 
@@ -101,8 +105,8 @@ public class TestSec50UatSf extends BaseTest {
 		logger.info(aboutTheWorkMessage);
 
 	}
-
-	@Test(priority = '7', enabled = true)
+	
+	@Test(priority = '6', enabled = true)
 	public void fillSupervisorDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String expectedMessage = "Success: Supervisor details filled successfully";
@@ -118,8 +122,7 @@ public class TestSec50UatSf extends BaseTest {
 		// Capture and attach screenshot
 		captureAndAddScreenshot(methodName.getName());
 	}
-
-	@Test(priority = '8', enabled = true, invocationCount = 1)
+	@Test(priority = '7', enabled = true, invocationCount = 1)
 	public void fillOperatorDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String expectedMessage = "Success: Operator details filled successfully";
@@ -135,24 +138,24 @@ public class TestSec50UatSf extends BaseTest {
 		// Capture and attach screenshot
 		captureAndAddScreenshot(methodName.getName());
 	}
-
-	@Test(priority = '9', enabled = true)
+	
+	
+	@Test(priority = '8', enabled = true)
 	public void addDeclarations(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String expectedMessage = "Success: Declarations filled successfully";
 		String declarationDetailsMessage = sec50.fillDeclaration(driver);
 		Assert.assertEquals(expectedMessage, declarationDetailsMessage);
 		logger.info(expectedMessage);
-	}
 
+	}
+	
 	@Test(priority = '9', enabled = true)
 	public void payFees(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String expectedMessage = "Payment successful";
-		String declarationDetailsMessage = sec50.payApplicationFee(driver, "");
+		String declarationDetailsMessage = sec50.payApplicationFee(driver,"Cash");
 		Assert.assertEquals(expectedMessage, declarationDetailsMessage);
 		logger.info(expectedMessage);
-
 	}
-
 }

@@ -1,8 +1,9 @@
 //Child2.java
-package common_files;
+package pageEvents;
 
 import org.openqa.selenium.WebDriver;
 
+import base.Section50Base;
 import pageObjects.Section50PageElementsBo;
 import utils.ElementFetch;
 import utils.SeleniumUtils;
