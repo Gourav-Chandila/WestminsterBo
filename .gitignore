@@ -1,0 +1,14 @@
+
+screenshots/fillBusinessDetails_20240503.png
+*.png
+*.png
+/PullPageScreenshots
+/PullPageScreenshots
+test-output/testng-results.xml
+test-output/Suite/FireFoxTest1.html
+/test-output/Suite
+/test-output
+/test-output/Suite
+/test-output
+/test-output/old/Suite
+/test-output/old

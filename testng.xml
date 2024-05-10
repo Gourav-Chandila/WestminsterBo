@@ -6,10 +6,8 @@
 	<test thread-count="5" name="FireFoxTest1">
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
-			<class name="common_files.TestSec50UatSfbo" />
+			<class name="qa.test.TestSec50TestServerSfbo" />
 		</classes>
 	</test>
-	
-
 
 </suite> <!-- Suite -->

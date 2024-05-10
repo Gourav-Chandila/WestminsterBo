@@ -19,7 +19,7 @@ public class Sec50UatSfEvents extends Section50Base {
 			SeleniumUtils.someDelay(1000);
 			ele.getWebElement("xpath", Section50PageElementsBo.noTogglebutton).click();
 
-			return "Please confirm the above is false : Clicked";
+			return "Please confirm the above is true : Clicked";
 		} catch (Exception e) {
 			return "Error : There are some problem" + e.getMessage();
 		}

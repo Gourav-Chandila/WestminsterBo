@@ -73,6 +73,7 @@ public class Section50PageElementsBo {
 	public static String supervisorSurnameInput = "supervisor_surname";
 	public static String supervisorTelephoneInput = "supervisor_telephone";
 	public static String supervisorNrwsaCardInput = "supervisor_nrwsa";
+	public static String supervisorChooseFile = "supervisor_card_input";
 	public static String supervisorCardSide = "supervisor_card_desc";
 	public static String supervisorCardSideOption = "//select[@id='supervisor_card_desc']/option[text()='Supervisor front card']";
 	public static String supervisorBackCardSideOption = "//select[@id='supervisor_card_desc']/option[text()='Supervisor back card']";
@@ -86,6 +87,7 @@ public class Section50PageElementsBo {
 	public static String operatorSurnameInput = "operator_surname";
 	public static String operatorTelephoneInput = "operator_telephone";
 	public static String operatorNrwsaCardInput = "operator_nrwsa";
+	public static String operatorChooseFile = "operator_card_input";
 	public static String operatorCardSide = "operator_card_desc";
 	public static String operatorCardSideOption = "//select[@id='operator_card_desc']/option[text()='Operator front card']";
 	public static String operatorBackCardSideOption = "//select[@id='operator_card_desc']/option[text()='Operator back card']";

@@ -79,7 +79,7 @@ public abstract class Section50Base {
 			ele.getWebElement("ID", Section50PageElementsBo.locationInputField).sendKeys("test location");
 			Thread.sleep(2000);
 
-			uploadDocument(driver, "C:\\Users\\Gaurav\\Desktop\\blank.png", "traffic_plan_input");
+			uploadDocument(driver, "C:\\Users\\Gaurav\\Desktop\\blank.png",Section50PageElementsBo.trafficPlanBrowseFile);
 
 			return String.format("Success: Site details filled successfully.");
 
@@ -101,7 +101,7 @@ public abstract class Section50Base {
 			ele.getWebElement("ID", Section50PageElementsBo.supervisorSurnameInput).sendKeys("1234Surname");
 			ele.getWebElement("ID", Section50PageElementsBo.supervisorTelephoneInput).sendKeys("98353423874563");
 			ele.getWebElement("ID", Section50PageElementsBo.supervisorNrwsaCardInput).sendKeys("2345");
-			uploadDocument(driver, "C:\\Users\\Gaurav\\Desktop\\blank.png", "supervisor_card_input");
+			uploadDocument(driver, "C:\\Users\\Gaurav\\Desktop\\blank.png",Section50PageElementsBo.supervisorChooseFile);
 
 			return "Success: Supervisor details filled successfully";
 		} catch (Exception e) {
@@ -120,7 +120,7 @@ public abstract class Section50Base {
 			ele.getWebElement("ID", Section50PageElementsBo.operatorSurnameInput).sendKeys("1234Surname");
 			ele.getWebElement("ID", Section50PageElementsBo.operatorTelephoneInput).sendKeys("98353423874563");
 			ele.getWebElement("ID", Section50PageElementsBo.operatorNrwsaCardInput).sendKeys("2345");
-			uploadDocument(driver, "C:\\Users\\Gaurav\\Desktop\\blank.png", "operator_card_input");
+			uploadDocument(driver, "C:\\Users\\Gaurav\\Desktop\\blank.png",Section50PageElementsBo.operatorChooseFile);
 			return "Success: Operator details filled successfully";
 		} catch (Exception e) {
 			return "Error: Unexpected error occurred - " + e.getMessage();
@@ -168,54 +168,40 @@ public abstract class Section50Base {
 		}
 	}
 
-	public abstract String payApplicationFee(WebDriver driver,String paymentMethod);
-
+	public abstract String payApplicationFee(WebDriver driver, String paymentMethod);
 
 	public void uploadDocument(WebDriver driver, String fullFilePath, String elementLocatorValue) {
 		if (elementLocatorValue.equals("traffic_plan_input")) {
-			WebElement fileInput = driver.findElement(By.id(elementLocatorValue));
-			fileInput.sendKeys(fullFilePath);
+			ele.getWebElement("ID", elementLocatorValue).sendKeys(fullFilePath);
 			ele.getWebElement("ID", Section50PageElementsBo.trafficPlanDescriptionInputField).sendKeys("Test");
 			ele.getWebElement("ID", Section50PageElementsBo.trafficPlanUploadButton).click();
 
 		} else if (elementLocatorValue.equals("supervisor_card_input")) {
-			WebElement fileInput = driver.findElement(By.id(elementLocatorValue));
-			fileInput.sendKeys(fullFilePath);
-			SeleniumUtils.someDelay(3000);
+			ele.getWebElement("ID", elementLocatorValue).sendKeys(fullFilePath);
 			ele.getWebElement("ID", Section50PageElementsBo.supervisorCardSide).click();
-			SeleniumUtils.someDelay(3000);
 			ele.getWebElement("XPATH", Section50PageElementsBo.supervisorCardSideOption).click();
 			ele.getWebElement("ID", Section50PageElementsBo.supervisorUploadButton).click();
 
 			// for backcard
 			ele.getWebElement("ID", Section50PageElementsBo.supervisorCardSide).click();
-			SeleniumUtils.someDelay(3000);
 			ele.getWebElement("XPATH", Section50PageElementsBo.supervisorBackCardSideOption).click();
 			ele.getWebElement("ID", Section50PageElementsBo.supervisorUploadButton).click();
-			SeleniumUtils.someDelay(4000);
+			SeleniumUtils.someDelay(3000);
 			ele.getWebElement("ID", Section50PageElementsBo.supervisorSaveDetailsButton).click();
 		} else if (elementLocatorValue.equals("operator_card_input")) {
-			SeleniumUtils.someDelay(3000);
-			WebElement fileInput = driver.findElement(By.id(elementLocatorValue));
-			fileInput.sendKeys(fullFilePath);
+
+			ele.getWebElement("ID", elementLocatorValue).sendKeys(fullFilePath);
 			ele.getWebElement("ID", Section50PageElementsBo.operatorCardSide).click();
-			SeleniumUtils.someDelay(3000);
 			ele.getWebElement("XPATH", Section50PageElementsBo.operatorCardSideOption).click();
 			ele.getWebElement("ID", Section50PageElementsBo.operatorUploadButton).click();
 
 			// for backcard
 			ele.getWebElement("ID", Section50PageElementsBo.operatorCardSide).click();
-			SeleniumUtils.someDelay(3000);
 			ele.getWebElement("XPATH", Section50PageElementsBo.operatorBackCardSideOption).click();
 			ele.getWebElement("ID", Section50PageElementsBo.operatorUploadButton).click();
-
 			SeleniumUtils.someDelay(3000);
 			ele.getWebElement("ID", Section50PageElementsBo.operatororSaveDetailsButton).click();
 		}
-
 	}
 
-	
-
-	
 }
