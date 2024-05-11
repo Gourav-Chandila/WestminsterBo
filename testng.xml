@@ -6,7 +6,7 @@
 	<test thread-count="5" name="FireFoxTest1">
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
-			<class name="qa.test.TestSec50TestServerSfbo" />
+			<class name="qa.test.TestPremiseAppUatSf" />
 		</classes>
 	</test>
 

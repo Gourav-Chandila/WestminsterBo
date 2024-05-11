@@ -28,6 +28,7 @@ public abstract class Section50Base {
 			SeleniumUtils.someDelay(2000);
 			ele.getWebElement("XPATH", Section50PageElementsBo.businessModalSelectButton2(partyId, businessEmail))
 					.click();
+
 			return "Success: Customer search successfully";
 		} catch (Exception e) {
 			// Handle thread interruption gracefully
@@ -41,12 +42,12 @@ public abstract class Section50Base {
 
 	public String fillApplicationDates(WebDriver driver, String startDate, String endDate) {
 		try {
-
+			SeleniumUtils.someDelay(2000);
 			// Scroll to the application section for better visibility
 			SeleniumUtils.scrollToElement(driver, "xpath", Section50PageElementsBo.applicationSectionLabel);
 
 			// Wait for a short period to ensure page stability
-			Thread.sleep(1000);
+			Thread.sleep(3000);
 
 			// Fill in the application start date
 			ele.getWebElement("XPATH", Section50PageElementsBo.applicationStartDate).sendKeys(startDate);
