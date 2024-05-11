@@ -73,6 +73,7 @@ public abstract class Section50Base {
 
 			// This is for send values to be searched on 'Street name or postcode'
 			ele.getWebElement("XPATH", Section50PageElementsBo.streetNamePoostcodeInput).sendKeys(streetNamePostcode);
+			SeleniumUtils.someDelay(2000);
 			// this is for select options from dropdown
 			ele.getWebElement("XPATH", Section50PageElementsBo.streetNamePostCodeOption(streetNamePostcodeOption))
 					.click();
@@ -175,13 +176,11 @@ public abstract class Section50Base {
 			ele.getWebElement("ID", elementLocatorValue).sendKeys(fullFilePath);
 			ele.getWebElement("ID", Section50PageElementsBo.trafficPlanDescriptionInputField).sendKeys("Test");
 			ele.getWebElement("ID", Section50PageElementsBo.trafficPlanUploadButton).click();
-
 		} else if (elementLocatorValue.equals("supervisor_card_input")) {
 			ele.getWebElement("ID", elementLocatorValue).sendKeys(fullFilePath);
 			ele.getWebElement("ID", Section50PageElementsBo.supervisorCardSide).click();
 			ele.getWebElement("XPATH", Section50PageElementsBo.supervisorCardSideOption).click();
 			ele.getWebElement("ID", Section50PageElementsBo.supervisorUploadButton).click();
-
 			// for backcard
 			ele.getWebElement("ID", Section50PageElementsBo.supervisorCardSide).click();
 			ele.getWebElement("XPATH", Section50PageElementsBo.supervisorBackCardSideOption).click();
@@ -189,12 +188,10 @@ public abstract class Section50Base {
 			SeleniumUtils.someDelay(3000);
 			ele.getWebElement("ID", Section50PageElementsBo.supervisorSaveDetailsButton).click();
 		} else if (elementLocatorValue.equals("operator_card_input")) {
-
 			ele.getWebElement("ID", elementLocatorValue).sendKeys(fullFilePath);
 			ele.getWebElement("ID", Section50PageElementsBo.operatorCardSide).click();
 			ele.getWebElement("XPATH", Section50PageElementsBo.operatorCardSideOption).click();
 			ele.getWebElement("ID", Section50PageElementsBo.operatorUploadButton).click();
-
 			// for backcard
 			ele.getWebElement("ID", Section50PageElementsBo.operatorCardSide).click();
 			ele.getWebElement("XPATH", Section50PageElementsBo.operatorBackCardSideOption).click();

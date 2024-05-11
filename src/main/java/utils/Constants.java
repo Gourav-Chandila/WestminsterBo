@@ -17,6 +17,7 @@ public class Constants {
 	
 	//Test Server front office url
 	public static String westminsterTestServerSfLoginUrl="https://10.3.97.4:7443/sf/control/loginSF";
+	public static String section50TestServerSfUrl="https://10.3.97.4:7443/sf/control/section50application";
 
 	
 	//Test Server back office url

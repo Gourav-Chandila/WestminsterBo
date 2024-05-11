@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Sec50UatSf.html</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">May 10, 2024 03:52:42 pm</span></a>
+<a href="#"><span class="badge badge-primary">May 11, 2024 11:43:35 am</span></a>
 </li>
 </ul>
 </div>
@@ -45,11 +45,6 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -87,7 +82,7 @@
           <div class="test-detail">
             <p class="name">OpenWestminsterBoUrl</p>
             <p class="text-sm">
-              <span>3:52:46 pm</span> / <span>00:00:11:105</span>
+              <span>11:43:40 am</span> / <span>00:00:31:032</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -96,9 +91,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">OpenWestminsterBoUrl</h5>
-<span class='badge badge-success'>05.10.2024 3:52:46 pm</span>
-<span class='badge badge-danger'>05.10.2024 3:52:58 pm</span>
-<span class='badge badge-default'>00:00:11:105</span>
+<span class='badge badge-success'>05.11.2024 11:43:40 am</span>
+<span class='badge badge-danger'>05.11.2024 11:44:11 am</span>
+<span class='badge badge-default'>00:00:31:032</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -110,28 +105,28 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:52:54 pm</td>
+        <td>11:44:08 am</td>
         <td>
           Login successful
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:52:54 pm</td>
+        <td>11:44:08 am</td>
         <td>
           Enter section 50 url :
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:52:58 pm</td>
+        <td>11:44:11 am</td>
         <td>
           Current url is : https://testwccmarkets.farthestgate.co.uk/sf/control/section50application
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:52:58 pm</td>
+        <td>11:44:11 am</td>
         <td>
           <span class='badge white-text green'>OpenWestminsterBoUrl  PASS</span>
         </td>
@@ -141,25 +136,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="fail" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">confirmInformationTrue</p>
+            <p class="name">fillingApplicationDates</p>
             <p class="text-sm">
-              <span>3:52:58 pm</span> / <span>00:00:01:370</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>11:44:11 am</span> / <span>00:00:02:767</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">confirmInformationTrue</h5>
-<span class='badge badge-success'>05.10.2024 3:52:58 pm</span>
-<span class='badge badge-danger'>05.10.2024 3:52:59 pm</span>
-<span class='badge badge-default'>00:00:01:370</span>
+<h5 class="test-status text-fail">fillingApplicationDates</h5>
+<span class='badge badge-success'>05.11.2024 11:44:11 am</span>
+<span class='badge badge-danger'>05.11.2024 11:44:14 am</span>
+<span class='badge badge-default'>00:00:02:767</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -171,16 +166,34 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:52:59 pm</td>
+        <td>11:44:14 am</td>
         <td>
-          Please confirm the above is true : Clicked
+          Success: Application dates filled successfully. Start date: 21/05/2024 End date: 30/05/2024
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:44:14 am</td>
+        <td>
+          The end date input field accepts a date earlier than the start date. Please ensure that the end date is on or after the start date.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:44:14 am</td>
+        <td>
+          Screenshot below: 
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='Z:\Sysnomy\Appl\WestminsterBo\screenshots\fillingApplicationDates_20240511.png' src="Z:\Sysnomy\Appl\WestminsterBo\screenshots\fillingApplicationDates_20240511.png">
+    
+    </div></div>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:52:59 pm</td>
+        <td>11:44:14 am</td>
         <td>
-          <span class='badge white-text green'>confirmInformationTrue  PASS</span>
+          <span class='badge white-text green'>fillingApplicationDates  PASS</span>
         </td>
       </tr>
   </tbody>
@@ -193,9 +206,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">fillingApplicationDates</p>
+            <p class="name">fillingSiteDetails</p>
             <p class="text-sm">
-              <span>3:52:59 pm</span> / <span>00:00:01:535</span>
+              <span>11:44:14 am</span> / <span>00:00:05:273</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -203,10 +216,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">fillingApplicationDates</h5>
-<span class='badge badge-success'>05.10.2024 3:52:59 pm</span>
-<span class='badge badge-danger'>05.10.2024 3:53:01 pm</span>
-<span class='badge badge-default'>00:00:01:535</span>
+<h5 class="test-status text-fail">fillingSiteDetails</h5>
+<span class='badge badge-success'>05.11.2024 11:44:14 am</span>
+<span class='badge badge-danger'>05.11.2024 11:44:19 am</span>
+<span class='badge badge-default'>00:00:05:273</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -218,578 +231,44 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:00 pm</td>
+        <td>11:44:19 am</td>
         <td>
-          Success: Application dates filled successfully. Start date: 21/05/2024 End date: 30/05/2024
+          Success: Site details filled successfully.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:00 pm</td>
+        <td>11:44:19 am</td>
+        <td>
+          If you search for 'Victoria Street' on the front office page and select it, but the same selection doesn't work in the back office, you receive an error message stating 'please select a valid address or postcode'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:44:19 am</td>
+        <td>
+          When passing SW1E6AA as the postcode, sometimes it shows SPENSER STREET, sometimes only VICTORIA STREET, and sometimes it shows many duplicate streets.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:44:19 am</td>
+        <td>
+          Expected error message is not displayed when the user uploads a file larger than 10MB in both traffic management plan and public liability insurance and also no validation message for wrong file format.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:44:19 am</td>
         <td>
           The end date input field accepts a date earlier than the start date. Please ensure that the end date is on or after the start date.
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:00 pm</td>
-        <td>
-          Screenshot below: 
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='Z:\Sysnomy\Appl\WestminsterBo\screenshots\fillingApplicationDates_20240510.png' src="Z:\Sysnomy\Appl\WestminsterBo\screenshots\fillingApplicationDates_20240510.png">
-    
-    </div></div>
-        </td>
-      </tr>
-      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:53:01 pm</td>
+        <td>11:44:19 am</td>
         <td>
-          <span class='badge white-text green'>fillingApplicationDates  PASS</span>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="4"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">fillingSiteDetails</p>
-            <p class="text-sm">
-              <span>3:53:01 pm</span> / <span>00:00:00:616</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">fillingSiteDetails</h5>
-<span class='badge badge-success'>05.10.2024 3:53:01 pm</span>
-<span class='badge badge-danger'>05.10.2024 3:53:01 pm</span>
-<span class='badge badge-default'>00:00:00:616</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:01 pm</td>
-        <td>
-          Error: Unexpected error occurred - Unable to locate element: //ul/li[text()='VICTORIA STREET']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [5258e153-14d9-4793-8a01-2af67b093151, findElement {using=xpath, value=//ul/li[text()='VICTORIA STREET']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:36889, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13692, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:36889/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5258e153-14d9-4793-8a01-2af67b093151
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:01 pm</td>
-        <td>
-          <span class='badge white-text red'>fillingSiteDetails  FAIL</span>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:01 pm</td>
-        <td>
-          <textarea readonly class="code-block">junit.framework.ComparisonFailure: expected:<Success: Site details filled successfully.> but was:<Error: Unexpected error occurred - Unable to locate element: //ul/li[text()='VICTORIA STREET']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [5258e153-14d9-4793-8a01-2af67b093151, findElement {using=xpath, value=//ul/li[text()='VICTORIA STREET']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:36889, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13692, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:36889/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5258e153-14d9-4793-8a01-2af67b093151>
-	at junit.framework.Assert.assertEquals(Assert.java:81)
-	at junit.framework.Assert.assertEquals(Assert.java:87)
-	at qa.test.TestSec50UatSf.fillingSiteDetails(TestSec50UatSf.java:83)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:01 pm</td>
-        <td>
-          Screenshot below: 
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='Z:\Sysnomy\Appl\WestminsterBo\screenshots\fillingSiteDetails_20240510.png' src="Z:\Sysnomy\Appl\WestminsterBo\screenshots\fillingSiteDetails_20240510.png">
-    
-    </div></div>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="5"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">fillAboutTheWorkSection</p>
-            <p class="text-sm">
-              <span>3:53:01 pm</span> / <span>00:00:01:258</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">fillAboutTheWorkSection</h5>
-<span class='badge badge-success'>05.10.2024 3:53:01 pm</span>
-<span class='badge badge-danger'>05.10.2024 3:53:02 pm</span>
-<span class='badge badge-default'>00:00:01:258</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:02 pm</td>
-        <td>
-          Success: About the work filled successfully
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:53:02 pm</td>
-        <td>
-          <span class='badge white-text green'>fillAboutTheWorkSection  PASS</span>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="6"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">fillSupervisorDetails</p>
-            <p class="text-sm">
-              <span>3:53:02 pm</span> / <span>00:00:08:305</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">fillSupervisorDetails</h5>
-<span class='badge badge-success'>05.10.2024 3:53:02 pm</span>
-<span class='badge badge-danger'>05.10.2024 3:53:11 pm</span>
-<span class='badge badge-default'>00:00:08:305</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:11 pm</td>
-        <td>
-          <span class='badge white-text red'>fillSupervisorDetails  FAIL</span>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:11 pm</td>
-        <td>
-          <textarea readonly class="code-block">junit.framework.ComparisonFailure: expected:<Success: Supervisor details filled successfully> but was:<Error: Unexpected error occurred - Element <button id="add_supervisor_button" class="btn btn-primary" type="submit"> could not be scrolled into view
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [5258e153-14d9-4793-8a01-2af67b093151, clickElement {id=fb19c4d0-c4ee-4875-b244-30686657985f}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:36889, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13692, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:36889/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on windows (5258e153-14d9-4793-8a01-2af67b093151)] -> id: add_supervisor_button]
-Session ID: 5258e153-14d9-4793-8a01-2af67b093151>
-	at junit.framework.Assert.assertEquals(Assert.java:81)
-	at junit.framework.Assert.assertEquals(Assert.java:87)
-	at qa.test.TestSec50UatSf.fillSupervisorDetails(TestSec50UatSf.java:112)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:11 pm</td>
-        <td>
-          Screenshot below: 
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='Z:\Sysnomy\Appl\WestminsterBo\screenshots\fillSupervisorDetails_20240510.png' src="Z:\Sysnomy\Appl\WestminsterBo\screenshots\fillSupervisorDetails_20240510.png">
-    
-    </div></div>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="7"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">fillOperatorDetails</p>
-            <p class="text-sm">
-              <span>3:53:11 pm</span> / <span>00:00:03:290</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">fillOperatorDetails</h5>
-<span class='badge badge-success'>05.10.2024 3:53:11 pm</span>
-<span class='badge badge-danger'>05.10.2024 3:53:14 pm</span>
-<span class='badge badge-default'>00:00:03:290</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:14 pm</td>
-        <td>
-          <span class='badge white-text red'>fillOperatorDetails  FAIL</span>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:14 pm</td>
-        <td>
-          <textarea readonly class="code-block">junit.framework.ComparisonFailure: expected:<Success: Operator details filled successfully> but was:<Error: Unexpected error occurred - Element <button id="add_operator" class="btn btn-primary" name="add_operator" type="button"> could not be scrolled into view
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [5258e153-14d9-4793-8a01-2af67b093151, clickElement {id=009ead6f-3571-4fa9-a72c-412248b07e72}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:36889, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13692, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:36889/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on windows (5258e153-14d9-4793-8a01-2af67b093151)] -> id: add_operator]
-Session ID: 5258e153-14d9-4793-8a01-2af67b093151>
-	at junit.framework.Assert.assertEquals(Assert.java:81)
-	at junit.framework.Assert.assertEquals(Assert.java:87)
-	at qa.test.TestSec50UatSf.fillOperatorDetails(TestSec50UatSf.java:129)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:14 pm</td>
-        <td>
-          Screenshot below: 
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='Z:\Sysnomy\Appl\WestminsterBo\screenshots\fillOperatorDetails_20240510.png' src="Z:\Sysnomy\Appl\WestminsterBo\screenshots\fillOperatorDetails_20240510.png">
-    
-    </div></div>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="8"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">addDeclarations</p>
-            <p class="text-sm">
-              <span>3:53:14 pm</span> / <span>00:00:04:340</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">addDeclarations</h5>
-<span class='badge badge-success'>05.10.2024 3:53:14 pm</span>
-<span class='badge badge-danger'>05.10.2024 3:53:18 pm</span>
-<span class='badge badge-default'>00:00:04:340</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:18 pm</td>
-        <td>
-          <span class='badge white-text red'>addDeclarations  FAIL</span>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:18 pm</td>
-        <td>
-          <textarea readonly class="code-block">junit.framework.ComparisonFailure: expected:<Success: Declarations filled successfully> but was:<Error: Unexpected error occurred - Element <input id="declaration_tc_confirm2" name="declaration_tc_confirm" type="checkbox"> could not be scrolled into view
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [5258e153-14d9-4793-8a01-2af67b093151, clickElement {id=d8c3764b-838d-4ddf-92b1-365aa99b4af1}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:36889, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13692, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:36889/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on windows (5258e153-14d9-4793-8a01-2af67b093151)] -> xpath: //input[@id='declaration_tc_confirm2']]
-Session ID: 5258e153-14d9-4793-8a01-2af67b093151>
-	at junit.framework.Assert.assertEquals(Assert.java:81)
-	at junit.framework.Assert.assertEquals(Assert.java:87)
-	at qa.test.TestSec50UatSf.addDeclarations(TestSec50UatSf.java:146)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:18 pm</td>
-        <td>
-          Screenshot below: 
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='Z:\Sysnomy\Appl\WestminsterBo\screenshots\addDeclarations_20240510.png' src="Z:\Sysnomy\Appl\WestminsterBo\screenshots\addDeclarations_20240510.png">
-    
-    </div></div>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="9"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">payFees</p>
-            <p class="text-sm">
-              <span>3:53:18 pm</span> / <span>00:00:00:361</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">payFees</h5>
-<span class='badge badge-success'>05.10.2024 3:53:18 pm</span>
-<span class='badge badge-danger'>05.10.2024 3:53:19 pm</span>
-<span class='badge badge-default'>00:00:00:361</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:19 pm</td>
-        <td>
-          <span class='badge white-text red'>payFees  FAIL</span>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:19 pm</td>
-        <td>
-          <textarea readonly class="code-block">junit.framework.ComparisonFailure: expected:<Payment successful> but was:<Error : some error occured>
-	at junit.framework.Assert.assertEquals(Assert.java:81)
-	at junit.framework.Assert.assertEquals(Assert.java:87)
-	at qa.test.TestSec50UatSf.payFees(TestSec50UatSf.java:155)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:19 pm</td>
-        <td>
-          Screenshot below: 
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='Z:\Sysnomy\Appl\WestminsterBo\screenshots\payFees_20240510.png' src="Z:\Sysnomy\Appl\WestminsterBo\screenshots\payFees_20240510.png">
-    
-    </div></div>
+          <span class='badge white-text green'>fillingSiteDetails  PASS</span>
         </td>
       </tr>
   </tbody>
@@ -806,107 +285,30 @@ Session ID: 5258e153-14d9-4793-8a01-2af67b093151>
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>5</span>
-</span>
-<p class="name">junit.framework.ComparisonFailure</p>
-<p class="duration text-sm">5 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>junit.framework.ComparisonFailure</h4>
-<span status="fail" class='badge log badge-danger'>5 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>15:53:01 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='4'>fillingSiteDetails</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>15:53:02 pm</td>
-<td>
-<a href="#" class="linked" test-id='6' id='6'>fillSupervisorDetails</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>15:53:11 pm</td>
-<td>
-<a href="#" class="linked" test-id='7' id='7'>fillOperatorDetails</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>15:53:14 pm</td>
-<td>
-<a href="#" class="linked" test-id='8' id='8'>addDeclarations</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>15:53:18 pm</td>
-<td>
-<a href="#" class="linked" test-id='9' id='9'>payFees</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="container-fluid p-4 view dashboard-view">
+<div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>May 10, 2024 03:52:42 pm</h3>
+<h3>May 11, 2024 11:43:35 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>May 10, 2024 03:53:19 pm</h3>
+<h3>May 11, 2024 11:44:19 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>3</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>6</h3>
+<h3>2</h3>
 </div></div>
 </div>
 </div>
@@ -923,11 +325,11 @@ Session ID: 5258e153-14d9-4793-8a01-2af67b093151>
 </div>
 <div class="card-footer">
 <div><small data-tooltip='33%'>
-<b>3</b> tests passed
+<b>1</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='66%'><b>6</b> tests failed,
+<small data-tooltip='66%'><b>2</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -945,10 +347,10 @@ Session ID: 5258e153-14d9-4793-8a01-2af67b093151>
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='14%'><b>4</b> events passed</small></div>
+<div><small data-tooltip='21%'><b>3</b> events passed</small></div>
 <div>
-<small data-tooltip='60%'><b>17</b> events failed,
-<b data-tooltip='%'>7</b> others
+<small data-tooltip='42%'><b>6</b> events failed,
+<b data-tooltip='%'>5</b> others
 </small>
 </div>
 </div>
@@ -964,7 +366,7 @@ Session ID: 5258e153-14d9-4793-8a01-2af67b093151>
 </div></div>
 <script>
 var timeline = {
-"OpenWestminsterBoUrl":11.105,"confirmInformationTrue":1.37,"fillingApplicationDates":1.535,"fillingSiteDetails":0.616,"fillAboutTheWorkSection":1.258,"fillSupervisorDetails":8.305,"fillOperatorDetails":3.29,"addDeclarations":4.34,"payFees":0.361
+"OpenWestminsterBoUrl":31.032,"fillingApplicationDates":2.767,"fillingSiteDetails":5.273
 };
 </script>
 <div class="row">
@@ -999,8 +401,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 3,
-failParent: 6,
+passParent: 1,
+failParent: 2,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -1016,11 +418,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 4,
-failEvents: 17,
+passEvents: 3,
+failEvents: 6,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 7
+infoEvents: 5
 };
 </script>        </div>
       </div>

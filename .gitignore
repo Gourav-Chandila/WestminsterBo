@@ -12,3 +12,7 @@ test-output/Suite/FireFoxTest1.html
 /test-output
 /test-output/old/Suite
 /test-output/old
+target/classes/utils/Constants.class
+/target/classes/utils
+/target/classes
+*.html

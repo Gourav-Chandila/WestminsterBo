@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-10T17:06:35 IST" name="Suite" finished-at="2024-05-10T17:07:19 IST" duration-ms="44102">
+  <suite started-at="2024-05-11T11:51:08 IST" name="Suite" finished-at="2024-05-11T11:52:02 IST" duration-ms="54033">
     <groups>
     </groups>
-    <test started-at="2024-05-10T17:06:35 IST" name="FireFoxTest1" finished-at="2024-05-10T17:07:19 IST" duration-ms="44102">
-      <class name="qa.test.TestSec50TestServerSf">
-        <test-method is-config="true" signature="beforeTestMethod(java.lang.String)[pri:0, instance:qa.test.TestSec50TestServerSf@2cb4893b]" started-at="2024-05-10T17:06:35 IST" name="beforeTestMethod" finished-at="2024-05-10T17:06:40 IST" duration-ms="4622" status="PASS">
+    <test started-at="2024-05-11T11:51:08 IST" name="FireFoxTest1" finished-at="2024-05-11T11:52:02 IST" duration-ms="54033">
+      <class name="qa.test.TestSec50TestServerSfbo">
+        <test-method is-config="true" signature="beforeTestMethod(java.lang.String)[pri:0, instance:qa.test.TestSec50TestServerSfbo@2cb4893b]" started-at="2024-05-11T11:51:08 IST" name="beforeTestMethod" finished-at="2024-05-11T11:51:13 IST" duration-ms="5510" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,153 +18,77 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method signature="OpenWestminsterBoUrl(java.lang.reflect.Method)[pri:49, instance:qa.test.TestSec50TestServerSf@2cb4893b]" started-at="2024-05-10T17:06:40 IST" name="OpenWestminsterBoUrl" finished-at="2024-05-10T17:07:14 IST" duration-ms="34240" status="PASS">
+        <test-method signature="OpenWestminsterBoUrl(java.lang.reflect.Method)[pri:49, instance:qa.test.TestSec50TestServerSfbo@2cb4893b]" started-at="2024-05-11T11:51:13 IST" name="OpenWestminsterBoUrl" finished-at="2024-05-11T11:51:53 IST" duration-ms="39412" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void qa.test.TestSec50TestServerSf.OpenWestminsterBoUrl(java.lang.reflect.Method)]]>
+                <![CDATA[public void qa.test.TestSec50TestServerSfbo.OpenWestminsterBoUrl(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenWestminsterBoUrl -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestSec50TestServerSf@2cb4893b]" started-at="2024-05-10T17:07:14 IST" name="afterMethod" finished-at="2024-05-10T17:07:14 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestSec50TestServerSfbo@2cb4893b]" started-at="2024-05-11T11:51:53 IST" name="afterMethod" finished-at="2024-05-11T11:51:53 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=OpenWestminsterBoUrl status=SUCCESS method=TestSec50TestServerSf.OpenWestminsterBoUrl(java.lang.reflect.Method)[pri:49, instance:qa.test.TestSec50TestServerSf@2cb4893b] output={null}]]]>
+                <![CDATA[[TestResult name=OpenWestminsterBoUrl status=SUCCESS method=TestSec50TestServerSfbo.OpenWestminsterBoUrl(java.lang.reflect.Method)[pri:49, instance:qa.test.TestSec50TestServerSfbo@2cb4893b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="confirmInformationTrue(java.lang.reflect.Method)[pri:50, instance:qa.test.TestSec50TestServerSf@2cb4893b]" started-at="2024-05-10T17:07:14 IST" name="confirmInformationTrue" finished-at="2024-05-10T17:07:16 IST" duration-ms="1378" status="PASS">
+        <test-method signature="fillingApplicationDates(java.lang.reflect.Method)[pri:51, instance:qa.test.TestSec50TestServerSfbo@2cb4893b]" started-at="2024-05-11T11:51:53 IST" name="fillingApplicationDates" finished-at="2024-05-11T11:51:55 IST" duration-ms="2540" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void qa.test.TestSec50TestServerSf.confirmInformationTrue(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- confirmInformationTrue -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestSec50TestServerSf@2cb4893b]" started-at="2024-05-10T17:07:16 IST" name="afterMethod" finished-at="2024-05-10T17:07:16 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=confirmInformationTrue status=SUCCESS method=TestSec50TestServerSf.confirmInformationTrue(java.lang.reflect.Method)[pri:50, instance:qa.test.TestSec50TestServerSf@2cb4893b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="fillingApplicationDates(java.lang.reflect.Method)[pri:51, instance:qa.test.TestSec50TestServerSf@2cb4893b]" started-at="2024-05-10T17:07:16 IST" name="fillingApplicationDates" finished-at="2024-05-10T17:07:17 IST" duration-ms="1566" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qa.test.TestSec50TestServerSf.fillingApplicationDates(java.lang.reflect.Method)]]>
+                <![CDATA[public void qa.test.TestSec50TestServerSfbo.fillingApplicationDates(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillingApplicationDates -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestSec50TestServerSf@2cb4893b]" started-at="2024-05-10T17:07:17 IST" name="afterMethod" finished-at="2024-05-10T17:07:17 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestSec50TestServerSfbo@2cb4893b]" started-at="2024-05-11T11:51:55 IST" name="afterMethod" finished-at="2024-05-11T11:51:55 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=fillingApplicationDates status=SUCCESS method=TestSec50TestServerSf.fillingApplicationDates(java.lang.reflect.Method)[pri:51, instance:qa.test.TestSec50TestServerSf@2cb4893b] output={null}]]]>
+                <![CDATA[[TestResult name=fillingApplicationDates status=SUCCESS method=TestSec50TestServerSfbo.fillingApplicationDates(java.lang.reflect.Method)[pri:51, instance:qa.test.TestSec50TestServerSfbo@2cb4893b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="fillingSiteDetails(java.lang.reflect.Method)[pri:52, instance:qa.test.TestSec50TestServerSf@2cb4893b]" started-at="2024-05-10T17:07:17 IST" name="fillingSiteDetails" finished-at="2024-05-10T17:07:19 IST" duration-ms="1735" status="FAIL">
+        <test-method signature="fillingSiteDetails(java.lang.reflect.Method)[pri:52, instance:qa.test.TestSec50TestServerSfbo@2cb4893b]" started-at="2024-05-11T11:51:55 IST" name="fillingSiteDetails" finished-at="2024-05-11T11:52:01 IST" duration-ms="5861" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void qa.test.TestSec50TestServerSf.fillingSiteDetails(java.lang.reflect.Method)]]>
+                <![CDATA[public void qa.test.TestSec50TestServerSfbo.fillingSiteDetails(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
-          <exception class="junit.framework.ComparisonFailure">
-            <message>
-              <![CDATA[expected:<Success: Site details filled successfully.> but was:<Error: Unexpected error occurred - Unable to locate element: //ul/li[text()='VICTORIA EMBANKMENT']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [50778092-fa26-44d6-a070-a6255f123c6e, findElement {using=xpath, value=//ul/li[text()='VICTORIA EMBANKMENT']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:37770, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7512, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:37770/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 50778092-fa26-44d6-a070-a6255f123c6e>]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[junit.framework.ComparisonFailure: expected:<Success: Site details filled successfully.> but was:<Error: Unexpected error occurred - Unable to locate element: //ul/li[text()='VICTORIA EMBANKMENT']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [50778092-fa26-44d6-a070-a6255f123c6e, findElement {using=xpath, value=//ul/li[text()='VICTORIA EMBANKMENT']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:37770, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7512, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:37770/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 50778092-fa26-44d6-a070-a6255f123c6e>
-at junit.framework.Assert.assertEquals(Assert.java:81)
-at junit.framework.Assert.assertEquals(Assert.java:87)
-at qa.test.TestSec50TestServerSf.fillingSiteDetails(TestSec50TestServerSf.java:84)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- junit.framework.ComparisonFailure -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillingSiteDetails -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestSec50TestServerSf@2cb4893b]" started-at="2024-05-10T17:07:19 IST" name="afterMethod" finished-at="2024-05-10T17:07:19 IST" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestSec50TestServerSfbo@2cb4893b]" started-at="2024-05-11T11:52:01 IST" name="afterMethod" finished-at="2024-05-11T11:52:01 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=fillingSiteDetails status=FAILURE method=TestSec50TestServerSf.fillingSiteDetails(java.lang.reflect.Method)[pri:52, instance:qa.test.TestSec50TestServerSf@2cb4893b] output={null}]]]>
+                <![CDATA[[TestResult name=fillingSiteDetails status=SUCCESS method=TestSec50TestServerSfbo.fillingSiteDetails(java.lang.reflect.Method)[pri:52, instance:qa.test.TestSec50TestServerSfbo@2cb4893b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:qa.test.TestSec50TestServerSf@2cb4893b]" started-at="2024-05-10T17:07:19 IST" name="afterTest" finished-at="2024-05-10T17:07:19 IST" duration-ms="387" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:qa.test.TestSec50TestServerSfbo@2cb4893b]" started-at="2024-05-11T11:52:01 IST" name="afterTest" finished-at="2024-05-11T11:52:02 IST" duration-ms="632" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- qa.test.TestSec50TestServerSf -->
+      </class> <!-- qa.test.TestSec50TestServerSfbo -->
     </test> <!-- FireFoxTest1 -->
   </suite> <!-- Suite -->
 </testng-results>
