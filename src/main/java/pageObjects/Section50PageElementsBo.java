@@ -112,7 +112,6 @@ public class Section50PageElementsBo {
 
 
 	// Please confirm the above is true: in front office
-
 	public static String confirmInfoLabel = "//label[@id='detailscorrectanchor']";
 	public static String noTogglebutton = "(//label[@class='btn btn-danger active toggle-off'])[1]";
 	

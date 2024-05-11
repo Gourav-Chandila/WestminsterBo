@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-11T15:48:00 IST" name="Suite" finished-at="2024-05-11T15:48:20 IST" duration-ms="19600">
+  <suite started-at="2024-05-11T16:54:05 IST" name="Suite" finished-at="2024-05-11T16:54:28 IST" duration-ms="23169">
     <groups>
     </groups>
-    <test started-at="2024-05-11T15:48:00 IST" name="FireFoxTest1" finished-at="2024-05-11T15:48:20 IST" duration-ms="19600">
-      <class name="qa.test.TestPremiseAppUatSf">
-        <test-method is-config="true" signature="beforeTestMethod(java.lang.String)[pri:0, instance:qa.test.TestPremiseAppUatSf@5f049ea1]" started-at="2024-05-11T15:48:00 IST" name="beforeTestMethod" finished-at="2024-05-11T15:48:05 IST" duration-ms="4561" status="PASS">
+    <test started-at="2024-05-11T16:54:05 IST" name="FireFoxTest1" finished-at="2024-05-11T16:54:28 IST" duration-ms="23169">
+      <class name="qa.test.TestPremiseAppUatSfbo">
+        <test-method is-config="true" signature="beforeTestMethod(java.lang.String)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@18271936]" started-at="2024-05-11T16:54:05 IST" name="beforeTestMethod" finished-at="2024-05-11T16:54:09 IST" duration-ms="4760" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,33 +18,55 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method signature="openLa_03LoginUrl(java.lang.reflect.Method)[pri:49, instance:qa.test.TestPremiseAppUatSf@5f049ea1]" started-at="2024-05-11T15:48:05 IST" name="openLa_03LoginUrl" finished-at="2024-05-11T15:48:18 IST" duration-ms="12895" status="PASS">
+        <test-method signature="openLa_03LoginUrl(java.lang.reflect.Method)[pri:49, instance:qa.test.TestPremiseAppUatSfbo@18271936]" started-at="2024-05-11T16:54:09 IST" name="openLa_03LoginUrl" finished-at="2024-05-11T16:54:23 IST" duration-ms="13109" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSf.openLa_03LoginUrl(java.lang.reflect.Method)]]>
+                <![CDATA[public void qa.test.TestPremiseAppUatSfbo.openLa_03LoginUrl(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openLa_03LoginUrl -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSf@5f049ea1]" started-at="2024-05-11T15:48:18 IST" name="afterMethod" finished-at="2024-05-11T15:48:18 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@18271936]" started-at="2024-05-11T16:54:23 IST" name="afterMethod" finished-at="2024-05-11T16:54:23 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=openLa_03LoginUrl status=SUCCESS method=TestPremiseAppUatSf.openLa_03LoginUrl(java.lang.reflect.Method)[pri:49, instance:qa.test.TestPremiseAppUatSf@5f049ea1] output={null}]]]>
+                <![CDATA[[TestResult name=openLa_03LoginUrl status=SUCCESS method=TestPremiseAppUatSfbo.openLa_03LoginUrl(java.lang.reflect.Method)[pri:49, instance:qa.test.TestPremiseAppUatSfbo@18271936] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:qa.test.TestPremiseAppUatSf@5f049ea1]" started-at="2024-05-11T15:48:18 IST" name="afterTest" finished-at="2024-05-11T15:48:20 IST" duration-ms="2069" status="PASS">
+        <test-method signature="fillBusinessDetails(java.lang.reflect.Method)[pri:50, instance:qa.test.TestPremiseAppUatSfbo@18271936]" started-at="2024-05-11T16:54:23 IST" name="fillBusinessDetails" finished-at="2024-05-11T16:54:27 IST" duration-ms="4593" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void qa.test.TestPremiseAppUatSfbo.fillBusinessDetails(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillBusinessDetails -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@18271936]" started-at="2024-05-11T16:54:27 IST" name="afterMethod" finished-at="2024-05-11T16:54:27 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=fillBusinessDetails status=SUCCESS method=TestPremiseAppUatSfbo.fillBusinessDetails(java.lang.reflect.Method)[pri:50, instance:qa.test.TestPremiseAppUatSfbo@18271936] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:qa.test.TestPremiseAppUatSfbo@18271936]" started-at="2024-05-11T16:54:27 IST" name="afterTest" finished-at="2024-05-11T16:54:28 IST" duration-ms="659" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- qa.test.TestPremiseAppUatSf -->
+      </class> <!-- qa.test.TestPremiseAppUatSfbo -->
     </test> <!-- FireFoxTest1 -->
   </suite> <!-- Suite -->
 </testng-results>

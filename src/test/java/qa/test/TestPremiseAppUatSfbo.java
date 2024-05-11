@@ -10,19 +10,20 @@ import base.BaseTest;
 import junit.framework.Assert;
 import pageEvents.LoginPageEvents;
 import pageEvents.PremiseAppSfEvents;
+import pageEvents.PremiseAppSfboEvents;
 import utils.Constants;
 import utils.SeleniumUtils;
 
-public class TestPremiseAppUatSf extends BaseTest {
+public class TestPremiseAppUatSfbo extends BaseTest {
 	LoginPageEvents loginPg = new LoginPageEvents();
-	PremiseAppSfEvents premise = new PremiseAppSfEvents();
+	PremiseAppSfboEvents premise = new PremiseAppSfboEvents();
 
 	@BeforeTest
 	@Parameters("browser")
 	public void beforeTestMethod(String browser) {
 		// Override the report name and document title for this class
-		reportName = "PremiseApplicationUatSf.html";
-		documentTitle = "PremiseApplication Front Office";
+		reportName = "PremiseApplicationUatSfbo.html";
+		documentTitle = "PremiseApplication Back Office";
 		// Call the base class setup
 		super.beforeTestMethod(browser);
 	}
@@ -32,18 +33,27 @@ public class TestPremiseAppUatSf extends BaseTest {
 		logger = extent.createTest(methodName.getName());
 
 		// Opening Westminster backoffice login page url
-		driver.get(Constants.La_03UatSfLoginUrl);
-		String loginMessage = loginPg.enterLoginCredentials(driver, "donchandila334@gmail.com", "Gourav@334");
+		driver.get(Constants.La_03UatSfboLoginUrl);
+		String loginMessage = loginPg.enterLoginCredentials(driver, "mdickinson", "ofbiz");
 		Assert.assertEquals(loginMessage, "Login successful");
 		logger.info(loginMessage);
 		logger.info("Enter Premise application url :");
 		SeleniumUtils.someDelay(1000);
-		driver.get(Constants.La_03PremiseAppUatSf);
+		driver.get(Constants.La_03PremiseAppUatSfbo);
 		SeleniumUtils.someDelay(1000);
 		logger.info("Current url is : " + driver.getCurrentUrl());
 	}
 
 	@Test(priority = '2', enabled = true)
+	public void fillBusinessDetails(Method methodName) {
+		logger = extent.createTest(methodName.getName());
+		String businessDetailsMessage = premise.fillBusinessDetails("40283", "donchandila334@gmail.com");
+		logger.info(driver.getCurrentUrl());
+		logger.info(businessDetailsMessage);
+
+	}
+
+	@Test(priority = '3', enabled = false)
 	public void confirmInformationTrue(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String Message = premise.confirmInfoIsTrue(driver);
@@ -51,7 +61,8 @@ public class TestPremiseAppUatSf extends BaseTest {
 		Assert.assertEquals(expectedMessage, Message);
 		logger.info(Message);
 	}
-	@Test(priority = '3', enabled = true)
+
+	@Test(priority = '4', enabled = false)
 	public void fillingLicenceDuration(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String startDate = "21/05/2024";
@@ -62,5 +73,5 @@ public class TestPremiseAppUatSf extends BaseTest {
 		Assert.assertEquals(expectedMessage, applicationDatesMessage);
 		logger.info(applicationDatesMessage);
 	}
-	
+
 }
