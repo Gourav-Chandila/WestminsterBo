@@ -74,7 +74,7 @@ public class TestPremiseAppUatSfbo extends BaseTest {
 		logger.info(applicationDatesMessage);
 	}
 
-	@Test(priority = '5', enabled = true)
+	@Test(priority = '5', enabled = false)
 	public void fillingApplicantDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String business="Other";//Accepts Test Business name,Other

@@ -2,7 +2,10 @@
 package base;
 
 import java.io.IOException;
+import java.time.DayOfWeek;
 import java.time.Duration;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -81,7 +84,8 @@ public abstract class Section50Base {
 			ele.getWebElement("ID", Section50PageElementsBo.locationInputField).sendKeys("test location");
 			Thread.sleep(2000);
 
-			uploadDocument(driver, "C:\\Users\\Gaurav\\Desktop\\blank.png",Section50PageElementsBo.trafficPlanBrowseFile);
+			uploadDocument(driver, "C:\\Users\\Gaurav\\Desktop\\blank.png",
+					Section50PageElementsBo.trafficPlanBrowseFile);
 
 			return String.format("Success: Site details filled successfully.");
 
@@ -103,7 +107,8 @@ public abstract class Section50Base {
 			ele.getWebElement("ID", Section50PageElementsBo.supervisorSurnameInput).sendKeys("1234Surname");
 			ele.getWebElement("ID", Section50PageElementsBo.supervisorTelephoneInput).sendKeys("98353423874563");
 			ele.getWebElement("ID", Section50PageElementsBo.supervisorNrwsaCardInput).sendKeys("2345");
-			uploadDocument(driver, "C:\\Users\\Gaurav\\Desktop\\blank.png",Section50PageElementsBo.supervisorChooseFile);
+			uploadDocument(driver, "C:\\Users\\Gaurav\\Desktop\\blank.png",
+					Section50PageElementsBo.supervisorChooseFile);
 
 			return "Success: Supervisor details filled successfully";
 		} catch (Exception e) {
@@ -122,7 +127,7 @@ public abstract class Section50Base {
 			ele.getWebElement("ID", Section50PageElementsBo.operatorSurnameInput).sendKeys("1234Surname");
 			ele.getWebElement("ID", Section50PageElementsBo.operatorTelephoneInput).sendKeys("98353423874563");
 			ele.getWebElement("ID", Section50PageElementsBo.operatorNrwsaCardInput).sendKeys("2345");
-			uploadDocument(driver, "C:\\Users\\Gaurav\\Desktop\\blank.png",Section50PageElementsBo.operatorChooseFile);
+			uploadDocument(driver, "C:\\Users\\Gaurav\\Desktop\\blank.png", Section50PageElementsBo.operatorChooseFile);
 			return "Success: Operator details filled successfully";
 		} catch (Exception e) {
 			return "Error: Unexpected error occurred - " + e.getMessage();
@@ -202,4 +207,28 @@ public abstract class Section50Base {
 		}
 	}
 
+	public long countWorkingDays(String startDateStr, String endDateStr) {
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		LocalDate startDate = LocalDate.parse(startDateStr, formatter);
+		LocalDate endDate = LocalDate.parse(endDateStr, formatter);
+		long workingDays = 0;
+		LocalDate date = startDate;
+
+		while (!date.isAfter(endDate)) {
+			if (date.getDayOfWeek() != DayOfWeek.SATURDAY && date.getDayOfWeek() != DayOfWeek.SUNDAY) {
+				workingDays++;
+			}
+			date = date.plusDays(1);
+		}
+		return workingDays;
+	}
+
+	public String fetchPrice(WebDriver driver) {
+		SeleniumUtils.scrollToElement(driver, "xpath", Section50PageElementsBo.orderSummaryLabel);
+		SeleniumUtils.someDelay(2000);
+		WebElement element = driver.findElement(By.xpath(Section50PageElementsBo.orderSummaryPrice));
+		String Actualprice = element.getText();
+		System.out.println("Actualprice :" + Actualprice);
+		return Actualprice;
+	}
 }

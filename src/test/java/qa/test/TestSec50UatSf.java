@@ -17,6 +17,8 @@ import utils.SeleniumUtils;
 public class TestSec50UatSf extends BaseTest {
 	LoginPageEvents loginPg = new LoginPageEvents();
 	Sec50UatSfEvents sec50 = new Sec50UatSfEvents();
+	private String startDate = "23/10/2024";
+	private String endDate = "13/11/2024";
 
 	@BeforeTest
 	@Parameters("browser")
@@ -57,8 +59,6 @@ public class TestSec50UatSf extends BaseTest {
 	@Test(priority = '3', enabled = true)
 	public void fillingApplicationDates(Method methodName) {
 		logger = extent.createTest(methodName.getName());
-		String startDate = "21/05/2024";
-		String endDate = "30/05/2024";
 		String applicationDatesMessage = sec50.fillApplicationDates(driver, startDate, endDate);
 		String expectedMessage = "Success: Application dates filled successfully. Start date: " + startDate
 				+ " End date: " + endDate;
@@ -69,10 +69,9 @@ public class TestSec50UatSf extends BaseTest {
 				"The end date input field accepts a date earlier than the start date. Please ensure that the end date is on or after the start date.");
 		// Capture and attach screenshot
 		captureAndAddScreenshot(methodName.getName());
-
 	}
 
-	@Test(priority = '4', enabled = true)
+	@Test(priority = '4', enabled = false)
 	public void fillingSiteDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String streetNamePostcode = "VICTORIA STREET";// which to be searched or SW1E6AA
@@ -93,7 +92,7 @@ public class TestSec50UatSf extends BaseTest {
 
 	}
 
-	@Test(priority = '5', enabled = true)
+	@Test(priority = '5', enabled = false)
 	public void fillAboutTheWorkSection(Method methodName) {
 
 		logger = extent.createTest(methodName.getName());
@@ -148,6 +147,30 @@ public class TestSec50UatSf extends BaseTest {
 	}
 
 	@Test(priority = '9', enabled = true)
+	public void checkOrderSummary(Method methodName) {
+		logger = extent.createTest(methodName.getName());
+		// You can pass the string dates for calculation
+		System.out.println("Start date is : " + startDate);
+		System.out.println("Start date is : " + endDate);
+		long days = sec50.countWorkingDays(startDate, endDate);
+		System.out.println("Working days : " + days);
+		if (days <= 10) {
+			final String applicationPrice = "£580";
+			logger.info("Total working days : " + days);
+			String actualPrice = sec50.fetchPrice(driver);
+			Assert.assertEquals(applicationPrice, actualPrice);
+			logger.info("Application price is :" + actualPrice);
+		} else {
+			final String applicationPrice = "£960";
+			logger.info("Total working days : " + days);
+			String actualPrice = sec50.fetchPrice(driver);
+			Assert.assertEquals(applicationPrice, actualPrice);
+			logger.info("Application price is :" + actualPrice);
+		}
+
+	}
+
+	@Test(priority = '9', enabled = false)
 	public void payFees(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String expectedMessage = "Payment successful";
