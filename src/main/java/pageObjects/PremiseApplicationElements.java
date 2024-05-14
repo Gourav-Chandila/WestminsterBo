@@ -63,4 +63,12 @@ public class PremiseApplicationElements {
 	public static String designatedPremisesSupervisorLabel="//div[@class='panel-heading' and text()='Designated Premises Supervisor']";
 	public static String addDesignatedPremisesSupervisorButton="//button[text()='Add Designated Premises Supervisor']";
 	public static String designatedPremisesSupervisorAddressSearchButton="supervisor_address";
+	
+	public static String designatedPremisesSupervisorName="designated_supervisor_name";
+	public static String designatedPremisesSupervisorDob="designated_dob";
+	public static String designatedPremisesSupervisorTelephone="designated_supervisor_telephone";
+	public static String designatedPremisesSupervisorEmail="designated_supervisor_email";
+	public static String designatedPremisesSupervisorPersonalLicNo="designated_personal_license";
+	public static String designatedPremisesSupervisorPersonalIssuingAuthority="designated_issuing_authority";
+	public static String saveDesignatedPremisesSupervisorDetails="add_designated";
 }

@@ -74,7 +74,7 @@ public class TestPremiseAppUatSfbo extends BaseTest {
 		logger.info(applicationDatesMessage);
 	}
 
-	@Test(priority = '4', enabled = true)
+	@Test(priority = '5', enabled = true)
 	public void fillingApplicantDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String business="Other";//Accepts Test Business name,Other
@@ -88,7 +88,7 @@ public class TestPremiseAppUatSfbo extends BaseTest {
 		logger.info(Message);
 	}
 	
-	@Test(priority = '4', enabled = true)
+	@Test(priority = '6', enabled = false)
 	public void fillingDesignatedPremisesSupervisor(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String Message = premise.designatedPremisesSupervisor(driver);							

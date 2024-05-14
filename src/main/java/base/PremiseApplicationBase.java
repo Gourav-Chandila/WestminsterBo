@@ -58,14 +58,11 @@ public abstract class PremiseApplicationBase {
 					.click();
 			ele.getWebElement("XPATH", PremiseApplicationElements.addApplicantDetailsButton).click();
 			Thread.sleep(1000);
-			// Accepts individual_applicant,limited_company_applicant,partnership_applicant,unincoporated_applicant,other_applicant,recognised_club_applicant,charity_applicant,educational_applicant,health_service_applicant,registered_individual_wales_applicant,registered_individual_wales_applicant,registered_individual_england_applicant,chief_officer_applicant
+//			 Accepts individual_applicant,limited_company_applicant,partnership_applicant,unincoporated_applicant,other_applicant,recognised_club_applicant,charity_applicant,educational_applicant,health_service_applicant,registered_individual_wales_applicant,registered_individual_wales_applicant,registered_individual_england_applicant,chief_officer_applicant
 			ele.getWebElement("ID", PremiseApplicationElements.applicantRadioButton(otherAppplicant)).click();
-
 			ele.getWebElement("ID", PremiseApplicationElements.otherApplicantNameInput)
 					.sendKeys("Test other applicant name");
-
 			SeleniumUtils.someDelay(1000);
-
 			enterAddressDetails(PremiseApplicationElements.otherApplicantAddressSearchButton);
 			ele.getWebElement("ID", PremiseApplicationElements.otherApplicantRegisteredNumberInput)
 					.sendKeys("+44567897689");
@@ -77,11 +74,10 @@ public abstract class PremiseApplicationBase {
 			ele.getWebElement("ID", PremiseApplicationElements.addOtherApplicantButton).click();
 
 			ele.getWebElement("ID", PremiseApplicationElements.ApplicantDetailsRadioButton(ApplicantCheckbox)).click();
+			SeleniumUtils.scrollToElement(driver, "xpath", PremiseApplicationElements.allApplicantsOver18YearsOfAge);
+			Thread.sleep(2000);
 			ele.getWebElement("XPATH", PremiseApplicationElements.allApplicantsOver18YearsOfAge).click();
-			Thread.sleep(1500);
-			ele.getWebElement("ID",
-					PremiseApplicationElements.applicationShadowLicenceOrProvisionalStatement(shadowCheckBox)).click();
-
+			ele.getWebElement("ID",PremiseApplicationElements.applicationShadowLicenceOrProvisionalStatement(shadowCheckBox)).click();
 			return "Applicant details filled successfully";
 		} catch (Exception e) {
 			return "Error : There are some problem" + e.getMessage();
@@ -93,11 +89,19 @@ public abstract class PremiseApplicationBase {
 		try {
 			SeleniumUtils.scrollToElement(driver, "xpath",
 					PremiseApplicationElements.designatedPremisesSupervisorLabel);
-			SeleniumUtils.someDelay(3000);
+			SeleniumUtils.someDelay(2500);
 			ele.getWebElement("XPATH", PremiseApplicationElements.addDesignatedPremisesSupervisorButton).click();
-			SeleniumUtils.someDelay(3000);
-
+			SeleniumUtils.someDelay(1000);
+			ele.getWebElement("ID", PremiseApplicationElements.designatedPremisesSupervisorName).sendKeys("Test supervisor name");
+			ele.getWebElement("ID", PremiseApplicationElements.designatedPremisesSupervisorDob).sendKeys("18/09/2000");
 			enterAddressDetails(PremiseApplicationElements.designatedPremisesSupervisorAddressSearchButton);
+			SeleniumUtils.someDelay(1000);
+			ele.getWebElement("ID", PremiseApplicationElements.designatedPremisesSupervisorTelephone).sendKeys("+445656565645");
+			ele.getWebElement("ID", PremiseApplicationElements.designatedPremisesSupervisorEmail).sendKeys("supervisor@fgl.com");
+			ele.getWebElement("ID", PremiseApplicationElements.designatedPremisesSupervisorPersonalLicNo).sendKeys("LICO0000");
+			ele.getWebElement("ID", PremiseApplicationElements.designatedPremisesSupervisorPersonalIssuingAuthority).sendKeys("Test authority");
+			ele.getWebElement("ID", PremiseApplicationElements.saveDesignatedPremisesSupervisorDetails).click();
+			
 			return "Success: Designated Premises Supervisor filled successfully";
 		} catch (Exception e) {
 			// Handle thread interruption gracefully
