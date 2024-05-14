@@ -17,7 +17,8 @@ import utils.SeleniumUtils;
 public class TestSec50TestServerSf extends BaseTest {
 	LoginPageEvents loginPg = new LoginPageEvents();
 	Sec50UatSfEvents sec50 = new Sec50UatSfEvents();
-
+	private String startDate = "23/10/2024";
+	private String endDate = "13/11/2024";
 	@BeforeTest
 	@Parameters("browser")
 	public void beforeTestMethod(String browser) {
@@ -28,7 +29,7 @@ public class TestSec50TestServerSf extends BaseTest {
 		super.beforeTestMethod(browser);
 	}
 
-	@Test(priority = '1', enabled = true)
+	@Test(priority = 1, enabled = true)
 	public void OpenWestminsterBoUrl(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 
@@ -45,7 +46,7 @@ public class TestSec50TestServerSf extends BaseTest {
 
 	}
 
-	@Test(priority = '2', enabled = true)
+	@Test(priority = 2, enabled = true)
 	public void confirmInformationTrue(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String Message = sec50.confirmInfoIsTrue(driver);
@@ -54,11 +55,9 @@ public class TestSec50TestServerSf extends BaseTest {
 		logger.info(Message);
 	}
 
-	@Test(priority = '3', enabled = true)
+	@Test(priority = 3, enabled = true)
 	public void fillingApplicationDates(Method methodName) {
 		logger = extent.createTest(methodName.getName());
-		String startDate = "21/05/2024";
-		String endDate = "30/05/2024";
 		String applicationDatesMessage = sec50.fillApplicationDates(driver, startDate, endDate);
 		String expectedMessage = "Success: Application dates filled successfully. Start date: " + startDate
 				+ " End date: " + endDate;
@@ -72,7 +71,7 @@ public class TestSec50TestServerSf extends BaseTest {
 
 	}
 
-	@Test(priority = '4', enabled = true)
+	@Test(priority = 4, enabled = true)
 	public void fillingSiteDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String streetNamePostcode = "VICTORIA EMBANKMENT";// which to be searched or SW1E6AA
@@ -93,7 +92,7 @@ public class TestSec50TestServerSf extends BaseTest {
 
 	}
 
-	@Test(priority = '5', enabled = true)
+	@Test(priority = 5, enabled = true)
 	public void fillAboutTheWorkSection(Method methodName) {
 
 		logger = extent.createTest(methodName.getName());
@@ -104,7 +103,7 @@ public class TestSec50TestServerSf extends BaseTest {
 
 	}
 
-	@Test(priority = '7', enabled = true)
+	@Test(priority = 6, enabled = true)
 	public void fillSupervisorDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String expectedMessage = "Success: Supervisor details filled successfully";
@@ -121,7 +120,7 @@ public class TestSec50TestServerSf extends BaseTest {
 		captureAndAddScreenshot(methodName.getName());
 	}
 
-	@Test(priority = '8', enabled = true, invocationCount = 1)
+	@Test(priority = 7, enabled = true, invocationCount = 1)
 	public void fillOperatorDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String expectedMessage = "Success: Operator details filled successfully";
@@ -138,7 +137,7 @@ public class TestSec50TestServerSf extends BaseTest {
 		captureAndAddScreenshot(methodName.getName());
 	}
 
-	@Test(priority = '9', enabled = true)
+	@Test(priority = 8, enabled = true)
 	public void addDeclarations(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String expectedMessage = "Success: Declarations filled successfully";
@@ -147,13 +146,35 @@ public class TestSec50TestServerSf extends BaseTest {
 		logger.info(expectedMessage);
 	}
 
-	@Test(priority = '9', enabled = true)
+	@Test(priority = 9, enabled = true)
+	public void checkOrderSummary(Method methodName) {
+		logger = extent.createTest(methodName.getName());
+		// You can pass the string dates for calculation
+		System.out.println("Start date is : " + startDate);
+		System.out.println("Start date is : " + endDate);
+		long days = sec50.countWorkingDays(startDate, endDate);
+		System.out.println("Working days : " + days);
+		if (days <= 10) {
+			final String applicationPrice = "£580"; 
+			logger.info("Total working days : " + days);
+			String actualPrice = sec50.fetchPrice(driver);
+			Assert.assertEquals(applicationPrice, actualPrice);
+			logger.info("Application price is :" + actualPrice);
+		} else {
+			final String applicationPrice = "£960";
+			logger.info("Total working days : " + days);
+			String actualPrice = sec50.fetchPrice(driver);
+			Assert.assertEquals(applicationPrice, actualPrice);
+			logger.info("Application price is :" + actualPrice);
+		}
+
+	}
+	@Test(priority = 10, enabled = true)
 	public void payFees(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String expectedMessage = "Payment successful";
 		String declarationDetailsMessage = sec50.payApplicationFee(driver, "");
 		Assert.assertEquals(expectedMessage, declarationDetailsMessage);
 		logger.info(expectedMessage);
-
 	}
 }

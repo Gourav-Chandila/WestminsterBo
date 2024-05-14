@@ -107,7 +107,8 @@ public class Section50PageElementsBo {
 
 	// Order Summary
 	public static String orderSummaryLabel = "//div[@class='panel-heading']/h2[text()='Order summary']";
-	public static String orderSummaryPrice = "(//span[@class='price_display'])[2]";
+	public static String orderSummaryPriceSf = "(//span[@class='price_display'])[2]";
+	public static String orderSummaryPriceSfbo = "(//span[@class='price_display'])[1]";
 
 
 

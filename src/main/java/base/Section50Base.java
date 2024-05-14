@@ -50,7 +50,7 @@ public abstract class Section50Base {
 			SeleniumUtils.scrollToElement(driver, "xpath", Section50PageElementsBo.applicationSectionLabel);
 
 			// Wait for a short period to ensure page stability
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 
 			// Fill in the application start date
 			ele.getWebElement("XPATH", Section50PageElementsBo.applicationStartDate).sendKeys(startDate);
@@ -206,7 +206,7 @@ public abstract class Section50Base {
 			ele.getWebElement("ID", Section50PageElementsBo.operatororSaveDetailsButton).click();
 		}
 	}
-
+	//function for count working days between two specific dates
 	public long countWorkingDays(String startDateStr, String endDateStr) {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		LocalDate startDate = LocalDate.parse(startDateStr, formatter);
@@ -222,13 +222,8 @@ public abstract class Section50Base {
 		}
 		return workingDays;
 	}
-
-	public String fetchPrice(WebDriver driver) {
-		SeleniumUtils.scrollToElement(driver, "xpath", Section50PageElementsBo.orderSummaryLabel);
-		SeleniumUtils.someDelay(2000);
-		WebElement element = driver.findElement(By.xpath(Section50PageElementsBo.orderSummaryPrice));
-		String Actualprice = element.getText();
-		System.out.println("Actualprice :" + Actualprice);
-		return Actualprice;
-	}
+	
+	
+	
+	public abstract String fetchPrice(WebDriver driver);
 }

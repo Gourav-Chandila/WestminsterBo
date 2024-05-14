@@ -1,7 +1,9 @@
 //Child2.java
 package pageEvents;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import base.Section50Base;
 import pageObjects.Section50PageElementsBo;
@@ -40,6 +42,17 @@ public class Sec50UatSfEvents extends Section50Base {
 		}
 
 	}
+
+	@Override
+	//function for fetch application price
+		public String fetchPrice(WebDriver driver) {
+			SeleniumUtils.scrollToElement(driver, "xpath", Section50PageElementsBo.orderSummaryLabel);
+			SeleniumUtils.someDelay(2000);
+			WebElement element = driver.findElement(By.xpath(Section50PageElementsBo.orderSummaryPriceSf));
+			String Actualprice = element.getText();
+			System.out.println("Actualprice :" + Actualprice);
+			return Actualprice;
+		}
 
 
 
