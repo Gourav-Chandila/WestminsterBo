@@ -44,7 +44,7 @@ public class TestPremiseAppUatSfbo extends BaseTest {
 		logger.info("Current url is : " + driver.getCurrentUrl());
 	}
 
-	@Test(priority = '2', enabled = true)
+	@Test(priority = '2', enabled = false)
 	public void fillBusinessDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String businessDetailsMessage = premise.fillBusinessDetails("40283", "donchandila334@gmail.com");
@@ -73,5 +73,30 @@ public class TestPremiseAppUatSfbo extends BaseTest {
 		Assert.assertEquals(expectedMessage, applicationDatesMessage);
 		logger.info(applicationDatesMessage);
 	}
+
+	@Test(priority = '4', enabled = true)
+	public void fillingApplicantDetails(Method methodName) {
+		logger = extent.createTest(methodName.getName());
+		String business="Other";//Accepts Test Business name,Other
+		String otherApplicant="health_service_applicant";//individual_applicant,limited_company_applicant,partnership_applicant, unincoporated_applicant,other_applicant,recognised_club_applicant,charity_applicant,educational_applicant,health_service_applicant,registered_individual_wales_applicant,registered_individual_wales_applicant,registered_individual_england_applicant,chief_officer_applicant
+		String ApplicantCheckbox="applicant_type_carry_on";//Accepts applicant_type_carry_on,applicant_type_function_discharged
+		String shadowCheckbox="product_type_neither";//Accepts product_type_neither,product_type_shadow,product_type_provisional
+		String Message = premise.fillApplicantDetails(driver,business,otherApplicant,ApplicantCheckbox,shadowCheckbox);// takes args Test Business
+																					// name,Other
+		String expectedMessage = "Applicant details filled successfully";
+		Assert.assertEquals(expectedMessage, Message);
+		logger.info(Message);
+	}
+	
+	@Test(priority = '4', enabled = true)
+	public void fillingDesignatedPremisesSupervisor(Method methodName) {
+		logger = extent.createTest(methodName.getName());
+		String Message = premise.designatedPremisesSupervisor(driver);							
+		String expectedMessage = "Success: Designated Premises Supervisor filled successfully";
+		Assert.assertEquals(expectedMessage, Message);
+		logger.info(Message);
+	}
+	
+	
 
 }

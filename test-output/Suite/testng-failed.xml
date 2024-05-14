@@ -4,14 +4,14 @@
   <test thread-count="5" name="FireFoxTest1(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="qa.test.TestSec50UatSfbo">
+      <class name="qa.test.TestPremiseAppUatSfbo">
         <methods>
-          <include name="payFees" invocation-numbers="0"/>
           <include name="afterMethod"/>
           <include name="afterTest"/>
+          <include name="fillingApplicantDetails" invocation-numbers="0"/>
           <include name="beforeTestMethod"/>
         </methods>
-      </class> <!-- qa.test.TestSec50UatSfbo -->
+      </class> <!-- qa.test.TestPremiseAppUatSfbo -->
     </classes>
   </test> <!-- FireFoxTest1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

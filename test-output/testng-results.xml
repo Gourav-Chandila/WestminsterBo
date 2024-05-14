@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-11T16:54:05 IST" name="Suite" finished-at="2024-05-11T16:54:28 IST" duration-ms="23169">
+  <suite started-at="2024-05-14T11:01:44 IST" name="Suite" finished-at="2024-05-14T11:02:27 IST" duration-ms="43603">
     <groups>
     </groups>
-    <test started-at="2024-05-11T16:54:05 IST" name="FireFoxTest1" finished-at="2024-05-11T16:54:28 IST" duration-ms="23169">
+    <test started-at="2024-05-14T11:01:44 IST" name="FireFoxTest1" finished-at="2024-05-14T11:02:27 IST" duration-ms="43603">
       <class name="qa.test.TestPremiseAppUatSfbo">
-        <test-method is-config="true" signature="beforeTestMethod(java.lang.String)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@18271936]" started-at="2024-05-11T16:54:05 IST" name="beforeTestMethod" finished-at="2024-05-11T16:54:09 IST" duration-ms="4760" status="PASS">
+        <test-method is-config="true" signature="beforeTestMethod(java.lang.String)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@8458f04]" started-at="2024-05-14T11:01:44 IST" name="beforeTestMethod" finished-at="2024-05-14T11:01:48 IST" duration-ms="4574" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method signature="openLa_03LoginUrl(java.lang.reflect.Method)[pri:49, instance:qa.test.TestPremiseAppUatSfbo@18271936]" started-at="2024-05-11T16:54:09 IST" name="openLa_03LoginUrl" finished-at="2024-05-11T16:54:23 IST" duration-ms="13109" status="PASS">
+        <test-method signature="openLa_03LoginUrl(java.lang.reflect.Method)[pri:49, instance:qa.test.TestPremiseAppUatSfbo@8458f04]" started-at="2024-05-14T11:01:48 IST" name="openLa_03LoginUrl" finished-at="2024-05-14T11:02:03 IST" duration-ms="15104" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,40 +29,116 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openLa_03LoginUrl -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@18271936]" started-at="2024-05-11T16:54:23 IST" name="afterMethod" finished-at="2024-05-11T16:54:23 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@8458f04]" started-at="2024-05-14T11:02:03 IST" name="afterMethod" finished-at="2024-05-14T11:02:03 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=openLa_03LoginUrl status=SUCCESS method=TestPremiseAppUatSfbo.openLa_03LoginUrl(java.lang.reflect.Method)[pri:49, instance:qa.test.TestPremiseAppUatSfbo@18271936] output={null}]]]>
+                <![CDATA[[TestResult name=openLa_03LoginUrl status=SUCCESS method=TestPremiseAppUatSfbo.openLa_03LoginUrl(java.lang.reflect.Method)[pri:49, instance:qa.test.TestPremiseAppUatSfbo@8458f04] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="fillBusinessDetails(java.lang.reflect.Method)[pri:50, instance:qa.test.TestPremiseAppUatSfbo@18271936]" started-at="2024-05-11T16:54:23 IST" name="fillBusinessDetails" finished-at="2024-05-11T16:54:27 IST" duration-ms="4593" status="PASS">
+        <test-method signature="fillingApplicantDetails(java.lang.reflect.Method)[pri:52, instance:qa.test.TestPremiseAppUatSfbo@8458f04]" started-at="2024-05-14T11:02:03 IST" name="fillingApplicantDetails" finished-at="2024-05-14T11:02:17 IST" duration-ms="13350" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSfbo.fillBusinessDetails(java.lang.reflect.Method)]]>
+                <![CDATA[public void qa.test.TestPremiseAppUatSfbo.fillingApplicantDetails(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<Applicant details filled successfully> but was:<Error : There are some problemElement <input id="product_type_neither" class="form-check-input" name="product_type" type="radio"> could not be scrolled into view
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [55bccf22-2c00-41ef-8a35-f10d542b94b8, clickElement {id=2b9430ac-878f-4f8b-a02d-063400b581e1}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:8374, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16232, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:8374/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (55bccf22-2c00-41ef-8a35-f10d542b94b8)] -> id: product_type_neither]
+Session ID: 55bccf22-2c00-41ef-8a35-f10d542b94b8>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<Applicant details filled successfully> but was:<Error : There are some problemElement <input id="product_type_neither" class="form-check-input" name="product_type" type="radio"> could not be scrolled into view
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [55bccf22-2c00-41ef-8a35-f10d542b94b8, clickElement {id=2b9430ac-878f-4f8b-a02d-063400b581e1}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:8374, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16232, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:8374/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (55bccf22-2c00-41ef-8a35-f10d542b94b8)] -> id: product_type_neither]
+Session ID: 55bccf22-2c00-41ef-8a35-f10d542b94b8>
+at junit.framework.Assert.assertEquals(Assert.java:81)
+at junit.framework.Assert.assertEquals(Assert.java:87)
+at qa.test.TestPremiseAppUatSfbo.fillingApplicantDetails(TestPremiseAppUatSfbo.java:87)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fillBusinessDetails -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@18271936]" started-at="2024-05-11T16:54:27 IST" name="afterMethod" finished-at="2024-05-11T16:54:27 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- fillingApplicantDetails -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@8458f04]" started-at="2024-05-14T11:02:17 IST" name="afterMethod" finished-at="2024-05-14T11:02:17 IST" duration-ms="131" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=fillBusinessDetails status=SUCCESS method=TestPremiseAppUatSfbo.fillBusinessDetails(java.lang.reflect.Method)[pri:50, instance:qa.test.TestPremiseAppUatSfbo@18271936] output={null}]]]>
+                <![CDATA[[TestResult name=fillingApplicantDetails status=FAILURE method=TestPremiseAppUatSfbo.fillingApplicantDetails(java.lang.reflect.Method)[pri:52, instance:qa.test.TestPremiseAppUatSfbo@8458f04] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:qa.test.TestPremiseAppUatSfbo@18271936]" started-at="2024-05-11T16:54:27 IST" name="afterTest" finished-at="2024-05-11T16:54:28 IST" duration-ms="659" status="PASS">
+        <test-method signature="fillingDesignatedPremisesSupervisor(java.lang.reflect.Method)[pri:52, instance:qa.test.TestPremiseAppUatSfbo@8458f04]" started-at="2024-05-14T11:02:17 IST" name="fillingDesignatedPremisesSupervisor" finished-at="2024-05-14T11:02:27 IST" duration-ms="10043" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void qa.test.TestPremiseAppUatSfbo.fillingDesignatedPremisesSupervisor(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillingDesignatedPremisesSupervisor -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@8458f04]" started-at="2024-05-14T11:02:27 IST" name="afterMethod" finished-at="2024-05-14T11:02:27 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=fillingDesignatedPremisesSupervisor status=SUCCESS method=TestPremiseAppUatSfbo.fillingDesignatedPremisesSupervisor(java.lang.reflect.Method)[pri:52, instance:qa.test.TestPremiseAppUatSfbo@8458f04] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:qa.test.TestPremiseAppUatSfbo@8458f04]" started-at="2024-05-14T11:02:27 IST" name="afterTest" finished-at="2024-05-14T11:02:27 IST" duration-ms="346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
