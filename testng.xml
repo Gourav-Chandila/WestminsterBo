@@ -7,7 +7,7 @@
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
 			<!--  <class name="qa.test.TestPremiseAppUatSfbo" />-->
-			<class name="qa.test.TestSec50TestServerSfbo" />
+			<class name="qa.test.TestSec50UatSf" />
 		</classes>
 	</test>
 
