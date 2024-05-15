@@ -82,27 +82,79 @@ public class PremiseApplicationElements {
 	public static String applicationEvidenceBrowseFile = "//input[@id='files']";
 	public static String applicationEvidenceDescriptionInput = "file_desc";
 	public static String applicationEvidenceUploadButton = "//button[text()='Upload']";
-	
-	//PremisesDetails
-	public static String premiseDetailsSection="//div[@class='panel-heading' and text()='Premises Details']";
-	public static String premiseDetailsAddressDropdown="//button[@data-id='address_activities_list']";
+
+	// PremisesDetails
+	public static String premiseDetailsSection = "//div[@class='panel-heading' and text()='Premises Details']";
+	public static String premiseDetailsAddressDropdown = "//button[@data-id='address_activities_list']";
+
 	public static String premiseDetailsAddressSelect(String selectedAddressValue) {
-	    return "//span[text()='" + selectedAddressValue + "']";
+		return "//span[text()='" + selectedAddressValue + "']";
 	}
-	public static String premiseAddressSearchButton="premise_address_btn";
-	public static String premiseAddressIsUnderConstructionOption="premise_address_btn";
+
+	public static String premiseAddressSearchButton = "premise_address_btn";
+	public static String premiseAddressIsUnderConstructionOption = "premise_address_btn";
+
 	public static String premiseDetailsUnderConstructionOption(String underConstructionOption) {
-	    return underConstructionOption;
+		return underConstructionOption;
 	}
-	public static String premiseAddressReteableValueInput="//input[@id='rateableValue']";
-	public static String premiseTradingName="premise_trading_name";
-	public static String premisesGeneralDesctiption="description_premise";
-	public static String if5000OrMorePeople="peopleAttend";
-	public static String PremisesAlcoholSection="//label[@for='serve_alcohol_flag']";
+
+	public static String premiseAddressReteableValueInput = "//input[@id='rateableValue']";
+	public static String premiseTradingName = "premise_trading_name";
+	public static String premisesGeneralDesctiption = "description_premise";
+	public static String if5000OrMorePeople = "peopleAttend";
+	public static String PremisesAlcoholSection = "//label[@for='serve_alcohol_flag']";
+
 	public static String premisesServeAlcohol(String Option) {
-	    return Option;
+		return Option;
 	}
+
 	public static String accessForChildrenRestrictedOrProhibited(String Option) {
 		return Option;
 	}
+
+	// Premises Opening Hours
+	public static String premisesOpeningHoursSection = "//div[text()='Premises Opening Hours']";
+	public static String premisesUpdateHoursButton = "update_premise_hours_button";
+
+	public static String selectBusinessHoursCheckBox(Integer CheckBoxIndexValue) {
+		return "(//input[@type='checkbox' and @name='openclose'])[" + CheckBoxIndexValue + "]";
+	}
+
+	// It select Start at input field
+	public static String selectStartAt(Integer StartAtIndexValue) {
+		return "(//button[@title='Start At'])[" + StartAtIndexValue + "]";
+	}
+
+	// It select End at input field
+	public static String selectEndAt(Integer endAtIndexValue) {
+		return "(//button[@title='End At'])[" + endAtIndexValue + "]";
+	}
+	// Input field of start at
+	public static String timeInputField(Integer StartAtInputFieldValue) {
+		return "(//div[contains(@class, 'bs-searchbox')]//input[@type='text'])[" + StartAtInputFieldValue + "]";
+	}
+	// It select time option
+	public static String selectStartAtTime(Integer StartAtTimeIndexValue) {
+		return "(//span[@class='text' and text()='0.00 am'])[" + StartAtTimeIndexValue + "]";
+	}
+
+	// Licence Objectives
+	public static String licenceObjectivesSection = "//div[text='Licence Objectives']";
+	public static String allFourLicenceInput = "general_objective";
+	public static String preventionOfCrimeInput = "crime_disorder_objective";
+	public static String publicSafetyInput = "public_safety_objective";
+	public static String preventionOfPublicNuisanceInput = "public_nuisance_objective";
+	public static String protectionOfChildrenInput = "children_harm_objective";
+	
+	//Declarations
+	public static String addDeclarationSection = "//div[text()='Declarations']";
+	public static String addDeclarationButton= "declaration_add";
+	public static String selectDeclarationCheckBox(String checkBoxButtonId) {
+		return checkBoxButtonId;
+	}
+	public static String declarationName= "declaration_name";
+	public static String declarationModeToggleButtonOff= "(//label[@class='btn btn-danger active toggle-off'])[4]";
+	public static String saveDeclaration= "aad_declaration";
+	public static String onDataProtection= "(//label[@class='btn btn-danger active toggle-off'])[3]";
+	
 }

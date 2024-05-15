@@ -7,8 +7,9 @@
       <class name="qa.test.TestPremiseAppUatSf">
         <methods>
           <include name="afterMethod"/>
-          <include name="fillPremisesDetails" invocation-numbers="0"/>
+          <include name="fillBusinessHours" invocation-numbers="0"/>
           <include name="afterTest"/>
+          <include name="fillDeclaration" invocation-numbers="0"/>
           <include name="beforeTestMethod"/>
         </methods>
       </class> <!-- qa.test.TestPremiseAppUatSf -->

@@ -1,6 +1,13 @@
 package base;
 
+import java.time.Duration;
+
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pageObjects.PremiseApplicationElements;
 import pageObjects.Section50PageElementsBo;
@@ -132,7 +139,8 @@ public abstract class PremiseApplicationBase {
 		}
 	}
 
-	public String fillPremisesDetails(WebDriver driver, String underConstructionId,String alcoholOption,String accessOption) {
+	public String fillPremisesDetails(WebDriver driver, String underConstructionId, String alcoholOption,
+			String accessOption) {
 		try {
 			SeleniumUtils.scrollToElement(driver, "xpath", PremiseApplicationElements.premiseDetailsSection);
 			SeleniumUtils.someDelay(2000);
@@ -152,17 +160,93 @@ public abstract class PremiseApplicationBase {
 				ele.getWebElement("XPATH", PremiseApplicationElements.premiseAddressReteableValueInput).sendKeys("23");
 			}
 			ele.getWebElement("ID", PremiseApplicationElements.premiseTradingName).clear();
-			ele.getWebElement("ID", PremiseApplicationElements.premiseTradingName).sendKeys("test premise trading name");
-			ele.getWebElement("ID", PremiseApplicationElements.premisesGeneralDesctiption).sendKeys("test general description");
+			ele.getWebElement("ID", PremiseApplicationElements.premiseTradingName)
+					.sendKeys("test premise trading name");
+			ele.getWebElement("ID", PremiseApplicationElements.premisesGeneralDesctiption)
+					.sendKeys("test general description");
 			ele.getWebElement("ID", PremiseApplicationElements.if5000OrMorePeople).sendKeys("5000");
 			SeleniumUtils.scrollToElement(driver, "id", PremiseApplicationElements.if5000OrMorePeople);
-			SeleniumUtils.someDelay(2000);	
+			SeleniumUtils.someDelay(2000);
 			ele.getWebElement("ID", PremiseApplicationElements.premisesServeAlcohol(alcoholOption)).click();
-			ele.getWebElement("ID", PremiseApplicationElements.accessForChildrenRestrictedOrProhibited(accessOption)).click();
-			
-			
+			ele.getWebElement("ID", PremiseApplicationElements.accessForChildrenRestrictedOrProhibited(accessOption))
+					.click();
 
 			return "Success : Premises details filled successfully";
+		} catch (Exception e) {
+			return "Error : There are some problem" + e.getMessage();
+		}
+	}
+
+	public String fillBusinessHours(WebDriver driver) {
+		try {
+			Actions actions = new Actions(driver);
+			SeleniumUtils.scrollToElement(driver, "xpath", PremiseApplicationElements.premisesOpeningHoursSection);
+			SeleniumUtils.someDelay(2000);
+			ele.getWebElement("ID", PremiseApplicationElements.premisesUpdateHoursButton).click();
+			SeleniumUtils.someDelay(1000);
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			// loop for checkbox
+			for (int i = 2; i <= 7; i++) {
+				// Select checkbox
+				WebElement checkbox = wait.until(ExpectedConditions.elementToBeClickable(
+						ele.getWebElement("XPATH", PremiseApplicationElements.selectBusinessHoursCheckBox(i))));
+				checkbox.click();
+			}
+			// loop for add hours here 7 is days
+			for (int i = 1; i <= 7; i++) {
+				WebElement startAt = wait.until(ExpectedConditions
+						.elementToBeClickable(ele.getWebElement("XPATH", PremiseApplicationElements.selectStartAt(i))));
+				startAt.click();
+
+				// Working
+//				WebElement startAtInput = wait.until(ExpectedConditions
+//						.elementToBeClickable(ele.getWebElement("XPATH", PremiseApplicationElements.timeInputField((i)))));
+//				startAtInput.sendKeys("0.00 am");
+			}
+
+			return "Success : Business hours filled successfully";
+		} catch (Exception e) {
+			return "Error : There are some problem" + e.getMessage();
+		}
+
+	}
+
+	public String licenceObjectives(WebDriver driver) {
+		try {
+			SeleniumUtils.scrollToElement(driver, "xpath", PremiseApplicationElements.premisesOpeningHoursSection);
+			SeleniumUtils.someDelay(2000);
+			ele.getWebElement("ID", PremiseApplicationElements.allFourLicenceInput).sendKeys("test");
+			ele.getWebElement("ID", PremiseApplicationElements.preventionOfCrimeInput).sendKeys("test");
+			ele.getWebElement("ID", PremiseApplicationElements.publicSafetyInput).sendKeys("test");
+			ele.getWebElement("ID", PremiseApplicationElements.preventionOfPublicNuisanceInput).sendKeys("test");
+			ele.getWebElement("ID", PremiseApplicationElements.protectionOfChildrenInput).sendKeys("test");
+			return "Success : Licence objectives filled successfully";
+		} catch (Exception e) {
+			return "Error : There are some problem" + e.getMessage();
+		}
+	}
+	
+	public String addDeclaration(WebDriver driver) {
+		try {
+			SeleniumUtils.scrollToElement(driver, "xpath", PremiseApplicationElements.addDeclarationSection);
+			SeleniumUtils.someDelay(2000);
+			ele.getWebElement("ID", PremiseApplicationElements.addDeclarationButton).click();
+			SeleniumUtils.someDelay(1000);
+			clickOnCheckBoxes("declaration_sole_applicant");
+			clickOnCheckBoxes("declaration_joint_applicant");
+			clickOnCheckBoxes("declaration_agree_terms");
+			clickOnCheckBoxes("declaration_agree_proof");
+			SeleniumUtils.scrollToElement(driver, "id", PremiseApplicationElements.declarationName);
+			SeleniumUtils.someDelay(500);
+			ele.getWebElement("ID", PremiseApplicationElements.declarationName).sendKeys("test");
+			clickOnCheckBoxes("capacity_applicant");
+			clickOnCheckBoxes("capacity_solicitor");
+			clickOnCheckBoxes("capacity_authorised_agent");
+			ele.getWebElement("XPATH", PremiseApplicationElements.declarationModeToggleButtonOff).click();
+			ele.getWebElement("ID", PremiseApplicationElements.saveDeclaration).click();
+			SeleniumUtils.someDelay(1000);
+			ele.getWebElement("XPATH", PremiseApplicationElements.onDataProtection).click();
+			return "Success : Declaration filled successfully";
 		} catch (Exception e) {
 			return "Error : There are some problem" + e.getMessage();
 		}
@@ -183,4 +267,7 @@ public abstract class PremiseApplicationBase {
 		ele.getWebElement("XPATH", PremiseApplicationElements.otherApplicantSelectAddress).click();
 	}
 
+	public void clickOnCheckBoxes(String checkBoxIdValue) {
+		ele.getWebElement("ID",PremiseApplicationElements.selectDeclarationCheckBox(checkBoxIdValue)).click();
+	}
 }
