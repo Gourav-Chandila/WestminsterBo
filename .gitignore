@@ -3,9 +3,8 @@
 /PullPageScreenshots
 /PullPageScreenshots
 target/
+/target-output/
 target-output/
-test-output/
 reports/
-
 Sec50TestServerSfbo.html
 testng.xml
