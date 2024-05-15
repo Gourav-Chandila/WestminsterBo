@@ -28,7 +28,7 @@ public class TestPremiseAppUatSfbo extends BaseTest {
 		super.beforeTestMethod(browser);
 	}
 
-	@Test(priority = '1', enabled = true)
+	@Test(priority = 1, enabled = true)
 	public void openLa_03LoginUrl(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 
@@ -44,7 +44,7 @@ public class TestPremiseAppUatSfbo extends BaseTest {
 		logger.info("Current url is : " + driver.getCurrentUrl());
 	}
 
-	@Test(priority = '2', enabled = false)
+	@Test(priority = 2, enabled = true)
 	public void fillBusinessDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String businessDetailsMessage = premise.fillBusinessDetails("40283", "donchandila334@gmail.com");
@@ -53,7 +53,7 @@ public class TestPremiseAppUatSfbo extends BaseTest {
 
 	}
 
-	@Test(priority = '3', enabled = false)
+	@Test(priority = 3, enabled = true)
 	public void confirmInformationTrue(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String Message = premise.confirmInfoIsTrue(driver);
@@ -62,7 +62,7 @@ public class TestPremiseAppUatSfbo extends BaseTest {
 		logger.info(Message);
 	}
 
-	@Test(priority = '4', enabled = false)
+	@Test(priority = 4, enabled = false)
 	public void fillingLicenceDuration(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String startDate = "21/05/2024";
@@ -74,7 +74,7 @@ public class TestPremiseAppUatSfbo extends BaseTest {
 		logger.info(applicationDatesMessage);
 	}
 
-	@Test(priority = '5', enabled = false)
+	@Test(priority = 5, enabled = false)
 	public void fillingApplicantDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String business="Other";//Accepts Test Business name,Other
@@ -88,7 +88,7 @@ public class TestPremiseAppUatSfbo extends BaseTest {
 		logger.info(Message);
 	}
 	
-	@Test(priority = '6', enabled = false)
+	@Test(priority = 6, enabled = false)
 	public void fillingDesignatedPremisesSupervisor(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String Message = premise.designatedPremisesSupervisor(driver);							
@@ -97,6 +97,54 @@ public class TestPremiseAppUatSfbo extends BaseTest {
 		logger.info(Message);
 	}
 	
+	
+	@Test(priority = 7, enabled = true)
+	public void uploadApplicationEvidence(Method methodName) {
+		logger = extent.createTest(methodName.getName());
+		String Message = premise.uploadApplicationEvidence(driver);							
+		String expectedMessage = "Success : Application Evidence uploaded successfully";
+		Assert.assertEquals(expectedMessage, Message);
+		logger.info(Message);
+	}
+	
+	@Test(priority = 8, enabled = true)
+	public void fillPremisesDetails(Method methodName) {
+		logger = extent.createTest(methodName.getName());
+		String underConstructionIdValue="is_under_construction_no"; //Accepts is_under_construction_yes,is_under_construction_no
+		String serveAlcoholOptionValue="serve_alcohol_flag_no"; //Accepts serve_alcohol_flag_yes,serve_alcohol_flag_no
+		String childerenAccessOption="access_for_children_restricted"; //Accepts access_for_children_restricted,access_for_children_prohibited,access_for_children_neither
+		String Message = premise.fillPremisesDetails(driver,underConstructionIdValue,serveAlcoholOptionValue,childerenAccessOption);							
+		String expectedMessage = "Success : Premises details filled successfully";
+		Assert.assertEquals(expectedMessage, Message);
+		logger.info(Message);
+	}
+	@Test(priority = 9, enabled = false)
+	public void fillBusinessHours(Method methodName) {
+		logger = extent.createTest(methodName.getName());
+
+		String Message = premise.fillBusinessHours(driver);							
+		String expectedMessage = "Success : Business hours filled successfully";
+		Assert.assertEquals(expectedMessage, Message);
+		logger.info(Message);
+	}
+	
+	@Test(priority = 10, enabled = true)
+	public void fillLicenceObjectives(Method methodName) {
+		logger = extent.createTest(methodName.getName());
+		String Message = premise.licenceObjectives(driver);							
+		String expectedMessage = "Success : Licence objectives filled successfully";
+		Assert.assertEquals(expectedMessage, Message);
+		logger.info(Message);
+	}
+	
+	@Test(priority = 11, enabled = true)
+	public void fillDeclaration(Method methodName) {
+		logger = extent.createTest(methodName.getName());
+		String Message = premise.addDeclaration(driver);							
+		String expectedMessage = "Success : Declaration filled successfully";
+		Assert.assertEquals(expectedMessage, Message);
+		logger.info(Message);
+	}
 	
 
 }
