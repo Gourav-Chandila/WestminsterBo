@@ -4,24 +4,8 @@
 /PullPageScreenshots
 target/
 target-output/
+test-output/
+reports/
 
-
-reports/Sec50TestServerSfbo.html
-reports/Sec50UatSf.html
-test-output/emailable-report.html
-test-output/index.html
-test-output/junitreports/TEST-qa.test.TestSec50TestServerSfbo.xml
-test-output/junitreports/TEST-qa.test.TestSec50UatSf.xml
-test-output/old/index.html
-test-output/old/Suite/classes.html
-test-output/old/Suite/methods-alphabetical.html
-test-output/old/Suite/methods-not-run.html
-test-output/old/Suite/methods.html
-test-output/old/Suite/testng.xml.html
-test-output/old/Suite/toc.html
-test-output/Suite/FireFoxTest1.html
-test-output/Suite/FireFoxTest1.xml
-test-output/Suite/testng-failed.xml
-test-output/testng-failed.xml
-test-output/testng-results.xml
+Sec50TestServerSfbo.html
 testng.xml
