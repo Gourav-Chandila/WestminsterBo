@@ -62,7 +62,7 @@ public class TestPremiseAppUatSfbo extends BaseTest {
 		logger.info(Message);
 	}
 
-	@Test(priority = 4, enabled = false)
+	@Test(priority = 4, enabled = true)
 	public void fillingLicenceDuration(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String startDate = "21/05/2024";
@@ -74,7 +74,7 @@ public class TestPremiseAppUatSfbo extends BaseTest {
 		logger.info(applicationDatesMessage);
 	}
 
-	@Test(priority = 5, enabled = false)
+	@Test(priority = 5, enabled = true)
 	public void fillingApplicantDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String business="Other";//Accepts Test Business name,Other
@@ -88,7 +88,7 @@ public class TestPremiseAppUatSfbo extends BaseTest {
 		logger.info(Message);
 	}
 	
-	@Test(priority = 6, enabled = false)
+	@Test(priority = 6, enabled = true)
 	public void fillingDesignatedPremisesSupervisor(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String Message = premise.designatedPremisesSupervisor(driver);							
@@ -118,7 +118,7 @@ public class TestPremiseAppUatSfbo extends BaseTest {
 		Assert.assertEquals(expectedMessage, Message);
 		logger.info(Message);
 	}
-	@Test(priority = 9, enabled = false)
+	@Test(priority = 9, enabled = true)
 	public void fillBusinessHours(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 

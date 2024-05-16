@@ -153,7 +153,7 @@ public class PremiseApplicationElements {
 		return checkBoxButtonId;
 	}
 	public static String declarationName= "declaration_name";
-	public static String declarationModeToggleButtonOff= "(//label[@class='btn btn-danger active toggle-off'])[4]";
+	public static String declarationModeToggleButtonOff= "//div[@class='toggle btn btn-danger off'][input[@id='declaration_mode']]";
 	public static String saveDeclaration= "aad_declaration";
 	public static String onDataProtection= "(//label[@class='btn btn-danger active toggle-off'])[3]";
 	

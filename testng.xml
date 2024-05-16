@@ -3,6 +3,14 @@
 <suite name="Suite">
 
 
+	<test thread-count="5" name="FireFoxTest">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="qa.test.TestPremiseAppUatSf" />
+
+		</classes>
+	</test>
+	
 	<test thread-count="5" name="FireFoxTest1">
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
