@@ -186,35 +186,39 @@ public abstract class PremiseApplicationBase {
 			ele.getWebElement("ID", PremiseApplicationElements.premisesUpdateHoursButton).click();
 			SeleniumUtils.someDelay(1000);
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-
+			int startTimeIndex = 1;
+			int endTimeIndex = 2;
 			// loop for checkbox
-			for (int i = 1; i <= 1; i++) {
+			for (int i = 1; i <= 6; i++) {
 				// Select checkbox
 				WebElement checkbox = wait.until(ExpectedConditions.elementToBeClickable(
 						ele.getWebElement("XPATH", PremiseApplicationElements.selectBusinessHoursCheckBox(i))));
 				checkbox.click();
 
-			}
-			for (int i = 1; i <= 1; i++) {
 				// Select Start at dropdown
 				WebElement startAtDropDown = wait.until(ExpectedConditions
-						.elementToBeClickable(ele.getWebElement("XPATH", PremiseApplicationElements.selectStartAt(1))));
+						.elementToBeClickable(ele.getWebElement("XPATH", PremiseApplicationElements.selectStartAt(i))));
 				startAtDropDown.click();
 				// click on time 00:00 in chrome 0.00
 				WebElement startAtTime = wait.until(ExpectedConditions.elementToBeClickable(
-						ele.getWebElement("XPATH", PremiseApplicationElements.selectStartAtTime(i * 2 - 1))));
+						ele.getWebElement("XPATH", PremiseApplicationElements.selectStartAtTime(startTimeIndex))));
 				startAtTime.click();
 
 				// Select End at dropdown
 				WebElement endAtDropDown = wait.until(ExpectedConditions
-						.elementToBeClickable(ele.getWebElement("XPATH", PremiseApplicationElements.selectEndAt(1))));
+						.elementToBeClickable(ele.getWebElement("XPATH", PremiseApplicationElements.selectEndAt(i))));
 				endAtDropDown.click();
 				// click on time 00:35 in chrome 0.35
 				WebElement endAtTime = wait.until(ExpectedConditions.elementToBeClickable(
-						ele.getWebElement("XPATH", PremiseApplicationElements.selectEndAtTime(i * 2))));
+						ele.getWebElement("XPATH", PremiseApplicationElements.selectEndAtTime(endTimeIndex))));
 				endAtTime.click();
-				actions.sendKeys(Keys.TAB, Keys.ENTER).perform();
-				SeleniumUtils.someDelay(1000);
+
+				WebElement addTimeSlot = wait.until(ExpectedConditions.elementToBeClickable(
+						ele.getWebElement("XPATH", PremiseApplicationElements.addTimeSlot(i * 2 - 1))));
+				addTimeSlot.click();
+
+				startTimeIndex += 4;
+				endTimeIndex += 4;
 			}
 
 			return "Success : Business hours filled successfully";

@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-17T11:14:37 IST" name="Suite" finished-at="2024-05-17T11:15:05 IST" duration-ms="27440">
+  <suite started-at="2024-05-17T12:11:46 IST" name="Suite" finished-at="2024-05-17T12:12:28 IST" duration-ms="41905">
     <groups>
     </groups>
-    <test started-at="2024-05-17T11:14:37 IST" name="FireFoxTest" finished-at="2024-05-17T11:15:05 IST" duration-ms="27440">
+    <test started-at="2024-05-17T12:11:46 IST" name="FireFoxTest" finished-at="2024-05-17T12:12:28 IST" duration-ms="41905">
       <class name="qa.test.TestPremiseAppUatSf">
-        <test-method is-config="true" signature="beforeTestMethod(java.lang.String)[pri:0, instance:qa.test.TestPremiseAppUatSf@cc43f62]" started-at="2024-05-17T11:14:37 IST" name="beforeTestMethod" finished-at="2024-05-17T11:14:42 IST" duration-ms="5123" status="PASS">
+        <test-method is-config="true" signature="beforeTestMethod(java.lang.String)[pri:0, instance:qa.test.TestPremiseAppUatSf@cc43f62]" started-at="2024-05-17T12:11:46 IST" name="beforeTestMethod" finished-at="2024-05-17T12:11:56 IST" duration-ms="9416" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method signature="openLa_03LoginUrl(java.lang.reflect.Method)[pri:1, instance:qa.test.TestPremiseAppUatSf@cc43f62]" started-at="2024-05-17T11:14:42 IST" name="openLa_03LoginUrl" finished-at="2024-05-17T11:14:58 IST" duration-ms="15222" status="PASS">
+        <test-method signature="openLa_03LoginUrl(java.lang.reflect.Method)[pri:1, instance:qa.test.TestPremiseAppUatSf@cc43f62]" started-at="2024-05-17T12:11:56 IST" name="openLa_03LoginUrl" finished-at="2024-05-17T12:12:10 IST" duration-ms="14847" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openLa_03LoginUrl -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSf@cc43f62]" started-at="2024-05-17T11:14:58 IST" name="afterMethod" finished-at="2024-05-17T11:14:58 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSf@cc43f62]" started-at="2024-05-17T12:12:10 IST" name="afterMethod" finished-at="2024-05-17T12:12:10 IST" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,7 +40,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="fillBusinessHours(java.lang.reflect.Method)[pri:8, instance:qa.test.TestPremiseAppUatSf@cc43f62]" started-at="2024-05-17T11:14:58 IST" name="fillBusinessHours" finished-at="2024-05-17T11:15:04 IST" duration-ms="6707" status="PASS">
+        <test-method signature="fillBusinessHours(java.lang.reflect.Method)[pri:8, instance:qa.test.TestPremiseAppUatSf@cc43f62]" started-at="2024-05-17T12:12:10 IST" name="fillBusinessHours" finished-at="2024-05-17T12:12:28 IST" duration-ms="17186" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,7 +51,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillBusinessHours -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSf@cc43f62]" started-at="2024-05-17T11:15:04 IST" name="afterMethod" finished-at="2024-05-17T11:15:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSf@cc43f62]" started-at="2024-05-17T12:12:28 IST" name="afterMethod" finished-at="2024-05-17T12:12:28 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,7 +62,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:qa.test.TestPremiseAppUatSf@cc43f62]" started-at="2024-05-17T11:15:04 IST" name="afterTest" finished-at="2024-05-17T11:15:05 IST" duration-ms="328" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:qa.test.TestPremiseAppUatSf@cc43f62]" started-at="2024-05-17T12:12:28 IST" name="afterTest" finished-at="2024-05-17T12:12:28 IST" duration-ms="394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

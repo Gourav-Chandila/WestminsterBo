@@ -112,14 +112,6 @@ public class PremiseApplicationElements {
 		return Option;
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
 	// Premises Opening Hours
 	public static String premisesOpeningHoursSection = "//div[text()='Premises Opening Hours']";
 	public static String premisesUpdateHoursButton = "update_premise_hours_button";
@@ -137,33 +129,22 @@ public class PremiseApplicationElements {
 	public static String selectStartAtTime(Integer StartAtInputFieldValue) {
 		return "(//a/span[@class='text' and text()='00:00'])[" + StartAtInputFieldValue + "]";
 	}
-	
+
 	// It select Start at input field
 	public static String selectEndAt(Integer StartAtIndexValue) {
 		return "(//button[@title='End At'])[" + StartAtIndexValue + "]";
 	}
-	
+
 	// Input field of start at
 	public static String selectEndAtTime(Integer StartAtInputFieldValue) {
 		return "(//a/span[@class='text' and text()='00:35'])[" + StartAtInputFieldValue + "]";
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	// Add TIme slot
+	public static String addTimeSlot(Integer TimeSlotIndexValue) {
+		return "(//button[text()='Add Timeslot'])[" + TimeSlotIndexValue + "]";
+	}
+
 	// Licence Objectives
 	public static String licenceObjectivesSection = "//div[text='Licence Objectives']";
 	public static String allFourLicenceInput = "general_objective";
