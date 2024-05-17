@@ -120,23 +120,24 @@ public class PremiseApplicationElements {
 		return "(//input[@type='checkbox' and @name='openclose'])[" + CheckBoxIndexValue + "]";
 	}
 
-	// It select Start at input field
+//	// It select Start at input field
 	public static String selectStartAt(Integer StartAtIndexValue) {
 		return "(//button[@title='Start At'])[" + StartAtIndexValue + "]";
 	}
 
-	// It select End at input field
-	public static String selectEndAt(Integer endAtIndexValue) {
-		return "(//button[@title='End At'])[" + endAtIndexValue + "]";
-	}
 	// Input field of start at
-	public static String timeInputField(Integer StartAtInputFieldValue) {
-		return "(//div[contains(@class, 'bs-searchbox')]//input[@type='text'])[" + StartAtInputFieldValue + "]";
-	}
-	// It select time option
-	public static String selectStartAtTime(Integer StartAtTimeIndexValue) {
-		return "(//span[@class='text' and text()='0.00 am'])[" + StartAtTimeIndexValue + "]";
-	}
+		public static String timeInputField(Integer StartAtInputFieldValue) {
+			return "(//input[@type='text' and @class='form-control' and @aria-label='Search' and @placeholder='Search'])["
+					+ StartAtInputFieldValue + "]";
+		}
+		// Input field of start at
+		public static String selectTime(Integer StartAtInputFieldValue) {
+			return "(//a/span[@class='text' and text()='00:00'])["+StartAtInputFieldValue+"]";
+		}
+	
+
+	
+	
 
 	// Licence Objectives
 	public static String licenceObjectivesSection = "//div[text='Licence Objectives']";
@@ -145,16 +146,18 @@ public class PremiseApplicationElements {
 	public static String publicSafetyInput = "public_safety_objective";
 	public static String preventionOfPublicNuisanceInput = "public_nuisance_objective";
 	public static String protectionOfChildrenInput = "children_harm_objective";
-	
-	//Declarations
+
+	// Declarations
 	public static String addDeclarationSection = "//div[text()='Declarations']";
-	public static String addDeclarationButton= "declaration_add";
+	public static String addDeclarationButton = "declaration_add";
+
 	public static String selectDeclarationCheckBox(String checkBoxButtonId) {
 		return checkBoxButtonId;
 	}
-	public static String declarationName= "declaration_name";
-	public static String declarationModeToggleButtonOff= "//div[@class='toggle btn btn-danger off'][input[@id='declaration_mode']]";
-	public static String saveDeclaration= "aad_declaration";
-	public static String onDataProtection= "(//label[@class='btn btn-danger active toggle-off'])[3]";
-	
+
+	public static String declarationName = "declaration_name";
+	public static String declarationModeToggleButtonOff = "//div[@class='toggle btn btn-danger off'][input[@id='declaration_mode']]";
+	public static String saveDeclaration = "aad_declaration";
+	public static String onDataProtection = "(//label[@class='btn btn-danger active toggle-off'])[3]";
+
 }

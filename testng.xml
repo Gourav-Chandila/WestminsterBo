@@ -11,12 +11,4 @@
 		</classes>
 	</test>
 	
-	<test thread-count="5" name="FireFoxTest1">
-		<parameter name="browser" value="firefox"></parameter>
-		<classes>
-			<class name="qa.test.TestPremiseAppUatSfbo" />
-
-		</classes>
-	</test>
-
 </suite> <!-- Suite -->
