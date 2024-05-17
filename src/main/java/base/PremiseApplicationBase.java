@@ -178,7 +178,6 @@ public abstract class PremiseApplicationBase {
 		}
 	}
 
-
 	public String fillBusinessHours(WebDriver driver) {
 		try {
 			Actions actions = new Actions(driver);
@@ -187,30 +186,37 @@ public abstract class PremiseApplicationBase {
 			ele.getWebElement("ID", PremiseApplicationElements.premisesUpdateHoursButton).click();
 			SeleniumUtils.someDelay(1000);
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-			
-//			// loop for checkbox
+
+			// loop for checkbox
 			for (int i = 1; i <= 1; i++) {
-//				// Select checkbox
+				// Select checkbox
 				WebElement checkbox = wait.until(ExpectedConditions.elementToBeClickable(
 						ele.getWebElement("XPATH", PremiseApplicationElements.selectBusinessHoursCheckBox(i))));
 				checkbox.click();
 
-		}	
+			}
 			for (int i = 1; i <= 1; i++) {
-			    // Loop for Select Start at dropdown and click on time
-			    WebElement startAtDropDown = wait.until(ExpectedConditions.elementToBeClickable(
-			            ele.getWebElement("XPATH", PremiseApplicationElements.selectStartAt(i))));
-			    startAtDropDown.click();
-//			    SeleniumUtils.someDelay(1000);
-			    // Select checkbox
-			    WebElement checkbox = wait.until(ExpectedConditions.elementToBeClickable(
-			    		ele.getWebElement("XPATH", PremiseApplicationElements.selectTime(i * 2 - 1))));
-			    checkbox.click();
+				// Select Start at dropdown
+				WebElement startAtDropDown = wait.until(ExpectedConditions
+						.elementToBeClickable(ele.getWebElement("XPATH", PremiseApplicationElements.selectStartAt(1))));
+				startAtDropDown.click();
+				// click on time 00:00 in chrome 0.00
+				WebElement startAtTime = wait.until(ExpectedConditions.elementToBeClickable(
+						ele.getWebElement("XPATH", PremiseApplicationElements.selectStartAtTime(i * 2 - 1))));
+				startAtTime.click();
+
+				// Select End at dropdown
+				WebElement endAtDropDown = wait.until(ExpectedConditions
+						.elementToBeClickable(ele.getWebElement("XPATH", PremiseApplicationElements.selectEndAt(1))));
+				endAtDropDown.click();
+				// click on time 00:35 in chrome 0.35
+				WebElement endAtTime = wait.until(ExpectedConditions.elementToBeClickable(
+						ele.getWebElement("XPATH", PremiseApplicationElements.selectEndAtTime(i * 2))));
+				endAtTime.click();
+				actions.sendKeys(Keys.TAB, Keys.ENTER).perform();
+				SeleniumUtils.someDelay(1000);
 			}
 
-				
-				
-				
 			return "Success : Business hours filled successfully";
 		} catch (Exception e) {
 			return "Error : There are some problem" + e.getMessage();
@@ -276,5 +282,9 @@ public abstract class PremiseApplicationBase {
 
 	public void clickOnCheckBoxes(String checkBoxIdValue) {
 		ele.getWebElement("ID", PremiseApplicationElements.selectDeclarationCheckBox(checkBoxIdValue)).click();
+	}
+
+	public void fillHours() {
+
 	}
 }

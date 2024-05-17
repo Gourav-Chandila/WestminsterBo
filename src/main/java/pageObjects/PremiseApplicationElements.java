@@ -112,6 +112,14 @@ public class PremiseApplicationElements {
 		return Option;
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
 	// Premises Opening Hours
 	public static String premisesOpeningHoursSection = "//div[text()='Premises Opening Hours']";
 	public static String premisesUpdateHoursButton = "update_premise_hours_button";
@@ -120,25 +128,42 @@ public class PremiseApplicationElements {
 		return "(//input[@type='checkbox' and @name='openclose'])[" + CheckBoxIndexValue + "]";
 	}
 
-//	// It select Start at input field
+	// It select Start at input field
 	public static String selectStartAt(Integer StartAtIndexValue) {
 		return "(//button[@title='Start At'])[" + StartAtIndexValue + "]";
 	}
 
 	// Input field of start at
-		public static String timeInputField(Integer StartAtInputFieldValue) {
-			return "(//input[@type='text' and @class='form-control' and @aria-label='Search' and @placeholder='Search'])["
-					+ StartAtInputFieldValue + "]";
-		}
-		// Input field of start at
-		public static String selectTime(Integer StartAtInputFieldValue) {
-			return "(//a/span[@class='text' and text()='00:00'])["+StartAtInputFieldValue+"]";
-		}
+	public static String selectStartAtTime(Integer StartAtInputFieldValue) {
+		return "(//a/span[@class='text' and text()='00:00'])[" + StartAtInputFieldValue + "]";
+	}
 	
+	// It select Start at input field
+	public static String selectEndAt(Integer StartAtIndexValue) {
+		return "(//button[@title='End At'])[" + StartAtIndexValue + "]";
+	}
+	
+	// Input field of start at
+	public static String selectEndAtTime(Integer StartAtInputFieldValue) {
+		return "(//a/span[@class='text' and text()='00:35'])[" + StartAtInputFieldValue + "]";
+	}
 
 	
 	
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	// Licence Objectives
 	public static String licenceObjectivesSection = "//div[text='Licence Objectives']";
 	public static String allFourLicenceInput = "general_objective";
