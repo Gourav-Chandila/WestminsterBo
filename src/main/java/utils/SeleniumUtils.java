@@ -2,6 +2,7 @@ package utils;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 import javax.activation.DataHandler;
@@ -20,10 +21,13 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
@@ -148,5 +152,17 @@ public class SeleniumUtils {
 			throw new RuntimeException(e);
 		}
 	}
+
+	
+	
+	 public static WebElement waitForElementToBeClickable(WebDriver driver, WebElement cardPayButton, Duration timeout) {
+	        WebDriverWait wait = new WebDriverWait(driver, timeout);
+	        return wait.until(ExpectedConditions.elementToBeClickable(cardPayButton));
+	    }
+	 
+	 public static WebElement waitForElementToBeDisplayed(WebDriver driver, WebElement cardPayButton, Duration timeout) {
+		    WebDriverWait wait = new WebDriverWait(driver, timeout);
+		    return wait.until(ExpectedConditions.visibilityOf(cardPayButton));
+		}
 
 }

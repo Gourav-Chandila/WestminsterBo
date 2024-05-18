@@ -127,8 +127,17 @@ public class TestPremiseAppUatSfbo extends BaseTest {
 		Assert.assertEquals(expectedMessage, Message);
 		logger.info(Message);
 	}
-	
+
 	@Test(priority = 10, enabled = true)
+	public void fillOperatingSchedule(Method methodName) {
+		logger = extent.createTest(methodName.getName());
+		String Message = premise.fillOperatingSchedule(driver);
+		String expectedMessage = "Success : Operating schedule filled successfully";
+		Assert.assertEquals(expectedMessage, Message);
+		logger.info(Message);
+	}
+	
+	@Test(priority = 11, enabled = true)
 	public void fillLicenceObjectives(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String Message = premise.licenceObjectives(driver);							
@@ -137,11 +146,20 @@ public class TestPremiseAppUatSfbo extends BaseTest {
 		logger.info(Message);
 	}
 	
-	@Test(priority = 11, enabled = true)
+	@Test(priority = 12, enabled = true)
 	public void fillDeclaration(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String Message = premise.addDeclaration(driver);							
 		String expectedMessage = "Success : Declaration filled successfully";
+		Assert.assertEquals(expectedMessage, Message);
+		logger.info(Message);
+	}
+	
+	@Test(priority = 13, enabled = true)
+	public void payment(Method methodName) {
+		logger = extent.createTest(methodName.getName());
+		String Message = premise.addPayment(driver,"Cash");
+		String expectedMessage = "Success : Payment successfull";
 		Assert.assertEquals(expectedMessage, Message);
 		logger.info(Message);
 	}
