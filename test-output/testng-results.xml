@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-20T01:15:11 IST" name="Suite" finished-at="2024-05-20T01:16:12 IST" duration-ms="60996">
+  <suite started-at="2024-05-20T02:05:15 IST" name="Suite" finished-at="2024-05-20T02:06:07 IST" duration-ms="51671">
     <groups>
     </groups>
-    <test started-at="2024-05-20T01:15:11 IST" name="FireFoxTest" finished-at="2024-05-20T01:16:12 IST" duration-ms="60996">
-      <class name="qa.test.TestPremiseAppTestServerSfbo">
-        <test-method is-config="true" signature="beforeTestMethod(java.lang.String)[pri:0, instance:qa.test.TestPremiseAppTestServerSfbo@6caf0677]" started-at="2024-05-20T01:15:11 IST" name="beforeTestMethod" finished-at="2024-05-20T01:15:18 IST" duration-ms="7697" status="PASS">
+    <test started-at="2024-05-20T02:05:15 IST" name="FireFoxTest" finished-at="2024-05-20T02:06:07 IST" duration-ms="51671">
+      <class name="qa.test.TestPremiseAppTestServerSf">
+        <test-method is-config="true" signature="beforeTestMethod(java.lang.String)[pri:0, instance:qa.test.TestPremiseAppTestServerSf@645aa696]" started-at="2024-05-20T02:05:15 IST" name="beforeTestMethod" finished-at="2024-05-20T02:05:20 IST" duration-ms="4801" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,105 +18,55 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method signature="openLa_03LoginUrl(java.lang.reflect.Method)[pri:1, instance:qa.test.TestPremiseAppTestServerSfbo@6caf0677]" started-at="2024-05-20T01:15:18 IST" name="openLa_03LoginUrl" finished-at="2024-05-20T01:15:59 IST" duration-ms="41070" status="PASS">
+        <test-method signature="openLa_03LoginUrl(java.lang.reflect.Method)[pri:1, instance:qa.test.TestPremiseAppTestServerSf@645aa696]" started-at="2024-05-20T02:05:20 IST" name="openLa_03LoginUrl" finished-at="2024-05-20T02:05:56 IST" duration-ms="36149" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void qa.test.TestPremiseAppTestServerSfbo.openLa_03LoginUrl(java.lang.reflect.Method)]]>
+                <![CDATA[public void qa.test.TestPremiseAppTestServerSf.openLa_03LoginUrl(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openLa_03LoginUrl -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppTestServerSfbo@6caf0677]" started-at="2024-05-20T01:16:00 IST" name="afterMethod" finished-at="2024-05-20T01:16:00 IST" duration-ms="15" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppTestServerSf@645aa696]" started-at="2024-05-20T02:05:56 IST" name="afterMethod" finished-at="2024-05-20T02:05:56 IST" duration-ms="10" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=openLa_03LoginUrl status=SUCCESS method=TestPremiseAppTestServerSfbo.openLa_03LoginUrl(java.lang.reflect.Method)[pri:1, instance:qa.test.TestPremiseAppTestServerSfbo@6caf0677] output={null}]]]>
+                <![CDATA[[TestResult name=openLa_03LoginUrl status=SUCCESS method=TestPremiseAppTestServerSf.openLa_03LoginUrl(java.lang.reflect.Method)[pri:1, instance:qa.test.TestPremiseAppTestServerSf@645aa696] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="fillOperatingSchedule(java.lang.reflect.Method)[pri:10, instance:qa.test.TestPremiseAppTestServerSfbo@6caf0677]" started-at="2024-05-20T01:16:00 IST" name="fillOperatingSchedule" finished-at="2024-05-20T01:16:11 IST" duration-ms="11035" status="FAIL">
+        <test-method signature="fillOperatingSchedule(java.lang.reflect.Method)[pri:9, instance:qa.test.TestPremiseAppTestServerSf@645aa696]" started-at="2024-05-20T02:05:56 IST" name="fillOperatingSchedule" finished-at="2024-05-20T02:06:07 IST" duration-ms="10184" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void qa.test.TestPremiseAppTestServerSfbo.fillOperatingSchedule(java.lang.reflect.Method)]]>
+                <![CDATA[public void qa.test.TestPremiseAppTestServerSf.fillOperatingSchedule(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
-          <exception class="junit.framework.ComparisonFailure">
-            <message>
-              <![CDATA[expected:<Success : Operating schedule filled successfully> but was:<Error : There are some problemExpected condition failed: waiting for element to be clickable: [[FirefoxDriver: firefox on windows (69e62f3e-952c-4a5b-a6e1-4b3ccf965f6c)] -> xpath: (//a/span[@class='text' and text()='00:00'])[1]] (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.3, moz:accessibilityChecks: false, moz:buildID: 20240425211020, moz:debuggerAddress: 127.0.0.1:35497, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20164, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:35497/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 69e62f3e-952c-4a5b-a6e1-4b3ccf965f6c>]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[junit.framework.ComparisonFailure: expected:<Success : Operating schedule filled successfully> but was:<Error : There are some problemExpected condition failed: waiting for element to be clickable: [[FirefoxDriver: firefox on windows (69e62f3e-952c-4a5b-a6e1-4b3ccf965f6c)] -> xpath: (//a/span[@class='text' and text()='00:00'])[1]] (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.3, moz:accessibilityChecks: false, moz:buildID: 20240425211020, moz:debuggerAddress: 127.0.0.1:35497, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20164, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:35497/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 69e62f3e-952c-4a5b-a6e1-4b3ccf965f6c>
-at junit.framework.Assert.assertEquals(Assert.java:81)
-at junit.framework.Assert.assertEquals(Assert.java:87)
-at qa.test.TestPremiseAppTestServerSfbo.fillOperatingSchedule(TestPremiseAppTestServerSfbo.java:136)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- junit.framework.ComparisonFailure -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillOperatingSchedule -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppTestServerSfbo@6caf0677]" started-at="2024-05-20T01:16:11 IST" name="afterMethod" finished-at="2024-05-20T01:16:11 IST" duration-ms="292" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppTestServerSf@645aa696]" started-at="2024-05-20T02:06:07 IST" name="afterMethod" finished-at="2024-05-20T02:06:07 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=fillOperatingSchedule status=FAILURE method=TestPremiseAppTestServerSfbo.fillOperatingSchedule(java.lang.reflect.Method)[pri:10, instance:qa.test.TestPremiseAppTestServerSfbo@6caf0677] output={null}]]]>
+                <![CDATA[[TestResult name=fillOperatingSchedule status=SUCCESS method=TestPremiseAppTestServerSf.fillOperatingSchedule(java.lang.reflect.Method)[pri:9, instance:qa.test.TestPremiseAppTestServerSf@645aa696] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:qa.test.TestPremiseAppTestServerSfbo@6caf0677]" started-at="2024-05-20T01:16:11 IST" name="afterTest" finished-at="2024-05-20T01:16:12 IST" duration-ms="780" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:qa.test.TestPremiseAppTestServerSf@645aa696]" started-at="2024-05-20T02:06:07 IST" name="afterTest" finished-at="2024-05-20T02:06:07 IST" duration-ms="463" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- qa.test.TestPremiseAppTestServerSfbo -->
+      </class> <!-- qa.test.TestPremiseAppTestServerSf -->
     </test> <!-- FireFoxTest -->
   </suite> <!-- Suite -->
 </testng-results>

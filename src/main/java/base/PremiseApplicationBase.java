@@ -275,7 +275,7 @@ public abstract class PremiseApplicationBase {
 		int startTimeIndex = 1;
 		int endTimeIndex = 2;
 		// loop for checkbox
-		for (int i = 6; i <= 6; i++) {
+		for (int i = 1; i <= 2; i++) {
 			// Select checkbox
 			WebElement checkbox = wait.until(ExpectedConditions.elementToBeClickable(
 					ele.getWebElement("XPATH", PremiseApplicationElements.selectBusinessHoursCheckBox(i))));

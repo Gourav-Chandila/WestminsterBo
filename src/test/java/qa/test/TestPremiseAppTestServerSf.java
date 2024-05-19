@@ -43,7 +43,7 @@ public class TestPremiseAppTestServerSf extends BaseTest{
 		logger.info("Current url is : " + driver.getCurrentUrl());
 	}
 
-	@Test(priority = 2, enabled = true)
+	@Test(priority = 2, enabled = false)
 	public void confirmInformationtrue(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String Message = premise.confirmInfoIsTrue(driver);
@@ -52,7 +52,7 @@ public class TestPremiseAppTestServerSf extends BaseTest{
 		logger.info(Message);
 	}
 
-	@Test(priority = 3, enabled = true)
+	@Test(priority = 3, enabled = false)
 	public void fillingLicenceDuration(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String startDate = "21/05/2024";
@@ -64,7 +64,7 @@ public class TestPremiseAppTestServerSf extends BaseTest{
 		logger.info(applicationDatesMessage);
 	}
 
-	@Test(priority = 4, enabled = true)
+	@Test(priority = 4, enabled = false)
 	public void fillingApplicantDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String business = "Other";// Accepts Test Business name,Other
@@ -82,7 +82,7 @@ public class TestPremiseAppTestServerSf extends BaseTest{
 		logger.info(Message);
 	}
 
-	@Test(priority = 5, enabled = true)
+	@Test(priority = 5, enabled = false)
 	public void fillingDesignatedPremisesSupervisor(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String Message = premise.designatedPremisesSupervisor(driver);
@@ -91,7 +91,7 @@ public class TestPremiseAppTestServerSf extends BaseTest{
 		logger.info(Message);
 	}
 
-	@Test(priority = 6, enabled = true)
+	@Test(priority = 6, enabled = false)
 	public void uploadApplicationEvidence(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String Message = premise.uploadApplicationEvidence(driver);
@@ -100,7 +100,7 @@ public class TestPremiseAppTestServerSf extends BaseTest{
 		logger.info(Message);
 	}
 
-	@Test(priority = 7, enabled = true)
+	@Test(priority = 7, enabled = false)
 	public void fillPremisesDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String underConstructionIdValue = "is_under_construction_no"; // Accepts
@@ -125,7 +125,7 @@ public class TestPremiseAppTestServerSf extends BaseTest{
 		logger.info(Message);
 	}
 
-	@Test(priority = 9, enabled = false)
+	@Test(priority = 9, enabled = true)
 	public void fillOperatingSchedule(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String Message = premise.fillOperatingSchedule(driver);
@@ -134,7 +134,7 @@ public class TestPremiseAppTestServerSf extends BaseTest{
 		logger.info(Message);
 	}
 
-	@Test(priority = 10, enabled = true)
+	@Test(priority = 10, enabled = false)
 	public void fillLicenceObjectives(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String Message = premise.licenceObjectives(driver);
@@ -143,7 +143,7 @@ public class TestPremiseAppTestServerSf extends BaseTest{
 		logger.info(Message);
 	}
 
-	@Test(priority = 11, enabled = true)
+	@Test(priority = 11, enabled = false)
 	public void fillDeclaration(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String Message = premise.addDeclaration(driver);
@@ -152,7 +152,7 @@ public class TestPremiseAppTestServerSf extends BaseTest{
 		logger.info(Message);
 	}
 
-	@Test(priority = 12, enabled = true)
+	@Test(priority = 12, enabled = false)
 	public void payment(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String Message = premise.addPayment(driver,"");

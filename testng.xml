@@ -5,8 +5,9 @@
 	<test thread-count="5" name="FireFoxTest">
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
-			<class name="qa.test.TestPremiseAppTestServerSfbo" />
+			<class name="qa.test.TestPremiseAppTestServerSf" />
 		</classes>
 	</test>
+	
 	
 </suite> <!-- Suite -->

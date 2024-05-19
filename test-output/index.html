@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="qa.test.TestPremiseAppTestServerSfbo" class="method navigator-link" hash-for-method="fillOperatingSchedule(public void qa.test.TestPremiseAppTestServerSfbo.fillOperatingSchedule(java.lang.reflect.Method))">fillOperatingSchedule(public void qa.test.TestPremiseAppTestServerSfbo.fillOperatingSchedule(java.lang.reflect.Method))</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,7 +103,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="qa.test.TestPremiseAppTestServerSfbo" class="method navigator-link" hash-for-method="openLa_03LoginUrl(public void qa.test.TestPremiseAppTestServerSfbo.openLa_03LoginUrl(java.lang.reflect.Method))">openLa_03LoginUrl(public void qa.test.TestPremiseAppTestServerSfbo.openLa_03LoginUrl(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="qa.test.TestPremiseAppTestServerSf" class="method navigator-link" hash-for-method="fillOperatingSchedule(public void qa.test.TestPremiseAppTestServerSf.fillOperatingSchedule(java.lang.reflect.Method))">fillOperatingSchedule(public void qa.test.TestPremiseAppTestServerSf.fillOperatingSchedule(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="qa.test.TestPremiseAppTestServerSf" class="method navigator-link" hash-for-method="openLa_03LoginUrl(public void qa.test.TestPremiseAppTestServerSf.openLa_03LoginUrl(java.lang.reflect.Method))">openLa_03LoginUrl(public void qa.test.TestPremiseAppTestServerSf.openLa_03LoginUrl(java.lang.reflect.Method))</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -132,46 +123,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">qa.test.TestPremiseAppTestServerSfbo</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="fillOperatingSchedule(public void qa.test.TestPremiseAppTestServerSfbo.fillOperatingSchedule(java.lang.reflect.Method))">
-                  </a> <!-- fillOperatingSchedule(public void qa.test.TestPremiseAppTestServerSfbo.fillOperatingSchedule(java.lang.reflect.Method)) -->
-                  <span class="method-name">fillOperatingSchedule</span>
-                  <span class="parameters">(public void qa.test.TestPremiseAppTestServerSfbo.fillOperatingSchedule(java.lang.reflect.Method))</span>
-                  <div class="stack-trace">junit.framework.ComparisonFailure: expected:&lt;Success : Operating schedule filled successfully&gt; but was:&lt;Error : There are some problemExpected condition failed: waiting for element to be clickable: [[FirefoxDriver: firefox on windows (69e62f3e-952c-4a5b-a6e1-4b3ccf965f6c)] -&gt; xpath: (//a/span[@class=&apos;text&apos; and text()=&apos;00:00&apos;])[1]] (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.3, moz:accessibilityChecks: false, moz:buildID: 20240425211020, moz:debuggerAddress: 127.0.0.1:35497, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20164, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:35497/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 69e62f3e-952c-4a5b-a6e1-4b3ccf965f6c&gt;
-	at junit.framework.Assert.assertEquals(Assert.java:81)
-	at junit.framework.Assert.assertEquals(Assert.java:87)
-	at qa.test.TestPremiseAppTestServerSfbo.fillOperatingSchedule(TestPremiseAppTestServerSfbo.java:136)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">qa.test.TestPremiseAppTestServerSfbo</span>
+              <span class="class-name">qa.test.TestPremiseAppTestServerSf</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="openLa_03LoginUrl(public void qa.test.TestPremiseAppTestServerSfbo.openLa_03LoginUrl(java.lang.reflect.Method))">
-                  </a> <!-- openLa_03LoginUrl(public void qa.test.TestPremiseAppTestServerSfbo.openLa_03LoginUrl(java.lang.reflect.Method)) -->
+                  <a name="fillOperatingSchedule(public void qa.test.TestPremiseAppTestServerSf.fillOperatingSchedule(java.lang.reflect.Method))">
+                  </a> <!-- fillOperatingSchedule(public void qa.test.TestPremiseAppTestServerSf.fillOperatingSchedule(java.lang.reflect.Method)) -->
+                  <span class="method-name">fillOperatingSchedule</span>
+                  <span class="parameters">(public void qa.test.TestPremiseAppTestServerSf.fillOperatingSchedule(java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openLa_03LoginUrl(public void qa.test.TestPremiseAppTestServerSf.openLa_03LoginUrl(java.lang.reflect.Method))">
+                  </a> <!-- openLa_03LoginUrl(public void qa.test.TestPremiseAppTestServerSf.openLa_03LoginUrl(java.lang.reflect.Method)) -->
                   <span class="method-name">openLa_03LoginUrl</span>
-                  <span class="parameters">(public void qa.test.TestPremiseAppTestServerSfbo.openLa_03LoginUrl(java.lang.reflect.Method))</span>
+                  <span class="parameters">(public void qa.test.TestPremiseAppTestServerSf.openLa_03LoginUrl(java.lang.reflect.Method))</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -189,7 +160,7 @@ Session ID: 69e62f3e-952c-4a5b-a6e1-4b3ccf965f6c&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;FireFoxTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;qa.test.TestPremiseAppTestServerSfbo&quot;/&gt;
+      &lt;class name=&quot;qa.test.TestPremiseAppTestServerSf&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- FireFoxTest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -232,17 +203,17 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'openLa_03LoginUrl')
-data.setCell(0, 2, 'qa.test.TestPremiseAppTestServerSfbo')
-data.setCell(0, 3, 41070);
+data.setCell(0, 2, 'qa.test.TestPremiseAppTestServerSf')
+data.setCell(0, 3, 36149);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'fillOperatingSchedule')
-data.setCell(1, 2, 'qa.test.TestPremiseAppTestServerSfbo')
-data.setCell(1, 3, 11035);
+data.setCell(1, 2, 'qa.test.TestPremiseAppTestServerSf')
+data.setCell(1, 3, 10184);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 52 seconds</span>
+              <span class="suite-total-time">Total running time: 46 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -257,33 +228,31 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">11 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">qa.test.TestPremiseAppTestServerSfbo</span>
+              <span class="ignored-class-name">qa.test.TestPremiseAppTestServerSf</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">fillBusinessDetails</span>
-                <br/>
-                <span class="ignored-method-name">fillingLicenceDuration</span>
-                <br/>
-                <span class="ignored-method-name">fillPremisesDetails</span>
-                <br/>
-                <span class="ignored-method-name">uploadApplicationEvidence</span>
-                <br/>
-                <span class="ignored-method-name">confirmInformationTrue</span>
-                <br/>
-                <span class="ignored-method-name">fillingApplicantDetails</span>
-                <br/>
                 <span class="ignored-method-name">fillingDesignatedPremisesSupervisor</span>
-                <br/>
-                <span class="ignored-method-name">fillBusinessHours</span>
                 <br/>
                 <span class="ignored-method-name">payment</span>
                 <br/>
-                <span class="ignored-method-name">fillLicenceObjectives</span>
-                <br/>
                 <span class="ignored-method-name">fillDeclaration</span>
+                <br/>
+                <span class="ignored-method-name">fillBusinessHours</span>
+                <br/>
+                <span class="ignored-method-name">fillingApplicantDetails</span>
+                <br/>
+                <span class="ignored-method-name">fillPremisesDetails</span>
+                <br/>
+                <span class="ignored-method-name">confirmInformationtrue</span>
+                <br/>
+                <span class="ignored-method-name">fillingLicenceDuration</span>
+                <br/>
+                <span class="ignored-method-name">uploadApplicationEvidence</span>
+                <br/>
+                <span class="ignored-method-name">fillLicenceObjectives</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -295,32 +264,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">qa.test.TestPremiseAppTestServerSfbo</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">qa.test.TestPremiseAppTestServerSf</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTestMethod(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">openLa_03LoginUrl(public void qa.test.TestPremiseAppTestServerSfbo.openLa_03LoginUrl(java.lang.reflect.Method))</span>
-                <span class="method-start">7735 ms</span>
+                <span class="method-name">openLa_03LoginUrl(public void qa.test.TestPremiseAppTestServerSf.openLa_03LoginUrl(java.lang.reflect.Method))</span>
+                <span class="method-start">4826 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=openLa_03LoginUrl status=SUCCESS method=TestPremiseAppTestServerSfbo.openLa_03Login...)</span>
-                <span class="method-start">48816 ms</span>
+                <span class="method-name">afterMethod([TestResult name=openLa_03LoginUrl status=SUCCESS method=TestPremiseAppTestServerSf.openLa_03LoginUr...)</span>
+                <span class="method-start">40981 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">fillOperatingSchedule(public void qa.test.TestPremiseAppTestServerSfbo.fillOperatingSchedule(java.lang.reflect.Method))</span>
-                <span class="method-start">48858 ms</span>
+                <span class="method-name">fillOperatingSchedule(public void qa.test.TestPremiseAppTestServerSf.fillOperatingSchedule(java.lang.reflect.Method))</span>
+                <span class="method-start">40999 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=fillOperatingSchedule status=FAILURE method=TestPremiseAppTestServerSfbo.fillOperat...)</span>
-                <span class="method-start">59900 ms</span>
+                <span class="method-name">afterMethod([TestResult name=fillOperatingSchedule status=SUCCESS method=TestPremiseAppTestServerSf.fillOperatin...)</span>
+                <span class="method-start">51185 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">60193 ms</span>
+                <span class="method-start">51187 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
