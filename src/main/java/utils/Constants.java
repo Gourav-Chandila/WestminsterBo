@@ -29,7 +29,11 @@ public class Constants {
 	public static String La_03UatSfboLoginUrl = "https://wcc-test-la03.farthestgate.co.uk/sfbo/control/loginSFBO";
 	public static String La_03PremiseAppUatSfbo = "https://wcc-test-la03.farthestgate.co.uk/sfbo/control/premiseapplication";
 
+	// Front office TestServer
+	public static String La_03TestServerSfLoginUrl = "https://10.3.97.4:7444/sf/control/loginSF";
+	public static String La_03TestServerPremiseAppSf = "https://10.3.97.4:7444/sf/control/premiseapplication";
+	
 	// Back office TestServer
 	public static String La_03TestServerSfboLoginUrl = "https://10.3.97.4:7444/sfbo/control/loginSFBO";
-	public static String La_03TestServerPremiseAppUatSfbo = "https://10.3.97.4:7444/sfbo/control/premiseapplication";
+	public static String La_03TestServerPremiseAppSfbo = "https://10.3.97.4:7444/sfbo/control/premiseapplication";
 }
