@@ -2,10 +2,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-	<test thread-count="5" name="FireFoxTest">
+	
+
+	<test thread-count="5" name="FireFoxTest2">
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
-			<class name="qa.test.TestPremiseAppTestServerSf" />
+			<class name="qa.test.TestPremiseAppUatSf" />
+		</classes>
+	</test>
+	<test thread-count="5" name="FireFoxTest3">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="qa.test.TestPremiseAppUatSfbo" />
 		</classes>
 	</test>
 	

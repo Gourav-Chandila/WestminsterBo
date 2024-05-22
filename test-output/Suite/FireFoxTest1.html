@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>FireFoxTest1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>10/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu May 16 13:33:56 IST 2024</td>
+<td>Started on:</td><td>Wed May 22 14:43:04 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>82 seconds (82724 ms)</td>
+<tr><td>Total time:</td><td>107 seconds (107825 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,68 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='qa.test.TestPremiseAppUatSfbo.fillBusinessHours()'><b>fillBusinessHours</b><br>Test class: qa.test.TestPremiseAppUatSfbo<br>Parameters: public void qa.test.TestPremiseAppUatSfbo.fillBusinessHours(java.lang.reflect.Method)</td>
-<td><div><pre>junit.framework.ComparisonFailure: expected:&lt;Success : Business hours filled successfully&gt; but was:&lt;Error : There are some problemExpected condition failed: waiting for element to be clickable: [[FirefoxDriver: firefox on windows (c62fdaa5-986b-4f8c-b674-31f8d23e82c3)] -&gt; xpath: (//input[@type=&apos;checkbox&apos; and @name=&apos;openclose&apos;])[7]] (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.3, moz:accessibilityChecks: false, moz:buildID: 20240425211020, moz:debuggerAddress: 127.0.0.1:42500, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9892, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:42500/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: c62fdaa5-986b-4f8c-b674-31f8d23e82c3&gt;
-	at junit.framework.Assert.assertEquals(Assert.java:81)
-	at junit.framework.Assert.assertEquals(Assert.java:87)
-	at qa.test.TestPremiseAppUatSfbo.fillBusinessHours(TestPremiseAppUatSfbo.java:127)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1821786174", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1821786174'><pre>junit.framework.ComparisonFailure: expected:&lt;Success : Business hours filled successfully&gt; but was:&lt;Error : There are some problemExpected condition failed: waiting for element to be clickable: [[FirefoxDriver: firefox on windows (c62fdaa5-986b-4f8c-b674-31f8d23e82c3)] -&gt; xpath: (//input[@type=&apos;checkbox&apos; and @name=&apos;openclose&apos;])[7]] (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.3, moz:accessibilityChecks: false, moz:buildID: 20240425211020, moz:debuggerAddress: 127.0.0.1:42500, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9892, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:42500/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: c62fdaa5-986b-4f8c-b674-31f8d23e82c3&gt;
-	at junit.framework.Assert.assertEquals(Assert.java:81)
-	at junit.framework.Assert.assertEquals(Assert.java:87)
-	at qa.test.TestPremiseAppUatSfbo.fillBusinessHours(TestPremiseAppUatSfbo.java:127)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>11</td>
-<td>qa.test.TestPremiseAppUatSfbo@52f27fbd</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -138,55 +76,70 @@ Session ID: c62fdaa5-986b-4f8c-b674-31f8d23e82c3&gt;
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='qa.test.TestPremiseAppUatSfbo.fillingDesignatedPremisesSupervisor()'><b>fillingDesignatedPremisesSupervisor</b><br>Test class: qa.test.TestPremiseAppUatSfbo<br>Parameters: public void qa.test.TestPremiseAppUatSfbo.fillingDesignatedPremisesSupervisor(java.lang.reflect.Method)</td>
+<td title='qa.test.TestPremiseAppTestServerSfbo.fillingDesignatedPremisesSupervisor()'><b>fillingDesignatedPremisesSupervisor</b><br>Test class: qa.test.TestPremiseAppTestServerSfbo<br>Parameters: public void qa.test.TestPremiseAppTestServerSfbo.fillingDesignatedPremisesSupervisor(java.lang.reflect.Method)</td>
 <td></td>
-<td>9</td>
-<td>qa.test.TestPremiseAppUatSfbo@52f27fbd</td></tr>
+<td>6</td>
+<td>qa.test.TestPremiseAppTestServerSfbo@4d0d9fe7</td></tr>
 <tr>
-<td title='qa.test.TestPremiseAppUatSfbo.uploadApplicationEvidence()'><b>uploadApplicationEvidence</b><br>Test class: qa.test.TestPremiseAppUatSfbo<br>Parameters: public void qa.test.TestPremiseAppUatSfbo.uploadApplicationEvidence(java.lang.reflect.Method)</td>
+<td title='qa.test.TestPremiseAppTestServerSfbo.fillingLicenceDuration()'><b>fillingLicenceDuration</b><br>Test class: qa.test.TestPremiseAppTestServerSfbo<br>Parameters: public void qa.test.TestPremiseAppTestServerSfbo.fillingLicenceDuration(java.lang.reflect.Method)</td>
 <td></td>
-<td>3</td>
-<td>qa.test.TestPremiseAppUatSfbo@52f27fbd</td></tr>
+<td>0</td>
+<td>qa.test.TestPremiseAppTestServerSfbo@4d0d9fe7</td></tr>
 <tr>
-<td title='qa.test.TestPremiseAppUatSfbo.fillDeclaration()'><b>fillDeclaration</b><br>Test class: qa.test.TestPremiseAppUatSfbo<br>Parameters: public void qa.test.TestPremiseAppUatSfbo.fillDeclaration(java.lang.reflect.Method)</td>
-<td></td>
-<td>7</td>
-<td>qa.test.TestPremiseAppUatSfbo@52f27fbd</td></tr>
-<tr>
-<td title='qa.test.TestPremiseAppUatSfbo.fillBusinessDetails()'><b>fillBusinessDetails</b><br>Test class: qa.test.TestPremiseAppUatSfbo<br>Parameters: public void qa.test.TestPremiseAppUatSfbo.fillBusinessDetails(java.lang.reflect.Method)</td>
-<td></td>
-<td>4</td>
-<td>qa.test.TestPremiseAppUatSfbo@52f27fbd</td></tr>
-<tr>
-<td title='qa.test.TestPremiseAppUatSfbo.fillingApplicantDetails()'><b>fillingApplicantDetails</b><br>Test class: qa.test.TestPremiseAppUatSfbo<br>Parameters: public void qa.test.TestPremiseAppUatSfbo.fillingApplicantDetails(java.lang.reflect.Method)</td>
-<td></td>
-<td>13</td>
-<td>qa.test.TestPremiseAppUatSfbo@52f27fbd</td></tr>
-<tr>
-<td title='qa.test.TestPremiseAppUatSfbo.confirmInformationTrue()'><b>confirmInformationTrue</b><br>Test class: qa.test.TestPremiseAppUatSfbo<br>Parameters: public void qa.test.TestPremiseAppUatSfbo.confirmInformationTrue(java.lang.reflect.Method)</td>
+<td title='qa.test.TestPremiseAppTestServerSfbo.uploadApplicationEvidence()'><b>uploadApplicationEvidence</b><br>Test class: qa.test.TestPremiseAppTestServerSfbo<br>Parameters: public void qa.test.TestPremiseAppTestServerSfbo.uploadApplicationEvidence(java.lang.reflect.Method)</td>
 <td></td>
 <td>1</td>
-<td>qa.test.TestPremiseAppUatSfbo@52f27fbd</td></tr>
+<td>qa.test.TestPremiseAppTestServerSfbo@4d0d9fe7</td></tr>
 <tr>
-<td title='qa.test.TestPremiseAppUatSfbo.fillLicenceObjectives()'><b>fillLicenceObjectives</b><br>Test class: qa.test.TestPremiseAppUatSfbo<br>Parameters: public void qa.test.TestPremiseAppUatSfbo.fillLicenceObjectives(java.lang.reflect.Method)</td>
+<td title='qa.test.TestPremiseAppTestServerSfbo.openLa_03LoginUrl()'><b>openLa_03LoginUrl</b><br>Test class: qa.test.TestPremiseAppTestServerSfbo<br>Parameters: public void qa.test.TestPremiseAppTestServerSfbo.openLa_03LoginUrl(java.lang.reflect.Method)</td>
+<td></td>
+<td>18</td>
+<td>qa.test.TestPremiseAppTestServerSfbo@4d0d9fe7</td></tr>
+<tr>
+<td title='qa.test.TestPremiseAppTestServerSfbo.confirmInformationTrue()'><b>confirmInformationTrue</b><br>Test class: qa.test.TestPremiseAppTestServerSfbo<br>Parameters: public void qa.test.TestPremiseAppTestServerSfbo.confirmInformationTrue(java.lang.reflect.Method)</td>
 <td></td>
 <td>2</td>
-<td>qa.test.TestPremiseAppUatSfbo@52f27fbd</td></tr>
+<td>qa.test.TestPremiseAppTestServerSfbo@4d0d9fe7</td></tr>
 <tr>
-<td title='qa.test.TestPremiseAppUatSfbo.fillPremisesDetails()'><b>fillPremisesDetails</b><br>Test class: qa.test.TestPremiseAppUatSfbo<br>Parameters: public void qa.test.TestPremiseAppUatSfbo.fillPremisesDetails(java.lang.reflect.Method)</td>
+<td title='qa.test.TestPremiseAppTestServerSfbo.fillLicenceObjectives()'><b>fillLicenceObjectives</b><br>Test class: qa.test.TestPremiseAppTestServerSfbo<br>Parameters: public void qa.test.TestPremiseAppTestServerSfbo.fillLicenceObjectives(java.lang.reflect.Method)</td>
 <td></td>
-<td>11</td>
-<td>qa.test.TestPremiseAppUatSfbo@52f27fbd</td></tr>
+<td>0</td>
+<td>qa.test.TestPremiseAppTestServerSfbo@4d0d9fe7</td></tr>
 <tr>
-<td title='qa.test.TestPremiseAppUatSfbo.openLa_03LoginUrl()'><b>openLa_03LoginUrl</b><br>Test class: qa.test.TestPremiseAppUatSfbo<br>Parameters: public void qa.test.TestPremiseAppUatSfbo.openLa_03LoginUrl(java.lang.reflect.Method)</td>
+<td title='qa.test.TestPremiseAppTestServerSfbo.fillBusinessDetails()'><b>fillBusinessDetails</b><br>Test class: qa.test.TestPremiseAppTestServerSfbo<br>Parameters: public void qa.test.TestPremiseAppTestServerSfbo.fillBusinessDetails(java.lang.reflect.Method)</td>
 <td></td>
-<td>9</td>
-<td>qa.test.TestPremiseAppUatSfbo@52f27fbd</td></tr>
+<td>14</td>
+<td>qa.test.TestPremiseAppTestServerSfbo@4d0d9fe7</td></tr>
 <tr>
-<td title='qa.test.TestPremiseAppUatSfbo.fillingLicenceDuration()'><b>fillingLicenceDuration</b><br>Test class: qa.test.TestPremiseAppUatSfbo<br>Parameters: public void qa.test.TestPremiseAppUatSfbo.fillingLicenceDuration(java.lang.reflect.Method)</td>
+<td title='qa.test.TestPremiseAppTestServerSfbo.fillOperatingSchedule()'><b>fillOperatingSchedule</b><br>Test class: qa.test.TestPremiseAppTestServerSfbo<br>Parameters: public void qa.test.TestPremiseAppTestServerSfbo.fillOperatingSchedule(java.lang.reflect.Method)</td>
 <td></td>
-<td>5</td>
-<td>qa.test.TestPremiseAppUatSfbo@52f27fbd</td></tr>
+<td>14</td>
+<td>qa.test.TestPremiseAppTestServerSfbo@4d0d9fe7</td></tr>
+<tr>
+<td title='qa.test.TestPremiseAppTestServerSfbo.fillBusinessHours()'><b>fillBusinessHours</b><br>Test class: qa.test.TestPremiseAppTestServerSfbo<br>Parameters: public void qa.test.TestPremiseAppTestServerSfbo.fillBusinessHours(java.lang.reflect.Method)</td>
+<td></td>
+<td>12</td>
+<td>qa.test.TestPremiseAppTestServerSfbo@4d0d9fe7</td></tr>
+<tr>
+<td title='qa.test.TestPremiseAppTestServerSfbo.fillPremisesDetails()'><b>fillPremisesDetails</b><br>Test class: qa.test.TestPremiseAppTestServerSfbo<br>Parameters: public void qa.test.TestPremiseAppTestServerSfbo.fillPremisesDetails(java.lang.reflect.Method)</td>
+<td></td>
+<td>8</td>
+<td>qa.test.TestPremiseAppTestServerSfbo@4d0d9fe7</td></tr>
+<tr>
+<td title='qa.test.TestPremiseAppTestServerSfbo.fillDeclaration()'><b>fillDeclaration</b><br>Test class: qa.test.TestPremiseAppTestServerSfbo<br>Parameters: public void qa.test.TestPremiseAppTestServerSfbo.fillDeclaration(java.lang.reflect.Method)</td>
+<td></td>
+<td>7</td>
+<td>qa.test.TestPremiseAppTestServerSfbo@4d0d9fe7</td></tr>
+<tr>
+<td title='qa.test.TestPremiseAppTestServerSfbo.payment()'><b>payment</b><br>Test class: qa.test.TestPremiseAppTestServerSfbo<br>Parameters: public void qa.test.TestPremiseAppTestServerSfbo.payment(java.lang.reflect.Method)</td>
+<td></td>
+<td>4</td>
+<td>qa.test.TestPremiseAppTestServerSfbo@4d0d9fe7</td></tr>
+<tr>
+<td title='qa.test.TestPremiseAppTestServerSfbo.fillingApplicantDetails()'><b>fillingApplicantDetails</b><br>Test class: qa.test.TestPremiseAppTestServerSfbo<br>Parameters: public void qa.test.TestPremiseAppTestServerSfbo.fillingApplicantDetails(java.lang.reflect.Method)</td>
+<td></td>
+<td>10</td>
+<td>qa.test.TestPremiseAppTestServerSfbo@4d0d9fe7</td></tr>
 </table><p>
 </body>
 </html>

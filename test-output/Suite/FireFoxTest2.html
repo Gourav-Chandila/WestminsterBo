@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>FireFoxTest2</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 20 01:52:44 IST 2024</td>
+<td>Started on:</td><td>Wed May 22 14:50:10 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>79 seconds (79474 ms)</td>
+<tr><td>Total time:</td><td>104 seconds (104334 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,27 +76,31 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='qa.test.TestPremiseAppTestServerSf.payment()'><b>payment</b><br>Test class: qa.test.TestPremiseAppTestServerSf<br>Parameters: public void qa.test.TestPremiseAppTestServerSf.payment(java.lang.reflect.Method)</td>
-<td><div><pre>junit.framework.ComparisonFailure: expected:&lt;Payment successful&gt; but was:&lt;Error :Expected condition failed: waiting for element to be clickable: By.xpath: //button[text()=&apos;OK&apos;] (tried for 8 second(s) with 500 milliseconds interval)
+<td title='qa.test.TestPremiseAppUatSf.payment()'><b>payment</b><br>Test class: qa.test.TestPremiseAppUatSf<br>Parameters: public void qa.test.TestPremiseAppUatSf.payment(java.lang.reflect.Method)</td>
+<td><div><pre>junit.framework.ComparisonFailure: expected:&lt;Payment successful&gt; but was:&lt;Error :Unable to locate element: #Field\-numberInput
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.3, moz:accessibilityChecks: false, moz:buildID: 20240425211020, moz:debuggerAddress: 127.0.0.1:16821, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20876, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:16821/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: bb108206-08e3-469d-ac14-420c9508c73d&gt;
+Command: [02e9ce0b-c8aa-4497-9b82-b6737ee5ebe4, findElement {using=id, value=Field-numberInput}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.3, moz:accessibilityChecks: false, moz:buildID: 20240425211020, moz:debuggerAddress: 127.0.0.1:22173, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20536, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:22173/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 02e9ce0b-c8aa-4497-9b82-b6737ee5ebe4&gt;
 	at junit.framework.Assert.assertEquals(Assert.java:81)
 	at junit.framework.Assert.assertEquals(Assert.java:87)
-	at qa.test.TestPremiseAppTestServerSf.payment(TestPremiseAppTestServerSf.java:160)
+	at qa.test.TestPremiseAppUatSf.payment(TestPremiseAppUatSf.java:160)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1925835770", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1925835770'><pre>junit.framework.ComparisonFailure: expected:&lt;Payment successful&gt; but was:&lt;Error :Expected condition failed: waiting for element to be clickable: By.xpath: //button[text()=&apos;OK&apos;] (tried for 8 second(s) with 500 milliseconds interval)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace6633388", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace6633388'><pre>junit.framework.ComparisonFailure: expected:&lt;Payment successful&gt; but was:&lt;Error :Unable to locate element: #Field\-numberInput
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.3, moz:accessibilityChecks: false, moz:buildID: 20240425211020, moz:debuggerAddress: 127.0.0.1:16821, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20876, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:16821/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: bb108206-08e3-469d-ac14-420c9508c73d&gt;
+Command: [02e9ce0b-c8aa-4497-9b82-b6737ee5ebe4, findElement {using=id, value=Field-numberInput}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.3, moz:accessibilityChecks: false, moz:buildID: 20240425211020, moz:debuggerAddress: 127.0.0.1:22173, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20536, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:22173/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 02e9ce0b-c8aa-4497-9b82-b6737ee5ebe4&gt;
 	at junit.framework.Assert.assertEquals(Assert.java:81)
 	at junit.framework.Assert.assertEquals(Assert.java:87)
-	at qa.test.TestPremiseAppTestServerSf.payment(TestPremiseAppTestServerSf.java:160)
+	at qa.test.TestPremiseAppUatSf.payment(TestPremiseAppUatSf.java:160)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -126,8 +130,8 @@ Session ID: bb108206-08e3-469d-ac14-420c9508c73d&gt;
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>8</td>
-<td>qa.test.TestPremiseAppTestServerSf@4a8355dd</td></tr>
+<td>12</td>
+<td>qa.test.TestPremiseAppUatSf@645aa696</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -138,50 +142,60 @@ Session ID: bb108206-08e3-469d-ac14-420c9508c73d&gt;
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='qa.test.TestPremiseAppTestServerSf.openLa_03LoginUrl()'><b>openLa_03LoginUrl</b><br>Test class: qa.test.TestPremiseAppTestServerSf<br>Parameters: public void qa.test.TestPremiseAppTestServerSf.openLa_03LoginUrl(java.lang.reflect.Method)</td>
-<td></td>
-<td>30</td>
-<td>qa.test.TestPremiseAppTestServerSf@4a8355dd</td></tr>
-<tr>
-<td title='qa.test.TestPremiseAppTestServerSf.fillLicenceObjectives()'><b>fillLicenceObjectives</b><br>Test class: qa.test.TestPremiseAppTestServerSf<br>Parameters: public void qa.test.TestPremiseAppTestServerSf.fillLicenceObjectives(java.lang.reflect.Method)</td>
-<td></td>
-<td>0</td>
-<td>qa.test.TestPremiseAppTestServerSf@4a8355dd</td></tr>
-<tr>
-<td title='qa.test.TestPremiseAppTestServerSf.fillingApplicantDetails()'><b>fillingApplicantDetails</b><br>Test class: qa.test.TestPremiseAppTestServerSf<br>Parameters: public void qa.test.TestPremiseAppTestServerSf.fillingApplicantDetails(java.lang.reflect.Method)</td>
-<td></td>
-<td>10</td>
-<td>qa.test.TestPremiseAppTestServerSf@4a8355dd</td></tr>
-<tr>
-<td title='qa.test.TestPremiseAppTestServerSf.uploadApplicationEvidence()'><b>uploadApplicationEvidence</b><br>Test class: qa.test.TestPremiseAppTestServerSf<br>Parameters: public void qa.test.TestPremiseAppTestServerSf.uploadApplicationEvidence(java.lang.reflect.Method)</td>
-<td></td>
-<td>1</td>
-<td>qa.test.TestPremiseAppTestServerSf@4a8355dd</td></tr>
-<tr>
-<td title='qa.test.TestPremiseAppTestServerSf.fillingLicenceDuration()'><b>fillingLicenceDuration</b><br>Test class: qa.test.TestPremiseAppTestServerSf<br>Parameters: public void qa.test.TestPremiseAppTestServerSf.fillingLicenceDuration(java.lang.reflect.Method)</td>
-<td></td>
-<td>0</td>
-<td>qa.test.TestPremiseAppTestServerSf@4a8355dd</td></tr>
-<tr>
-<td title='qa.test.TestPremiseAppTestServerSf.fillDeclaration()'><b>fillDeclaration</b><br>Test class: qa.test.TestPremiseAppTestServerSf<br>Parameters: public void qa.test.TestPremiseAppTestServerSf.fillDeclaration(java.lang.reflect.Method)</td>
-<td></td>
-<td>7</td>
-<td>qa.test.TestPremiseAppTestServerSf@4a8355dd</td></tr>
-<tr>
-<td title='qa.test.TestPremiseAppTestServerSf.confirmInformationtrue()'><b>confirmInformationtrue</b><br>Test class: qa.test.TestPremiseAppTestServerSf<br>Parameters: public void qa.test.TestPremiseAppTestServerSf.confirmInformationtrue(java.lang.reflect.Method)</td>
-<td></td>
-<td>1</td>
-<td>qa.test.TestPremiseAppTestServerSf@4a8355dd</td></tr>
-<tr>
-<td title='qa.test.TestPremiseAppTestServerSf.fillingDesignatedPremisesSupervisor()'><b>fillingDesignatedPremisesSupervisor</b><br>Test class: qa.test.TestPremiseAppTestServerSf<br>Parameters: public void qa.test.TestPremiseAppTestServerSf.fillingDesignatedPremisesSupervisor(java.lang.reflect.Method)</td>
+<td title='qa.test.TestPremiseAppUatSf.fillingDesignatedPremisesSupervisor()'><b>fillingDesignatedPremisesSupervisor</b><br>Test class: qa.test.TestPremiseAppUatSf<br>Parameters: public void qa.test.TestPremiseAppUatSf.fillingDesignatedPremisesSupervisor(java.lang.reflect.Method)</td>
 <td></td>
 <td>6</td>
-<td>qa.test.TestPremiseAppTestServerSf@4a8355dd</td></tr>
+<td>qa.test.TestPremiseAppUatSf@645aa696</td></tr>
 <tr>
-<td title='qa.test.TestPremiseAppTestServerSf.fillPremisesDetails()'><b>fillPremisesDetails</b><br>Test class: qa.test.TestPremiseAppTestServerSf<br>Parameters: public void qa.test.TestPremiseAppTestServerSf.fillPremisesDetails(java.lang.reflect.Method)</td>
+<td title='qa.test.TestPremiseAppUatSf.fillLicenceObjectives()'><b>fillLicenceObjectives</b><br>Test class: qa.test.TestPremiseAppUatSf<br>Parameters: public void qa.test.TestPremiseAppUatSf.fillLicenceObjectives(java.lang.reflect.Method)</td>
+<td></td>
+<td>0</td>
+<td>qa.test.TestPremiseAppUatSf@645aa696</td></tr>
+<tr>
+<td title='qa.test.TestPremiseAppUatSf.openLa_03LoginUrl()'><b>openLa_03LoginUrl</b><br>Test class: qa.test.TestPremiseAppUatSf<br>Parameters: public void qa.test.TestPremiseAppUatSf.openLa_03LoginUrl(java.lang.reflect.Method)</td>
+<td></td>
+<td>13</td>
+<td>qa.test.TestPremiseAppUatSf@645aa696</td></tr>
+<tr>
+<td title='qa.test.TestPremiseAppUatSf.fillPremisesDetails()'><b>fillPremisesDetails</b><br>Test class: qa.test.TestPremiseAppUatSf<br>Parameters: public void qa.test.TestPremiseAppUatSf.fillPremisesDetails(java.lang.reflect.Method)</td>
 <td></td>
 <td>8</td>
-<td>qa.test.TestPremiseAppTestServerSf@4a8355dd</td></tr>
+<td>qa.test.TestPremiseAppUatSf@645aa696</td></tr>
+<tr>
+<td title='qa.test.TestPremiseAppUatSf.fillingLicenceDuration()'><b>fillingLicenceDuration</b><br>Test class: qa.test.TestPremiseAppUatSf<br>Parameters: public void qa.test.TestPremiseAppUatSf.fillingLicenceDuration(java.lang.reflect.Method)</td>
+<td></td>
+<td>0</td>
+<td>qa.test.TestPremiseAppUatSf@645aa696</td></tr>
+<tr>
+<td title='qa.test.TestPremiseAppUatSf.fillOperatingSchedule()'><b>fillOperatingSchedule</b><br>Test class: qa.test.TestPremiseAppUatSf<br>Parameters: public void qa.test.TestPremiseAppUatSf.fillOperatingSchedule(java.lang.reflect.Method)</td>
+<td></td>
+<td>15</td>
+<td>qa.test.TestPremiseAppUatSf@645aa696</td></tr>
+<tr>
+<td title='qa.test.TestPremiseAppUatSf.confirmInformationtrue()'><b>confirmInformationtrue</b><br>Test class: qa.test.TestPremiseAppUatSf<br>Parameters: public void qa.test.TestPremiseAppUatSf.confirmInformationtrue(java.lang.reflect.Method)</td>
+<td></td>
+<td>3</td>
+<td>qa.test.TestPremiseAppUatSf@645aa696</td></tr>
+<tr>
+<td title='qa.test.TestPremiseAppUatSf.uploadApplicationEvidence()'><b>uploadApplicationEvidence</b><br>Test class: qa.test.TestPremiseAppUatSf<br>Parameters: public void qa.test.TestPremiseAppUatSf.uploadApplicationEvidence(java.lang.reflect.Method)</td>
+<td></td>
+<td>1</td>
+<td>qa.test.TestPremiseAppUatSf@645aa696</td></tr>
+<tr>
+<td title='qa.test.TestPremiseAppUatSf.fillingApplicantDetails()'><b>fillingApplicantDetails</b><br>Test class: qa.test.TestPremiseAppUatSf<br>Parameters: public void qa.test.TestPremiseAppUatSf.fillingApplicantDetails(java.lang.reflect.Method)</td>
+<td></td>
+<td>11</td>
+<td>qa.test.TestPremiseAppUatSf@645aa696</td></tr>
+<tr>
+<td title='qa.test.TestPremiseAppUatSf.fillBusinessHours()'><b>fillBusinessHours</b><br>Test class: qa.test.TestPremiseAppUatSf<br>Parameters: public void qa.test.TestPremiseAppUatSf.fillBusinessHours(java.lang.reflect.Method)</td>
+<td></td>
+<td>13</td>
+<td>qa.test.TestPremiseAppUatSf@645aa696</td></tr>
+<tr>
+<td title='qa.test.TestPremiseAppUatSf.fillDeclaration()'><b>fillDeclaration</b><br>Test class: qa.test.TestPremiseAppUatSf<br>Parameters: public void qa.test.TestPremiseAppUatSf.fillDeclaration(java.lang.reflect.Method)</td>
+<td></td>
+<td>7</td>
+<td>qa.test.TestPremiseAppUatSf@645aa696</td></tr>
 </table><p>
 </body>
 </html>

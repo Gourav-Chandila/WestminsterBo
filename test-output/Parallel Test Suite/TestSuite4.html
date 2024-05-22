@@ -1,0 +1,715 @@
+<html>
+<head>
+<title>TestNG:  TestSuite4</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestSuite4</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/16</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 20 02:17:41 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (314 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='qa.test.TestSec50UatSf.beforeTestMethod()'><b>beforeTestMethod</b><br>Test class: qa.test.TestSec50UatSf</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1658676267", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1658676267'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>-1716151661</td>
+<td>qa.test.TestSec50UatSf@3de8f619</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='qa.test.TestSec50UatSf.afterMethod()'><b>afterMethod</b><br>Test class: qa.test.TestSec50UatSf</td>
+<td></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSf@3de8f619</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSf.afterMethod()'><b>afterMethod</b><br>Test class: qa.test.TestSec50UatSf</td>
+<td></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSf@3de8f619</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSfbo.afterMethod()'><b>afterMethod</b><br>Test class: qa.test.TestSec50UatSfbo</td>
+<td></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSfbo@2ab4bc72</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSfbo.beforeTestMethod()'><b>beforeTestMethod</b><br>Test class: qa.test.TestSec50UatSfbo</td>
+<td></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSfbo@2ab4bc72</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSf.afterMethod()'><b>afterMethod</b><br>Test class: qa.test.TestSec50UatSf</td>
+<td></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSf@3de8f619</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSf.afterMethod()'><b>afterMethod</b><br>Test class: qa.test.TestSec50UatSf</td>
+<td></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSf@3de8f619</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSfbo.afterMethod()'><b>afterMethod</b><br>Test class: qa.test.TestSec50UatSfbo</td>
+<td></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSfbo@2ab4bc72</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSf.afterMethod()'><b>afterMethod</b><br>Test class: qa.test.TestSec50UatSf</td>
+<td></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSf@3de8f619</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSfbo.afterMethod()'><b>afterMethod</b><br>Test class: qa.test.TestSec50UatSfbo</td>
+<td></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSfbo@2ab4bc72</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSfbo.afterMethod()'><b>afterMethod</b><br>Test class: qa.test.TestSec50UatSfbo</td>
+<td></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSfbo@2ab4bc72</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSf.afterMethod()'><b>afterMethod</b><br>Test class: qa.test.TestSec50UatSf</td>
+<td></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSf@3de8f619</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSf.afterMethod()'><b>afterMethod</b><br>Test class: qa.test.TestSec50UatSf</td>
+<td></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSf@3de8f619</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSfbo.afterMethod()'><b>afterMethod</b><br>Test class: qa.test.TestSec50UatSfbo</td>
+<td></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSfbo@2ab4bc72</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSf.afterMethod()'><b>afterMethod</b><br>Test class: qa.test.TestSec50UatSf</td>
+<td></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSf@3de8f619</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSfbo.afterMethod()'><b>afterMethod</b><br>Test class: qa.test.TestSec50UatSfbo</td>
+<td></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSfbo@2ab4bc72</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSf.afterTest()'><b>afterTest</b><br>Test class: qa.test.TestSec50UatSf</td>
+<td></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSf@3de8f619</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSf.afterMethod()'><b>afterMethod</b><br>Test class: qa.test.TestSec50UatSf</td>
+<td></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSf@3de8f619</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSfbo.afterMethod()'><b>afterMethod</b><br>Test class: qa.test.TestSec50UatSfbo</td>
+<td></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSfbo@2ab4bc72</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='qa.test.TestSec50UatSf.fillOperatorDetails()'><b>fillOperatorDetails</b><br>Test class: qa.test.TestSec50UatSf<br>Parameters: public void qa.test.TestSec50UatSf.fillOperatorDetails(java.lang.reflect.Method)</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace356456093", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace356456093'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSf@3de8f619</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSfbo.fillBusinessDetails()'><b>fillBusinessDetails</b><br>Test class: qa.test.TestSec50UatSfbo<br>Parameters: public void qa.test.TestSec50UatSfbo.fillBusinessDetails(java.lang.reflect.Method)</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1920338623", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1920338623'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSfbo@2ab4bc72</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSf.fillingApplicationDates()'><b>fillingApplicationDates</b><br>Test class: qa.test.TestSec50UatSf<br>Parameters: public void qa.test.TestSec50UatSf.fillingApplicationDates(java.lang.reflect.Method)</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace146734772", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace146734772'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSf@3de8f619</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSfbo.fillingApplicationDates()'><b>fillingApplicationDates</b><br>Test class: qa.test.TestSec50UatSfbo<br>Parameters: public void qa.test.TestSec50UatSfbo.fillingApplicationDates(java.lang.reflect.Method)</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1319549100", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1319549100'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSfbo@2ab4bc72</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSf.confirmInformationTrue()'><b>confirmInformationTrue</b><br>Test class: qa.test.TestSec50UatSf<br>Parameters: public void qa.test.TestSec50UatSf.confirmInformationTrue(java.lang.reflect.Method)</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace532432498", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace532432498'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSf@3de8f619</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSf.checkOrderSummary()'><b>checkOrderSummary</b><br>Test class: qa.test.TestSec50UatSf<br>Parameters: public void qa.test.TestSec50UatSf.checkOrderSummary(java.lang.reflect.Method)</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1817762678", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1817762678'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSf@3de8f619</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSf.fillingSiteDetails()'><b>fillingSiteDetails</b><br>Test class: qa.test.TestSec50UatSf<br>Parameters: public void qa.test.TestSec50UatSf.fillingSiteDetails(java.lang.reflect.Method)</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace562253708", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace562253708'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSf@3de8f619</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSfbo.fillingSiteDetails()'><b>fillingSiteDetails</b><br>Test class: qa.test.TestSec50UatSfbo<br>Parameters: public void qa.test.TestSec50UatSfbo.fillingSiteDetails(java.lang.reflect.Method)</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1839748679", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1839748679'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSfbo@2ab4bc72</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSf.fillSupervisorDetails()'><b>fillSupervisorDetails</b><br>Test class: qa.test.TestSec50UatSf<br>Parameters: public void qa.test.TestSec50UatSf.fillSupervisorDetails(java.lang.reflect.Method)</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace286062851", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace286062851'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSf@3de8f619</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSf.addDeclarations()'><b>addDeclarations</b><br>Test class: qa.test.TestSec50UatSf<br>Parameters: public void qa.test.TestSec50UatSf.addDeclarations(java.lang.reflect.Method)</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1226055942", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1226055942'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSf@3de8f619</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSf.OpenWestminsterBoUrl()'><b>OpenWestminsterBoUrl</b><br>Test class: qa.test.TestSec50UatSf<br>Parameters: public void qa.test.TestSec50UatSf.OpenWestminsterBoUrl(java.lang.reflect.Method)</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace512549631", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace512549631'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSf@3de8f619</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSfbo.checkOrderSummary()'><b>checkOrderSummary</b><br>Test class: qa.test.TestSec50UatSfbo<br>Parameters: public void qa.test.TestSec50UatSfbo.checkOrderSummary(java.lang.reflect.Method)</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace850263704", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace850263704'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSfbo@2ab4bc72</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSfbo.fillAboutTheWorkSection()'><b>fillAboutTheWorkSection</b><br>Test class: qa.test.TestSec50UatSfbo<br>Parameters: public void qa.test.TestSec50UatSfbo.fillAboutTheWorkSection(java.lang.reflect.Method)</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace207200046", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace207200046'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSfbo@2ab4bc72</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSfbo.OpenWestminsterBoUrl()'><b>OpenWestminsterBoUrl</b><br>Test class: qa.test.TestSec50UatSfbo<br>Parameters: public void qa.test.TestSec50UatSfbo.OpenWestminsterBoUrl(java.lang.reflect.Method)</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace867224425", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace867224425'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSfbo@2ab4bc72</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSfbo.addDeclarations()'><b>addDeclarations</b><br>Test class: qa.test.TestSec50UatSfbo<br>Parameters: public void qa.test.TestSec50UatSfbo.addDeclarations(java.lang.reflect.Method)</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace186509956", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace186509956'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSfbo@2ab4bc72</td></tr>
+<tr>
+<td title='qa.test.TestSec50UatSf.fillAboutTheWorkSection()'><b>fillAboutTheWorkSection</b><br>Test class: qa.test.TestSec50UatSf<br>Parameters: public void qa.test.TestSec50UatSf.fillAboutTheWorkSection(java.lang.reflect.Method)</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace842199310", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace842199310'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method beforeTestMethod but has not been marked @Optional or defined
+in Z:\Sysnomy\Appl\WestminsterBo\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>qa.test.TestSec50UatSf@3de8f619</td></tr>
+</table><p>
+</body>
+</html>

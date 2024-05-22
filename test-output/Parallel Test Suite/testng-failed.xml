@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [Parallel Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="TestSuite4(failed)">
+    <classes>
+      <class name="qa.test.TestSec50UatSfbo">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="addDeclarations"/>
+          <include name="OpenWestminsterBoUrl"/>
+          <include name="checkOrderSummary"/>
+          <include name="afterTest"/>
+          <include name="beforeTestMethod"/>
+          <include name="fillAboutTheWorkSection"/>
+          <include name="fillBusinessDetails"/>
+          <include name="fillingSiteDetails"/>
+          <include name="fillingApplicationDates"/>
+        </methods>
+      </class> <!-- qa.test.TestSec50UatSfbo -->
+      <class name="qa.test.TestSec50UatSf">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="fillSupervisorDetails"/>
+          <include name="confirmInformationTrue"/>
+          <include name="addDeclarations"/>
+          <include name="afterTest"/>
+          <include name="fillingApplicationDates"/>
+          <include name="checkOrderSummary"/>
+          <include name="beforeTestMethod"/>
+          <include name="fillingSiteDetails"/>
+          <include name="OpenWestminsterBoUrl"/>
+          <include name="fillOperatorDetails"/>
+          <include name="fillAboutTheWorkSection"/>
+        </methods>
+      </class> <!-- qa.test.TestSec50UatSf -->
+    </classes>
+  </test> <!-- TestSuite4(failed) -->
+  <test thread-count="4" parallel="tests" name="TestSuite2(failed)">
+    <classes>
+      <class name="qa.test.TestPremiseAppUatSf">
+        <methods>
+          <include name="fillPremisesDetails"/>
+          <include name="fillBusinessHours"/>
+          <include name="fillLicenceObjectives"/>
+          <include name="fillingDesignatedPremisesSupervisor"/>
+          <include name="fillDeclaration"/>
+          <include name="uploadApplicationEvidence"/>
+          <include name="fillOperatingSchedule"/>
+          <include name="confirmInformationtrue"/>
+          <include name="afterMethod"/>
+          <include name="fillingApplicantDetails"/>
+          <include name="openLa_03LoginUrl"/>
+          <include name="fillingLicenceDuration"/>
+          <include name="afterTest"/>
+          <include name="payment"/>
+          <include name="beforeTestMethod"/>
+        </methods>
+      </class> <!-- qa.test.TestPremiseAppUatSf -->
+      <class name="qa.test.TestPremiseAppUatSfbo">
+        <methods>
+          <include name="fillBusinessDetails"/>
+          <include name="openLa_03LoginUrl"/>
+          <include name="fillingLicenceDuration"/>
+          <include name="fillingApplicantDetails"/>
+          <include name="confirmInformationTrue"/>
+          <include name="fillLicenceObjectives"/>
+          <include name="beforeTestMethod"/>
+          <include name="payment"/>
+          <include name="afterMethod"/>
+          <include name="fillPremisesDetails"/>
+          <include name="fillingDesignatedPremisesSupervisor"/>
+          <include name="afterTest"/>
+          <include name="fillBusinessHours"/>
+          <include name="fillOperatingSchedule"/>
+          <include name="uploadApplicationEvidence"/>
+          <include name="fillDeclaration"/>
+        </methods>
+      </class> <!-- qa.test.TestPremiseAppUatSfbo -->
+    </classes>
+  </test> <!-- TestSuite2(failed) -->
+  <test thread-count="4" parallel="tests" name="TestSuite3(failed)">
+    <classes>
+      <class name="qa.test.TestSec50TestServerSf">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="OpenWestminsterBoUrl"/>
+          <include name="addDeclarations"/>
+          <include name="confirmInformationTrue"/>
+          <include name="payFees"/>
+          <include name="checkOrderSummary"/>
+          <include name="afterTest"/>
+          <include name="beforeTestMethod"/>
+          <include name="fillingSiteDetails"/>
+          <include name="fillAboutTheWorkSection"/>
+          <include name="fillingApplicationDates"/>
+          <include name="fillOperatorDetails"/>
+          <include name="fillSupervisorDetails"/>
+        </methods>
+      </class> <!-- qa.test.TestSec50TestServerSf -->
+      <class name="qa.test.TestSec50TestServerSfbo">
+        <methods>
+          <include name="fillSupervisorDetails"/>
+          <include name="fillOperatorDetails"/>
+          <include name="afterMethod"/>
+          <include name="fillAboutTheWorkSection"/>
+          <include name="afterTest"/>
+          <include name="fillBusinessDetails"/>
+          <include name="fillingSiteDetails"/>
+          <include name="payFees"/>
+          <include name="fillingApplicationDates"/>
+          <include name="beforeTestMethod"/>
+          <include name="checkOrderSummary"/>
+          <include name="addDeclarations"/>
+          <include name="OpenWestminsterBoUrl"/>
+        </methods>
+      </class> <!-- qa.test.TestSec50TestServerSfbo -->
+    </classes>
+  </test> <!-- TestSuite3(failed) -->
+  <test thread-count="4" parallel="tests" name="TestSuite1(failed)">
+    <classes>
+      <class name="qa.test.TestPremiseAppTestServerSf">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeTestMethod"/>
+          <include name="afterTest"/>
+          <include name="fillOperatingSchedule"/>
+          <include name="openLa_03LoginUrl"/>
+        </methods>
+      </class> <!-- qa.test.TestPremiseAppTestServerSf -->
+      <class name="qa.test.TestPremiseAppTestServerSfbo">
+        <methods>
+          <include name="confirmInformationTrue"/>
+          <include name="payment"/>
+          <include name="beforeTestMethod"/>
+          <include name="fillBusinessDetails"/>
+          <include name="fillingApplicantDetails"/>
+          <include name="openLa_03LoginUrl"/>
+          <include name="fillingLicenceDuration"/>
+          <include name="fillOperatingSchedule"/>
+          <include name="afterMethod"/>
+          <include name="uploadApplicationEvidence"/>
+          <include name="fillPremisesDetails"/>
+          <include name="afterTest"/>
+          <include name="fillDeclaration"/>
+          <include name="fillBusinessHours"/>
+          <include name="fillingDesignatedPremisesSupervisor"/>
+          <include name="fillLicenceObjectives"/>
+        </methods>
+      </class> <!-- qa.test.TestPremiseAppTestServerSfbo -->
+    </classes>
+  </test> <!-- TestSuite1(failed) -->
+</suite> <!-- Failed suite [Parallel Test Suite] -->
