@@ -1,5 +1,4 @@
-
-package qa.test;
+package qa.test.Section50;
 
 import java.lang.reflect.Method;
 
@@ -10,22 +9,22 @@ import org.testng.annotations.Test;
 import base.BaseTest;
 import junit.framework.Assert;
 import pageEvents.LoginPageEvents;
-import pageEvents.Sec50UatSfEvents;
+import pageEvents.Sec50UatSfboEvents;
 import utils.Constants;
 import utils.SeleniumUtils;
 
-public class TestSec50UatSf extends BaseTest {
+public class TestSec50TestServerSfbo extends BaseTest {
 	LoginPageEvents loginPg = new LoginPageEvents();
-	Sec50UatSfEvents sec50 = new Sec50UatSfEvents();
+	Sec50UatSfboEvents sec50 = new Sec50UatSfboEvents();
 	private String startDate = "23/10/2024";
-	private String endDate = "13/11/2024";
-
+	private String endDate = "30/10/2024";
 	@BeforeTest
 	@Parameters("browser")
 	public void beforeTestMethod(String browser) {
 		// Override the report name and document title for this class
-		reportName = "Sec50UatSf.html";
-		documentTitle = "Section 50 Front Office";
+		reportName = "Sec50TestServerSfbo.html";
+		documentTitle = "Section 50 Back Office";
+
 		// Call the base class setup
 		super.beforeTestMethod(browser);
 	}
@@ -35,25 +34,26 @@ public class TestSec50UatSf extends BaseTest {
 		logger = extent.createTest(methodName.getName());
 
 		// Opening Westminster backoffice login page url
-		driver.get(Constants.westminsterUatSfLoginUrl);
-		String loginMessage = loginPg.enterLoginCredentials(driver, "donchandila334@gmail.com", "Gourav@334");
-
-		logger.info(loginMessage);
+		driver.get(Constants.westminsterTestServerSfboLoginUrl);
+		String loginMessage = loginPg.enterLoginCredentials(driver, "mdickinson", "ofbiz");
 		Assert.assertEquals(loginMessage, "Login successful");
+		logger.info(loginMessage);
 		logger.info("Enter section 50 url :");
 		SeleniumUtils.someDelay(1000);
-		driver.get(Constants.section50UatSfUrl);
+		driver.get(Constants.section50TestServerSfboUrl);
 		SeleniumUtils.someDelay(1000);
 		logger.info("Current url is : " + driver.getCurrentUrl());
+
 	}
 
 	@Test(priority = 2, enabled = true)
-	public void confirmInformationTrue(Method methodName) {
+	public void fillBusinessDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
-		String Message = sec50.confirmInfoIsTrue(driver);
-		String expectedMessage = "Please confirm the above is true : Clicked";
-		Assert.assertEquals(expectedMessage, Message);
-		logger.info(Message);
+		String businessDetailsMessage = sec50.fillBusinessDetails("36211", "test@fgl.com");
+		logger.info(businessDetailsMessage);
+		logger.info(driver.getCurrentUrl());
+		logger.info(businessDetailsMessage);
+
 	}
 
 	@Test(priority = 3, enabled = true)
@@ -69,6 +69,7 @@ public class TestSec50UatSf extends BaseTest {
 				"The end date input field accepts a date earlier than the start date. Please ensure that the end date is on or after the start date.");
 		// Capture and attach screenshot
 		captureAndAddScreenshot(methodName.getName());
+
 	}
 
 	@Test(priority = 4, enabled = true)
@@ -144,8 +145,8 @@ public class TestSec50UatSf extends BaseTest {
 		String declarationDetailsMessage = sec50.fillDeclaration(driver);
 		Assert.assertEquals(expectedMessage, declarationDetailsMessage);
 		logger.info(expectedMessage);
-	}
 
+	}
 	@Test(priority = 9, enabled = true)
 	public void checkOrderSummary(Method methodName) {
 		logger = extent.createTest(methodName.getName());
@@ -167,17 +168,13 @@ public class TestSec50UatSf extends BaseTest {
 			Assert.assertEquals(applicationPrice, actualPrice);
 			logger.info("Application price is :" + actualPrice);
 		}
-
 	}
-
-	@Test(priority = 10, enabled = false)
+	@Test(priority = 10, enabled = true)
 	public void payFees(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String expectedMessage = "Payment successful";
-		String declarationDetailsMessage = sec50.payApplicationFee(driver, "");
+		String declarationDetailsMessage = sec50.payApplicationFee(driver, "Cash");
 		Assert.assertEquals(expectedMessage, declarationDetailsMessage);
 		logger.info(expectedMessage);
-
 	}
-
 }

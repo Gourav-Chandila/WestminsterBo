@@ -1,4 +1,4 @@
-package qa.test;
+package qa.test.Premise;
 
 import java.lang.reflect.Method;
 
@@ -13,7 +13,7 @@ import pageEvents.PremiseAppSfEvents;
 import utils.Constants;
 import utils.SeleniumUtils;
 
-public class TestPremiseAppTestServerSf extends BaseTest{
+public class TestPremiseAppUatSf extends BaseTest {
 	LoginPageEvents loginPg = new LoginPageEvents();
 	PremiseAppSfEvents premise = new PremiseAppSfEvents();
 
@@ -21,7 +21,7 @@ public class TestPremiseAppTestServerSf extends BaseTest{
 	@Parameters("browser")
 	public void beforeTestMethod(String browser) {
 		// Override the report name and document title for this class
-		reportName = "PremiseApplicationTestServerSf.html";
+		reportName = "PremiseApplicationUatSf.html";
 		documentTitle = "PremiseApplication Front Office";
 		// Call the base class setup
 		super.beforeTestMethod(browser);
@@ -32,13 +32,13 @@ public class TestPremiseAppTestServerSf extends BaseTest{
 		logger = extent.createTest(methodName.getName());
 
 		// Opening Westminster backoffice login page url
-		driver.get(Constants.La_03TestServerSfLoginUrl);
+		driver.get(Constants.La_03UatSfLoginUrl);
 		String loginMessage = loginPg.enterLoginCredentials(driver, "donchandila334@gmail.com", "Gourav@334");
 		Assert.assertEquals(loginMessage, "Login successful");
 		logger.info(loginMessage);
 		logger.info("Enter Premise application url :");
 		SeleniumUtils.someDelay(1000);
-		driver.get(Constants.La_03TestServerPremiseAppSf);
+		driver.get(Constants.La_03PremiseAppUatSf);
 		SeleniumUtils.someDelay(1000);
 		logger.info("Current url is : " + driver.getCurrentUrl());
 	}

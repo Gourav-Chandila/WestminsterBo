@@ -1,8 +1,5 @@
 package pageEvents;
-
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
 
 import pageObjects.LoginPageElements;
 import utils.ElementFetch;

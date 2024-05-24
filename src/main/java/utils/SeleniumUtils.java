@@ -29,6 +29,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageObjects.TENsPageElements;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
@@ -154,7 +155,9 @@ public class SeleniumUtils {
 	}
 
 	
-	
+	//Usage 
+	//    WebElement PremiseOrClubPremisesButton=ele.getWebElement("XPATH",TENsPageElements.choosePremiseOrClubPremisesButton("Premises"));
+	//    SeleniumUtils.waitForElementToBeClickable(driver,PremiseOrClubPremisesButton,Duration.ofSeconds(5));
 	 public static WebElement waitForElementToBeClickable(WebDriver driver, WebElement cardPayButton, Duration timeout) {
 	        WebDriverWait wait = new WebDriverWait(driver, timeout);
 	        return wait.until(ExpectedConditions.elementToBeClickable(cardPayButton));

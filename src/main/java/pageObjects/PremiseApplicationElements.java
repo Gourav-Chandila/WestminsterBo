@@ -176,7 +176,7 @@ public class PremiseApplicationElements {
 	//payment sf
 	public static String payAndSubmitButton="btnSubmit";
 	public static String paymentOKButton="//button[text()='OK']";
-	public static String cardPayButton="//span[@class='MuiButton-label']";
+	public static String cardPaySummaryButton="//span[@class='MuiButton-label']";
 	public static String cardNumberInput="Field-numberInput";
 	public static String pay="//span[normalize-space()='Pay']//*[name()='svg']";
 	

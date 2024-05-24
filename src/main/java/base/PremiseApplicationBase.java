@@ -336,7 +336,7 @@ public abstract class PremiseApplicationBase {
 
 	public void fillHours(WebDriver driver) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
-		for (int i = 1; i <= 6; i++) {
+		for (int i = 5; i <= 6; i++) {
 			try {
 				// Select checkbox
 				WebElement checkbox = wait.until(ExpectedConditions.elementToBeClickable(

@@ -1,4 +1,4 @@
-package qa.test;
+package qa.test.Section50;
 
 import java.lang.reflect.Method;
 
@@ -9,22 +9,22 @@ import org.testng.annotations.Test;
 import base.BaseTest;
 import junit.framework.Assert;
 import pageEvents.LoginPageEvents;
+import pageEvents.Sec50UatSfEvents;
 import pageEvents.Sec50UatSfboEvents;
 import utils.Constants;
 import utils.SeleniumUtils;
 
-public class TestSec50TestServerSfbo extends BaseTest {
+public class TestSec50TestServerSf extends BaseTest {
 	LoginPageEvents loginPg = new LoginPageEvents();
-	Sec50UatSfboEvents sec50 = new Sec50UatSfboEvents();
+	Sec50UatSfEvents sec50 = new Sec50UatSfEvents();
 	private String startDate = "23/10/2024";
-	private String endDate = "30/10/2024";
+	private String endDate = "13/11/2024";
 	@BeforeTest
 	@Parameters("browser")
 	public void beforeTestMethod(String browser) {
 		// Override the report name and document title for this class
-		reportName = "Sec50TestServerSfbo.html";
-		documentTitle = "Section 50 Back Office";
-
+		reportName = "Sec50TestServerSf.html";
+		documentTitle = "Section 50 Front Office";
 		// Call the base class setup
 		super.beforeTestMethod(browser);
 	}
@@ -34,26 +34,25 @@ public class TestSec50TestServerSfbo extends BaseTest {
 		logger = extent.createTest(methodName.getName());
 
 		// Opening Westminster backoffice login page url
-		driver.get(Constants.westminsterTestServerSfboLoginUrl);
-		String loginMessage = loginPg.enterLoginCredentials(driver, "mdickinson", "ofbiz");
+		driver.get(Constants.westminsterTestServerSfLoginUrl);
+		String loginMessage = loginPg.enterLoginCredentials(driver, "donchandila334@gmail.com", "Gourav@334");
 		Assert.assertEquals(loginMessage, "Login successful");
 		logger.info(loginMessage);
 		logger.info("Enter section 50 url :");
 		SeleniumUtils.someDelay(1000);
-		driver.get(Constants.section50TestServerSfboUrl);
+		driver.get(Constants.section50TestServerSfUrl);
 		SeleniumUtils.someDelay(1000);
 		logger.info("Current url is : " + driver.getCurrentUrl());
 
 	}
 
 	@Test(priority = 2, enabled = true)
-	public void fillBusinessDetails(Method methodName) {
+	public void confirmInformationTrue(Method methodName) {
 		logger = extent.createTest(methodName.getName());
-		String businessDetailsMessage = sec50.fillBusinessDetails("36211", "test@fgl.com");
-		logger.info(businessDetailsMessage);
-		logger.info(driver.getCurrentUrl());
-		logger.info(businessDetailsMessage);
-
+		String Message = sec50.confirmInfoIsTrue(driver);
+		String expectedMessage = "Please confirm the above is true : Clicked";
+		Assert.assertEquals(expectedMessage, Message);
+		logger.info(Message);
 	}
 
 	@Test(priority = 3, enabled = true)
@@ -75,8 +74,8 @@ public class TestSec50TestServerSfbo extends BaseTest {
 	@Test(priority = 4, enabled = true)
 	public void fillingSiteDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
-		String streetNamePostcode = "VICTORIA STREET";// which to be searched or SW1E6AA
-		String streetNameOptionXpathValue = "VICTORIA STREET"; // xpath value its dynamic
+		String streetNamePostcode = "VICTORIA EMBANKMENT";// which to be searched or SW1E6AA
+		String streetNameOptionXpathValue = "VICTORIA EMBANKMENT"; // xpath value its dynamic
 		String siteDetailsMessage = sec50.fillSiteDetails(driver, streetNamePostcode, streetNameOptionXpathValue);
 
 		logger.info(siteDetailsMessage);
@@ -145,8 +144,8 @@ public class TestSec50TestServerSfbo extends BaseTest {
 		String declarationDetailsMessage = sec50.fillDeclaration(driver);
 		Assert.assertEquals(expectedMessage, declarationDetailsMessage);
 		logger.info(expectedMessage);
-
 	}
+
 	@Test(priority = 9, enabled = true)
 	public void checkOrderSummary(Method methodName) {
 		logger = extent.createTest(methodName.getName());
@@ -168,12 +167,13 @@ public class TestSec50TestServerSfbo extends BaseTest {
 			Assert.assertEquals(applicationPrice, actualPrice);
 			logger.info("Application price is :" + actualPrice);
 		}
+
 	}
 	@Test(priority = 10, enabled = true)
 	public void payFees(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String expectedMessage = "Payment successful";
-		String declarationDetailsMessage = sec50.payApplicationFee(driver, "Cash");
+		String declarationDetailsMessage = sec50.payApplicationFee(driver, "");
 		Assert.assertEquals(expectedMessage, declarationDetailsMessage);
 		logger.info(expectedMessage);
 	}

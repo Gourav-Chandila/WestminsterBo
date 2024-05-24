@@ -1,5 +1,5 @@
 //TestCLass1.java
-package qa.test;
+package qa.test.Section50;
 
 import java.lang.reflect.Method;
 

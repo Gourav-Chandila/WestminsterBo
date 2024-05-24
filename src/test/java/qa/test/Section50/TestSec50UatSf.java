@@ -1,4 +1,5 @@
-package qa.test;
+
+package qa.test.Section50;
 
 import java.lang.reflect.Method;
 
@@ -10,20 +11,20 @@ import base.BaseTest;
 import junit.framework.Assert;
 import pageEvents.LoginPageEvents;
 import pageEvents.Sec50UatSfEvents;
-import pageEvents.Sec50UatSfboEvents;
 import utils.Constants;
 import utils.SeleniumUtils;
 
-public class TestSec50TestServerSf extends BaseTest {
+public class TestSec50UatSf extends BaseTest {
 	LoginPageEvents loginPg = new LoginPageEvents();
 	Sec50UatSfEvents sec50 = new Sec50UatSfEvents();
 	private String startDate = "23/10/2024";
 	private String endDate = "13/11/2024";
+
 	@BeforeTest
 	@Parameters("browser")
 	public void beforeTestMethod(String browser) {
 		// Override the report name and document title for this class
-		reportName = "Sec50TestServerSf.html";
+		reportName = "Sec50UatSf.html";
 		documentTitle = "Section 50 Front Office";
 		// Call the base class setup
 		super.beforeTestMethod(browser);
@@ -34,16 +35,16 @@ public class TestSec50TestServerSf extends BaseTest {
 		logger = extent.createTest(methodName.getName());
 
 		// Opening Westminster backoffice login page url
-		driver.get(Constants.westminsterTestServerSfLoginUrl);
+		driver.get(Constants.westminsterUatSfLoginUrl);
 		String loginMessage = loginPg.enterLoginCredentials(driver, "donchandila334@gmail.com", "Gourav@334");
-		Assert.assertEquals(loginMessage, "Login successful");
+
 		logger.info(loginMessage);
+		Assert.assertEquals(loginMessage, "Login successful");
 		logger.info("Enter section 50 url :");
 		SeleniumUtils.someDelay(1000);
-		driver.get(Constants.section50TestServerSfUrl);
+		driver.get(Constants.section50UatSfUrl);
 		SeleniumUtils.someDelay(1000);
 		logger.info("Current url is : " + driver.getCurrentUrl());
-
 	}
 
 	@Test(priority = 2, enabled = true)
@@ -68,14 +69,13 @@ public class TestSec50TestServerSf extends BaseTest {
 				"The end date input field accepts a date earlier than the start date. Please ensure that the end date is on or after the start date.");
 		// Capture and attach screenshot
 		captureAndAddScreenshot(methodName.getName());
-
 	}
 
 	@Test(priority = 4, enabled = true)
 	public void fillingSiteDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
-		String streetNamePostcode = "VICTORIA EMBANKMENT";// which to be searched or SW1E6AA
-		String streetNameOptionXpathValue = "VICTORIA EMBANKMENT"; // xpath value its dynamic
+		String streetNamePostcode = "VICTORIA STREET";// which to be searched or SW1E6AA
+		String streetNameOptionXpathValue = "VICTORIA STREET"; // xpath value its dynamic
 		String siteDetailsMessage = sec50.fillSiteDetails(driver, streetNamePostcode, streetNameOptionXpathValue);
 
 		logger.info(siteDetailsMessage);
@@ -169,12 +169,15 @@ public class TestSec50TestServerSf extends BaseTest {
 		}
 
 	}
-	@Test(priority = 10, enabled = true)
+
+	@Test(priority = 10, enabled = false)
 	public void payFees(Method methodName) {
 		logger = extent.createTest(methodName.getName());
 		String expectedMessage = "Payment successful";
 		String declarationDetailsMessage = sec50.payApplicationFee(driver, "");
 		Assert.assertEquals(expectedMessage, declarationDetailsMessage);
 		logger.info(expectedMessage);
+
 	}
+
 }

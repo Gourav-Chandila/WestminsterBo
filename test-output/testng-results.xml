@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="25" passed="24" failed="1" skipped="0">
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-22T14:50:10 IST" name="Suite" finished-at="2024-05-22T14:53:42 IST" duration-ms="212640">
+  <suite started-at="2024-05-24T17:01:47 IST" name="Suite" finished-at="2024-05-24T17:02:35 IST" duration-ms="47808">
     <groups>
     </groups>
-    <test started-at="2024-05-22T14:50:10 IST" name="FireFoxTest2" finished-at="2024-05-22T14:51:54 IST" duration-ms="104334">
-      <class name="qa.test.TestPremiseAppUatSf">
-        <test-method is-config="true" signature="beforeTestMethod(java.lang.String)[pri:0, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:50:10 IST" name="beforeTestMethod" finished-at="2024-05-22T14:50:18 IST" duration-ms="7932" status="PASS">
+    <test started-at="2024-05-24T17:01:47 IST" name="FireFoxTest" finished-at="2024-05-24T17:02:35 IST" duration-ms="47808">
+      <class name="TENs.TestTENsAppUatSf">
+        <test-method is-config="true" signature="beforeTestMethod(java.lang.String)[pri:0, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:01:47 IST" name="beforeTestMethod" finished-at="2024-05-24T17:01:52 IST" duration-ms="5181" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,279 +18,231 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method signature="openLa_03LoginUrl(java.lang.reflect.Method)[pri:1, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:50:18 IST" name="openLa_03LoginUrl" finished-at="2024-05-22T14:50:31 IST" duration-ms="13527" status="PASS">
+        <test-method signature="openLa_03LoginUrl(java.lang.reflect.Method)[pri:1, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:01:52 IST" name="openLa_03LoginUrl" finished-at="2024-05-24T17:02:05 IST" duration-ms="12854" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSf.openLa_03LoginUrl(java.lang.reflect.Method)]]>
+                <![CDATA[public void TENs.TestTENsAppUatSf.openLa_03LoginUrl(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openLa_03LoginUrl -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:50:31 IST" name="afterMethod" finished-at="2024-05-22T14:50:31 IST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:02:05 IST" name="afterMethod" finished-at="2024-05-24T17:02:05 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=openLa_03LoginUrl status=SUCCESS method=TestPremiseAppUatSf.openLa_03LoginUrl(java.lang.reflect.Method)[pri:1, instance:qa.test.TestPremiseAppUatSf@645aa696] output={null}]]]>
+                <![CDATA[[TestResult name=openLa_03LoginUrl status=SUCCESS method=TestTENsAppUatSf.openLa_03LoginUrl(java.lang.reflect.Method)[pri:1, instance:TENs.TestTENsAppUatSf@cc43f62] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="confirmInformationtrue(java.lang.reflect.Method)[pri:2, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:50:31 IST" name="confirmInformationtrue" finished-at="2024-05-22T14:50:35 IST" duration-ms="3437" status="PASS">
+        <test-method signature="confirmInformationtrue(java.lang.reflect.Method)[pri:2, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:02:05 IST" name="confirmInformationtrue" finished-at="2024-05-24T17:02:06 IST" duration-ms="1307" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSf.confirmInformationtrue(java.lang.reflect.Method)]]>
+                <![CDATA[public void TENs.TestTENsAppUatSf.confirmInformationtrue(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confirmInformationtrue -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:50:35 IST" name="afterMethod" finished-at="2024-05-22T14:50:35 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:02:06 IST" name="afterMethod" finished-at="2024-05-24T17:02:06 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=confirmInformationtrue status=SUCCESS method=TestPremiseAppUatSf.confirmInformationtrue(java.lang.reflect.Method)[pri:2, instance:qa.test.TestPremiseAppUatSf@645aa696] output={null}]]]>
+                <![CDATA[[TestResult name=confirmInformationtrue status=SUCCESS method=TestTENsAppUatSf.confirmInformationtrue(java.lang.reflect.Method)[pri:2, instance:TENs.TestTENsAppUatSf@cc43f62] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="fillingLicenceDuration(java.lang.reflect.Method)[pri:3, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:50:35 IST" name="fillingLicenceDuration" finished-at="2024-05-22T14:50:35 IST" duration-ms="445" status="PASS">
+        <test-method signature="fillDateTime(java.lang.reflect.Method)[pri:3, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:02:06 IST" name="fillDateTime" finished-at="2024-05-24T17:02:07 IST" duration-ms="581" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSf.fillingLicenceDuration(java.lang.reflect.Method)]]>
+                <![CDATA[public void TENs.TestTENsAppUatSf.fillDateTime(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fillingLicenceDuration -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:50:35 IST" name="afterMethod" finished-at="2024-05-22T14:50:35 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- fillDateTime -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:02:07 IST" name="afterMethod" finished-at="2024-05-24T17:02:07 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=fillingLicenceDuration status=SUCCESS method=TestPremiseAppUatSf.fillingLicenceDuration(java.lang.reflect.Method)[pri:3, instance:qa.test.TestPremiseAppUatSf@645aa696] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="fillingApplicantDetails(java.lang.reflect.Method)[pri:4, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:50:35 IST" name="fillingApplicantDetails" finished-at="2024-05-22T14:50:46 IST" duration-ms="11135" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSf.fillingApplicantDetails(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillingApplicantDetails -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:50:46 IST" name="afterMethod" finished-at="2024-05-22T14:50:46 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=fillingApplicantDetails status=SUCCESS method=TestPremiseAppUatSf.fillingApplicantDetails(java.lang.reflect.Method)[pri:4, instance:qa.test.TestPremiseAppUatSf@645aa696] output={null}]]]>
+                <![CDATA[[TestResult name=fillDateTime status=SUCCESS method=TestTENsAppUatSf.fillDateTime(java.lang.reflect.Method)[pri:3, instance:TENs.TestTENsAppUatSf@cc43f62] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="fillingDesignatedPremisesSupervisor(java.lang.reflect.Method)[pri:5, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:50:46 IST" name="fillingDesignatedPremisesSupervisor" finished-at="2024-05-22T14:50:53 IST" duration-ms="6762" status="PASS">
+        <test-method signature="fillLicenceActivities(java.lang.reflect.Method)[pri:4, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:02:07 IST" name="fillLicenceActivities" finished-at="2024-05-24T17:02:10 IST" duration-ms="2659" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSf.fillingDesignatedPremisesSupervisor(java.lang.reflect.Method)]]>
+                <![CDATA[public void TENs.TestTENsAppUatSf.fillLicenceActivities(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fillingDesignatedPremisesSupervisor -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:50:53 IST" name="afterMethod" finished-at="2024-05-22T14:50:53 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- fillLicenceActivities -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:02:10 IST" name="afterMethod" finished-at="2024-05-24T17:02:10 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=fillingDesignatedPremisesSupervisor status=SUCCESS method=TestPremiseAppUatSf.fillingDesignatedPremisesSupervisor(java.lang.reflect.Method)[pri:5, instance:qa.test.TestPremiseAppUatSf@645aa696] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="uploadApplicationEvidence(java.lang.reflect.Method)[pri:6, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:50:53 IST" name="uploadApplicationEvidence" finished-at="2024-05-22T14:50:54 IST" duration-ms="1340" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSf.uploadApplicationEvidence(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadApplicationEvidence -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:50:54 IST" name="afterMethod" finished-at="2024-05-22T14:50:54 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=uploadApplicationEvidence status=SUCCESS method=TestPremiseAppUatSf.uploadApplicationEvidence(java.lang.reflect.Method)[pri:6, instance:qa.test.TestPremiseAppUatSf@645aa696] output={null}]]]>
+                <![CDATA[[TestResult name=fillLicenceActivities status=SUCCESS method=TestTENsAppUatSf.fillLicenceActivities(java.lang.reflect.Method)[pri:4, instance:TENs.TestTENsAppUatSf@cc43f62] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="fillPremisesDetails(java.lang.reflect.Method)[pri:7, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:50:54 IST" name="fillPremisesDetails" finished-at="2024-05-22T14:51:03 IST" duration-ms="8777" status="PASS">
+        <test-method signature="fillPersonalLicence(java.lang.reflect.Method)[pri:4, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:02:10 IST" name="fillPersonalLicence" finished-at="2024-05-24T17:02:11 IST" duration-ms="1055" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSf.fillPremisesDetails(java.lang.reflect.Method)]]>
+                <![CDATA[public void TENs.TestTENsAppUatSf.fillPersonalLicence(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fillPremisesDetails -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:51:03 IST" name="afterMethod" finished-at="2024-05-22T14:51:03 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- fillPersonalLicence -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:02:11 IST" name="afterMethod" finished-at="2024-05-24T17:02:11 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=fillPremisesDetails status=SUCCESS method=TestPremiseAppUatSf.fillPremisesDetails(java.lang.reflect.Method)[pri:7, instance:qa.test.TestPremiseAppUatSf@645aa696] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="fillBusinessHours(java.lang.reflect.Method)[pri:8, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:51:03 IST" name="fillBusinessHours" finished-at="2024-05-22T14:51:17 IST" duration-ms="13853" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSf.fillBusinessHours(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillBusinessHours -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:51:17 IST" name="afterMethod" finished-at="2024-05-22T14:51:17 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=fillBusinessHours status=SUCCESS method=TestPremiseAppUatSf.fillBusinessHours(java.lang.reflect.Method)[pri:8, instance:qa.test.TestPremiseAppUatSf@645aa696] output={null}]]]>
+                <![CDATA[[TestResult name=fillPersonalLicence status=SUCCESS method=TestTENsAppUatSf.fillPersonalLicence(java.lang.reflect.Method)[pri:4, instance:TENs.TestTENsAppUatSf@cc43f62] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="fillOperatingSchedule(java.lang.reflect.Method)[pri:9, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:51:17 IST" name="fillOperatingSchedule" finished-at="2024-05-22T14:51:32 IST" duration-ms="15300" status="PASS">
+        <test-method signature="fillPremiseEventDetails(java.lang.reflect.Method)[pri:5, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:02:11 IST" name="fillPremiseEventDetails" finished-at="2024-05-24T17:02:17 IST" duration-ms="6760" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSf.fillOperatingSchedule(java.lang.reflect.Method)]]>
+                <![CDATA[public void TENs.TestTENsAppUatSf.fillPremiseEventDetails(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fillOperatingSchedule -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:51:32 IST" name="afterMethod" finished-at="2024-05-22T14:51:32 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- fillPremiseEventDetails -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:02:17 IST" name="afterMethod" finished-at="2024-05-24T17:02:17 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=fillOperatingSchedule status=SUCCESS method=TestPremiseAppUatSf.fillOperatingSchedule(java.lang.reflect.Method)[pri:9, instance:qa.test.TestPremiseAppUatSf@645aa696] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="fillLicenceObjectives(java.lang.reflect.Method)[pri:10, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:51:32 IST" name="fillLicenceObjectives" finished-at="2024-05-22T14:51:33 IST" duration-ms="824" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSf.fillLicenceObjectives(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillLicenceObjectives -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:51:33 IST" name="afterMethod" finished-at="2024-05-22T14:51:33 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=fillLicenceObjectives status=SUCCESS method=TestPremiseAppUatSf.fillLicenceObjectives(java.lang.reflect.Method)[pri:10, instance:qa.test.TestPremiseAppUatSf@645aa696] output={null}]]]>
+                <![CDATA[[TestResult name=fillPremiseEventDetails status=SUCCESS method=TestTENsAppUatSf.fillPremiseEventDetails(java.lang.reflect.Method)[pri:5, instance:TENs.TestTENsAppUatSf@cc43f62] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="fillDeclaration(java.lang.reflect.Method)[pri:11, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:51:33 IST" name="fillDeclaration" finished-at="2024-05-22T14:51:41 IST" duration-ms="7394" status="PASS">
+        <test-method signature="uploadApplicaitonEvidence(java.lang.reflect.Method)[pri:5, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:02:17 IST" name="uploadApplicaitonEvidence" finished-at="2024-05-24T17:02:19 IST" duration-ms="1288" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSf.fillDeclaration(java.lang.reflect.Method)]]>
+                <![CDATA[public void TENs.TestTENsAppUatSf.uploadApplicaitonEvidence(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fillDeclaration -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:51:41 IST" name="afterMethod" finished-at="2024-05-22T14:51:41 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- uploadApplicaitonEvidence -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:02:19 IST" name="afterMethod" finished-at="2024-05-24T17:02:19 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=fillDeclaration status=SUCCESS method=TestPremiseAppUatSf.fillDeclaration(java.lang.reflect.Method)[pri:11, instance:qa.test.TestPremiseAppUatSf@645aa696] output={null}]]]>
+                <![CDATA[[TestResult name=uploadApplicaitonEvidence status=SUCCESS method=TestTENsAppUatSf.uploadApplicaitonEvidence(java.lang.reflect.Method)[pri:5, instance:TENs.TestTENsAppUatSf@cc43f62] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="payment(java.lang.reflect.Method)[pri:12, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:51:41 IST" name="payment" finished-at="2024-05-22T14:51:53 IST" duration-ms="12355" status="FAIL">
+        <test-method signature="infoAboutProperty(java.lang.reflect.Method)[pri:6, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:02:19 IST" name="infoAboutProperty" finished-at="2024-05-24T17:02:21 IST" duration-ms="2111" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSf.payment(java.lang.reflect.Method)]]>
+                <![CDATA[public void TENs.TestTENsAppUatSf.infoAboutProperty(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- infoAboutProperty -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:02:21 IST" name="afterMethod" finished-at="2024-05-24T17:02:21 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=infoAboutProperty status=SUCCESS method=TestTENsAppUatSf.infoAboutProperty(java.lang.reflect.Method)[pri:6, instance:TENs.TestTENsAppUatSf@cc43f62] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="addDeclaration(java.lang.reflect.Method)[pri:7, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:02:21 IST" name="addDeclaration" finished-at="2024-05-24T17:02:26 IST" duration-ms="4773" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TENs.TestTENsAppUatSf.addDeclaration(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDeclaration -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:02:26 IST" name="afterMethod" finished-at="2024-05-24T17:02:26 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addDeclaration status=SUCCESS method=TestTENsAppUatSf.addDeclaration(java.lang.reflect.Method)[pri:7, instance:TENs.TestTENsAppUatSf@cc43f62] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="addPayment(java.lang.reflect.Method)[pri:8, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:02:26 IST" name="addPayment" finished-at="2024-05-24T17:02:34 IST" duration-ms="8574" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TENs.TestTENsAppUatSf.addPayment(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <exception class="junit.framework.ComparisonFailure">
             <message>
-              <![CDATA[expected:<Payment successful> but was:<Error :Unable to locate element: #Field\-numberInput
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[expected:<Payment successful> but was:<Error :Expected condition failed: waiting for element to be clickable: By.xpath: //span[@class='MuiButton-label'] (tried for 8 second(s) with 500 milliseconds interval)
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [02e9ce0b-c8aa-4497-9b82-b6737ee5ebe4, findElement {using=id, value=Field-numberInput}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.3, moz:accessibilityChecks: false, moz:buildID: 20240425211020, moz:debuggerAddress: 127.0.0.1:22173, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20536, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:22173/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 02e9ce0b-c8aa-4497-9b82-b6737ee5ebe4>]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.3, moz:accessibilityChecks: false, moz:buildID: 20240425211020, moz:debuggerAddress: 127.0.0.1:24601, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12568, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:24601/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 08760b54-c11d-40b0-9d72-4ffe20bb62be>]]>
             </message>
             <full-stacktrace>
-              <![CDATA[junit.framework.ComparisonFailure: expected:<Payment successful> but was:<Error :Unable to locate element: #Field\-numberInput
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[junit.framework.ComparisonFailure: expected:<Payment successful> but was:<Error :Expected condition failed: waiting for element to be clickable: By.xpath: //span[@class='MuiButton-label'] (tried for 8 second(s) with 500 milliseconds interval)
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [02e9ce0b-c8aa-4497-9b82-b6737ee5ebe4, findElement {using=id, value=Field-numberInput}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.3, moz:accessibilityChecks: false, moz:buildID: 20240425211020, moz:debuggerAddress: 127.0.0.1:22173, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20536, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:22173/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 02e9ce0b-c8aa-4497-9b82-b6737ee5ebe4>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.3, moz:accessibilityChecks: false, moz:buildID: 20240425211020, moz:debuggerAddress: 127.0.0.1:24601, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12568, moz:profile: C:\Users\Gaurav\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:24601/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 08760b54-c11d-40b0-9d72-4ffe20bb62be>
 at junit.framework.Assert.assertEquals(Assert.java:81)
 at junit.framework.Assert.assertEquals(Assert.java:87)
-at qa.test.TestPremiseAppUatSf.payment(TestPremiseAppUatSf.java:160)
+at TENs.TestTENsAppUatSf.addPayment(TestTENsAppUatSf.java:175)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -324,328 +276,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- junit.framework.ComparisonFailure -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- payment -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:51:53 IST" name="afterMethod" finished-at="2024-05-22T14:51:53 IST" duration-ms="196" status="PASS">
+        </test-method> <!-- addPayment -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:02:34 IST" name="afterMethod" finished-at="2024-05-24T17:02:34 IST" duration-ms="217" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=payment status=FAILURE method=TestPremiseAppUatSf.payment(java.lang.reflect.Method)[pri:12, instance:qa.test.TestPremiseAppUatSf@645aa696] output={null}]]]>
+                <![CDATA[[TestResult name=addPayment status=FAILURE method=TestTENsAppUatSf.addPayment(java.lang.reflect.Method)[pri:8, instance:TENs.TestTENsAppUatSf@cc43f62] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:qa.test.TestPremiseAppUatSf@645aa696]" started-at="2024-05-22T14:51:53 IST" name="afterTest" finished-at="2024-05-22T14:51:54 IST" duration-ms="891" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TENs.TestTENsAppUatSf@cc43f62]" started-at="2024-05-24T17:02:34 IST" name="afterTest" finished-at="2024-05-24T17:02:35 IST" duration-ms="376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- qa.test.TestPremiseAppUatSf -->
-    </test> <!-- FireFoxTest2 -->
-    <test started-at="2024-05-22T14:51:54 IST" name="FireFoxTest3" finished-at="2024-05-22T14:53:42 IST" duration-ms="108234">
-      <class name="qa.test.TestPremiseAppUatSfbo">
-        <test-method is-config="true" signature="beforeTestMethod(java.lang.String)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:51:54 IST" name="beforeTestMethod" finished-at="2024-05-22T14:52:00 IST" duration-ms="6079" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTestMethod -->
-        <test-method signature="openLa_03LoginUrl(java.lang.reflect.Method)[pri:1, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:52:00 IST" name="openLa_03LoginUrl" finished-at="2024-05-22T14:52:19 IST" duration-ms="19199" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSfbo.openLa_03LoginUrl(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openLa_03LoginUrl -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:52:19 IST" name="afterMethod" finished-at="2024-05-22T14:52:19 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=openLa_03LoginUrl status=SUCCESS method=TestPremiseAppUatSfbo.openLa_03LoginUrl(java.lang.reflect.Method)[pri:1, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="fillBusinessDetails(java.lang.reflect.Method)[pri:2, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:52:19 IST" name="fillBusinessDetails" finished-at="2024-05-22T14:52:26 IST" duration-ms="6988" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSfbo.fillBusinessDetails(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillBusinessDetails -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:52:26 IST" name="afterMethod" finished-at="2024-05-22T14:52:26 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=fillBusinessDetails status=SUCCESS method=TestPremiseAppUatSfbo.fillBusinessDetails(java.lang.reflect.Method)[pri:2, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="confirmInformationTrue(java.lang.reflect.Method)[pri:3, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:52:26 IST" name="confirmInformationTrue" finished-at="2024-05-22T14:52:28 IST" duration-ms="2115" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSfbo.confirmInformationTrue(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- confirmInformationTrue -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:52:28 IST" name="afterMethod" finished-at="2024-05-22T14:52:28 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=confirmInformationTrue status=SUCCESS method=TestPremiseAppUatSfbo.confirmInformationTrue(java.lang.reflect.Method)[pri:3, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="fillingLicenceDuration(java.lang.reflect.Method)[pri:4, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:52:28 IST" name="fillingLicenceDuration" finished-at="2024-05-22T14:52:32 IST" duration-ms="3254" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSfbo.fillingLicenceDuration(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillingLicenceDuration -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:52:32 IST" name="afterMethod" finished-at="2024-05-22T14:52:32 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=fillingLicenceDuration status=SUCCESS method=TestPremiseAppUatSfbo.fillingLicenceDuration(java.lang.reflect.Method)[pri:4, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="fillingApplicantDetails(java.lang.reflect.Method)[pri:5, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:52:32 IST" name="fillingApplicantDetails" finished-at="2024-05-22T14:52:43 IST" duration-ms="11527" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSfbo.fillingApplicantDetails(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillingApplicantDetails -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:52:43 IST" name="afterMethod" finished-at="2024-05-22T14:52:43 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=fillingApplicantDetails status=SUCCESS method=TestPremiseAppUatSfbo.fillingApplicantDetails(java.lang.reflect.Method)[pri:5, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="fillingDesignatedPremisesSupervisor(java.lang.reflect.Method)[pri:6, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:52:43 IST" name="fillingDesignatedPremisesSupervisor" finished-at="2024-05-22T14:52:50 IST" duration-ms="6718" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSfbo.fillingDesignatedPremisesSupervisor(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillingDesignatedPremisesSupervisor -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:52:50 IST" name="afterMethod" finished-at="2024-05-22T14:52:50 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=fillingDesignatedPremisesSupervisor status=SUCCESS method=TestPremiseAppUatSfbo.fillingDesignatedPremisesSupervisor(java.lang.reflect.Method)[pri:6, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="uploadApplicationEvidence(java.lang.reflect.Method)[pri:7, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:52:50 IST" name="uploadApplicationEvidence" finished-at="2024-05-22T14:52:51 IST" duration-ms="1334" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSfbo.uploadApplicationEvidence(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadApplicationEvidence -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:52:51 IST" name="afterMethod" finished-at="2024-05-22T14:52:51 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=uploadApplicationEvidence status=SUCCESS method=TestPremiseAppUatSfbo.uploadApplicationEvidence(java.lang.reflect.Method)[pri:7, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="fillPremisesDetails(java.lang.reflect.Method)[pri:8, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:52:51 IST" name="fillPremisesDetails" finished-at="2024-05-22T14:53:00 IST" duration-ms="8685" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSfbo.fillPremisesDetails(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillPremisesDetails -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:53:00 IST" name="afterMethod" finished-at="2024-05-22T14:53:00 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=fillPremisesDetails status=SUCCESS method=TestPremiseAppUatSfbo.fillPremisesDetails(java.lang.reflect.Method)[pri:8, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="fillBusinessHours(java.lang.reflect.Method)[pri:9, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:53:00 IST" name="fillBusinessHours" finished-at="2024-05-22T14:53:13 IST" duration-ms="13226" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSfbo.fillBusinessHours(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillBusinessHours -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:53:13 IST" name="afterMethod" finished-at="2024-05-22T14:53:13 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=fillBusinessHours status=SUCCESS method=TestPremiseAppUatSfbo.fillBusinessHours(java.lang.reflect.Method)[pri:9, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="fillOperatingSchedule(java.lang.reflect.Method)[pri:10, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:53:13 IST" name="fillOperatingSchedule" finished-at="2024-05-22T14:53:30 IST" duration-ms="16313" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSfbo.fillOperatingSchedule(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillOperatingSchedule -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:53:30 IST" name="afterMethod" finished-at="2024-05-22T14:53:30 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=fillOperatingSchedule status=SUCCESS method=TestPremiseAppUatSfbo.fillOperatingSchedule(java.lang.reflect.Method)[pri:10, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="fillLicenceObjectives(java.lang.reflect.Method)[pri:11, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:53:30 IST" name="fillLicenceObjectives" finished-at="2024-05-22T14:53:30 IST" duration-ms="751" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSfbo.fillLicenceObjectives(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillLicenceObjectives -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:53:30 IST" name="afterMethod" finished-at="2024-05-22T14:53:30 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=fillLicenceObjectives status=SUCCESS method=TestPremiseAppUatSfbo.fillLicenceObjectives(java.lang.reflect.Method)[pri:11, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="fillDeclaration(java.lang.reflect.Method)[pri:12, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:53:30 IST" name="fillDeclaration" finished-at="2024-05-22T14:53:38 IST" duration-ms="7357" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSfbo.fillDeclaration(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillDeclaration -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:53:38 IST" name="afterMethod" finished-at="2024-05-22T14:53:38 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=fillDeclaration status=SUCCESS method=TestPremiseAppUatSfbo.fillDeclaration(java.lang.reflect.Method)[pri:12, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="payment(java.lang.reflect.Method)[pri:13, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:53:38 IST" name="payment" finished-at="2024-05-22T14:53:42 IST" duration-ms="4319" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void qa.test.TestPremiseAppUatSfbo.payment(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- payment -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:53:42 IST" name="afterMethod" finished-at="2024-05-22T14:53:42 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=payment status=SUCCESS method=TestPremiseAppUatSfbo.payment(java.lang.reflect.Method)[pri:13, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:qa.test.TestPremiseAppUatSfbo@4d0d9fe7]" started-at="2024-05-22T14:53:42 IST" name="afterTest" finished-at="2024-05-22T14:53:42 IST" duration-ms="301" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- qa.test.TestPremiseAppUatSfbo -->
-    </test> <!-- FireFoxTest3 -->
+      </class> <!-- TENs.TestTENsAppUatSf -->
+    </test> <!-- FireFoxTest -->
   </suite> <!-- Suite -->
 </testng-results>

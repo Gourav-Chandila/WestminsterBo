@@ -1,4 +1,4 @@
-package qa.test;
+package qa.test.Premise;
 
 import java.lang.reflect.Method;
 
@@ -14,7 +14,7 @@ import pageEvents.PremiseAppSfboEvents;
 import utils.Constants;
 import utils.SeleniumUtils;
 
-public class TestPremiseAppTestServerSfbo extends BaseTest {
+public class TestPremiseAppUatSfbo extends BaseTest {
 	LoginPageEvents loginPg = new LoginPageEvents();
 	PremiseAppSfboEvents premise = new PremiseAppSfboEvents();
 
@@ -22,7 +22,7 @@ public class TestPremiseAppTestServerSfbo extends BaseTest {
 	@Parameters("browser")
 	public void beforeTestMethod(String browser) {
 		// Override the report name and document title for this class
-		reportName = "PremiseApplicationTestServerSfbo.html";
+		reportName = "PremiseApplicationUatSfbo.html";
 		documentTitle = "PremiseApplication Back Office";
 		// Call the base class setup
 		super.beforeTestMethod(browser);
@@ -33,13 +33,13 @@ public class TestPremiseAppTestServerSfbo extends BaseTest {
 		logger = extent.createTest(methodName.getName());
 
 		// Opening Westminster backoffice login page url
-		driver.get(Constants.La_03TestServerSfboLoginUrl);
+		driver.get(Constants.La_03UatSfboLoginUrl);
 		String loginMessage = loginPg.enterLoginCredentials(driver, "mdickinson", "ofbiz");
 		Assert.assertEquals(loginMessage, "Login successful");
 		logger.info(loginMessage);
 		logger.info("Enter Premise application url :");
 		SeleniumUtils.someDelay(1000);
-		driver.get(Constants.La_03TestServerPremiseAppSfbo);
+		driver.get(Constants.La_03PremiseAppUatSfbo);
 		SeleniumUtils.someDelay(1000);
 		logger.info("Current url is : " + driver.getCurrentUrl());
 	}
@@ -47,7 +47,7 @@ public class TestPremiseAppTestServerSfbo extends BaseTest {
 	@Test(priority = 2, enabled = true)
 	public void fillBusinessDetails(Method methodName) {
 		logger = extent.createTest(methodName.getName());
-		String businessDetailsMessage = premise.fillBusinessDetails("36433", "donchandila334@gmail.com");
+		String businessDetailsMessage = premise.fillBusinessDetails("40283", "donchandila334@gmail.com");
 		logger.info(driver.getCurrentUrl());
 		logger.info(businessDetailsMessage);
 
