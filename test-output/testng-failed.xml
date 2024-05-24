@@ -4,14 +4,19 @@
   <test thread-count="5" name="FireFoxTest(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="TENs.TestTENsAppUatSfbo">
+      <class name="TENs.TestTENsAppTestServerSfbo">
         <methods>
           <include name="afterMethod"/>
-          <include name="addDeclaration" invocation-numbers="0"/>
+          <include name="uploadApplicaitonEvidence" invocation-numbers="0"/>
+          <include name="fillPremiseEventDetails" invocation-numbers="0"/>
           <include name="afterTest"/>
+          <include name="fillDateTime" invocation-numbers="0"/>
+          <include name="addDeclaration" invocation-numbers="0"/>
+          <include name="fillLicenceActivities" invocation-numbers="0"/>
           <include name="beforeTestMethod"/>
+          <include name="infoAboutProperty" invocation-numbers="0"/>
         </methods>
-      </class> <!-- TENs.TestTENsAppUatSfbo -->
+      </class> <!-- TENs.TestTENsAppTestServerSfbo -->
     </classes>
   </test> <!-- FireFoxTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
