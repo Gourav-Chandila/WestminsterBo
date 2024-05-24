@@ -88,8 +88,8 @@ public class TENsPageElements {
 	public static String termsAndConditionsButton = "//i[@data-bv-icon-for='detailscorrect1']/following-sibling::div[@class='toggle-group']/label[@class='btn btn-danger active toggle-off']";
 
 	//payment sf
-		public static String payAndSubmitButton="btnSubmit";
-		public static String cardPaySummaryButton="//span[@class='MuiButton-label']";
+	public static String payAndSubmitButton="btnSubmit";
+	public static String cardPaySummaryButton="//span[@class='MuiButton-label']";
 
 		
 }

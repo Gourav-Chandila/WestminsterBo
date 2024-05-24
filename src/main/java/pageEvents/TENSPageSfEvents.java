@@ -21,7 +21,7 @@ public class TENSPageSfEvents extends TENsApplicationBase{
 			WebElement payAndSubmitButton = wait.until(ExpectedConditions.elementToBeClickable(By.id(TENsPageElements.payAndSubmitButton)));
 			payAndSubmitButton.click();
 
-//			 Clicking on the third party pay  button
+            // Clicking on the third party pay  button
 			WebElement cardPayButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(TENsPageElements.cardPaySummaryButton)));
 			cardPayButton.click();
 			
@@ -29,6 +29,11 @@ public class TENSPageSfEvents extends TENsApplicationBase{
 		} catch (Exception e) {
 			return "Error :" + e.getMessage();
 		}
+	}
+	
+	@Override
+	public String fillBusinessDetails(String partyId, String businessEmail) {
+		return null;
 	}
 
 	

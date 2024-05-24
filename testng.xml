@@ -5,7 +5,7 @@
 	<test thread-count="5" name="FireFoxTest">
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
-			<class name="TENs.TestTENsAppUatSf" />
+			<class name="TENs.TestTENsAppUatSfbo" />
 		</classes>
 	</test>
 

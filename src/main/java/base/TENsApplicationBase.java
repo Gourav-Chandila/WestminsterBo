@@ -17,6 +17,8 @@ public abstract class TENsApplicationBase {
 	ElementFetch ele = new ElementFetch();
 	LicensingUtils lic = new LicensingUtils();
 
+	public abstract String fillBusinessDetails(String partyId, String businessEmail);
+	
 	public String confirmInfoIsTrue(WebDriver driver) {
 		try {
 			SeleniumUtils.scrollToElement(driver, "xpath", TENsPageElements.confirmInfoLabel);
@@ -170,6 +172,7 @@ public abstract class TENsApplicationBase {
 	            ele.getWebElement("ID", TENsPageElements.licenceStartDateInput).sendKeys(startDate);
 	            ele.getWebElement("ID", TENsPageElements.licenceEndDateInput).sendKeys(endDate);
 	            ele.getWebElement("XPATH", TENsPageElements.saveApplyForLicenceModal).click();
+	            SeleniumUtils.someDelay(2000);
 	            result.put("licenceName", licenceName);
 	        } else {  
 	        	//click on no check box

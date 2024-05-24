@@ -174,7 +174,6 @@ public class TestTENsAppUatSf extends BaseTest {
 		String expectedMessage = "Payment successful";
 		Assert.assertEquals(expectedMessage, Message);
 		logger.info(Message);
-
 	}
 
 }

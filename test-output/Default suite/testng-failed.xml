@@ -6,8 +6,8 @@
       <class name="TENs.TestTENsAppUatSf">
         <methods>
           <include name="afterMethod"/>
+          <include name="addPayment"/>
           <include name="afterTest"/>
-          <include name="uploadApplicaitonEvidence"/>
           <include name="beforeTestMethod"/>
         </methods>
       </class> <!-- TENs.TestTENsAppUatSf -->

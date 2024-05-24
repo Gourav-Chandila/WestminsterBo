@@ -4,14 +4,14 @@
   <test thread-count="5" name="FireFoxTest(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="TENs.TestTENsAppUatSf">
+      <class name="TENs.TestTENsAppUatSfbo">
         <methods>
           <include name="afterMethod"/>
-          <include name="addPayment" invocation-numbers="0"/>
+          <include name="addDeclaration" invocation-numbers="0"/>
           <include name="afterTest"/>
           <include name="beforeTestMethod"/>
         </methods>
-      </class> <!-- TENs.TestTENsAppUatSf -->
+      </class> <!-- TENs.TestTENsAppUatSfbo -->
     </classes>
   </test> <!-- FireFoxTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

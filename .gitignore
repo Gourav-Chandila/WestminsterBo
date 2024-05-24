@@ -8,3 +8,4 @@ target-output/
 reports/
 Sec50TestServerSfbo.html
 testng.xml
+*.java
